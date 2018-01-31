@@ -9,7 +9,7 @@ find_package(catkin REQUIRED
 
 catkin_package(
     INCLUDE_DIRS
-        include
+        ${NaviX_SOURCE_DIR}/include
     CATKIN_DEPENDS
             std_msgs
             geometry_msgs

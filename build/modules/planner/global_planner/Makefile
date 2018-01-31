@@ -89,18 +89,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -121,6 +109,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,64 +155,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/rule
-.PHONY : modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/rule
+modules/planner/global_planner/CMakeFiles/planner.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/planner.dir/rule
+.PHONY : modules/planner/global_planner/CMakeFiles/planner.dir/rule
 
 # Convenience name for target.
-navfn_generate_messages_cpp: modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/rule
+planner: modules/planner/global_planner/CMakeFiles/planner.dir/rule
 
-.PHONY : navfn_generate_messages_cpp
+.PHONY : planner
 
 # fast build rule for target.
-navfn_generate_messages_cpp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/build.make modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/build
-.PHONY : navfn_generate_messages_cpp/fast
-
-# Convenience name for target.
-modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/rule
-.PHONY : modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-navfn_generate_messages_lisp: modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/rule
-
-.PHONY : navfn_generate_messages_lisp
-
-# fast build rule for target.
-navfn_generate_messages_lisp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/build.make modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/build
-.PHONY : navfn_generate_messages_lisp/fast
-
-# Convenience name for target.
-modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/rule
-.PHONY : modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/rule
-
-# Convenience name for target.
-navfn_generate_messages_py: modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/rule
-
-.PHONY : navfn_generate_messages_py
-
-# fast build rule for target.
-navfn_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/build.make modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/build
-.PHONY : navfn_generate_messages_py/fast
-
-# Convenience name for target.
-modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
-.PHONY : modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
-
-# Convenience name for target.
-global_planner_gencfg: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
-
-.PHONY : global_planner_gencfg
-
-# fast build rule for target.
-global_planner_gencfg/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build
-.PHONY : global_planner_gencfg/fast
+planner/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/build
+.PHONY : planner/fast
 
 # Convenience name for target.
 modules/planner/global_planner/CMakeFiles/global_planner.dir/rule:
@@ -230,19 +185,19 @@ global_planner/fast:
 .PHONY : global_planner/fast
 
 # Convenience name for target.
-modules/planner/global_planner/CMakeFiles/planner.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/planner.dir/rule
-.PHONY : modules/planner/global_planner/CMakeFiles/planner.dir/rule
+modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
+.PHONY : modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
 
 # Convenience name for target.
-planner: modules/planner/global_planner/CMakeFiles/planner.dir/rule
+global_planner_gencfg: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
 
-.PHONY : planner
+.PHONY : global_planner_gencfg
 
 # fast build rule for target.
-planner/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/build
-.PHONY : planner/fast
+global_planner_gencfg/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build
+.PHONY : global_planner_gencfg/fast
 
 src/astar.o: src/astar.cpp.o
 
@@ -468,16 +423,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... navfn_generate_messages_cpp"
-	@echo "... navfn_generate_messages_lisp"
 	@echo "... install/local"
-	@echo "... navfn_generate_messages_py"
-	@echo "... global_planner_gencfg"
-	@echo "... global_planner"
-	@echo "... planner"
-	@echo "... install"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... install"
+	@echo "... planner"
+	@echo "... global_planner"
+	@echo "... global_planner_gencfg"
 	@echo "... src/astar.o"
 	@echo "... src/astar.i"
 	@echo "... src/astar.s"

@@ -1559,6 +1559,149 @@ diagnostic_msgs_generate_messages_cpp/fast:
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named _run_tests_clear_costmap_recovery_rostest
+
+# Build rule for target.
+_run_tests_clear_costmap_recovery_rostest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_clear_costmap_recovery_rostest
+.PHONY : _run_tests_clear_costmap_recovery_rostest
+
+# fast build rule for target.
+_run_tests_clear_costmap_recovery_rostest/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/build
+.PHONY : _run_tests_clear_costmap_recovery_rostest/fast
+
+#=============================================================================
+# Target rules for targets named clear_tester
+
+# Build rule for target.
+clear_tester: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clear_tester
+.PHONY : clear_tester
+
+# fast build rule for target.
+clear_tester/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/build
+.PHONY : clear_tester/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
+
+# Build rule for target.
+_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
+.PHONY : _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
+
+# fast build rule for target.
+_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build
+.PHONY : _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_clear_costmap_recovery
+
+# Build rule for target.
+run_tests_clear_costmap_recovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_clear_costmap_recovery
+.PHONY : run_tests_clear_costmap_recovery
+
+# fast build rule for target.
+run_tests_clear_costmap_recovery/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/build
+.PHONY : run_tests_clear_costmap_recovery/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_clear_costmap_recovery
+
+# Build rule for target.
+_run_tests_clear_costmap_recovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_clear_costmap_recovery
+.PHONY : _run_tests_clear_costmap_recovery
+
+# fast build rule for target.
+_run_tests_clear_costmap_recovery/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/build
+.PHONY : _run_tests_clear_costmap_recovery/fast
+
+#=============================================================================
+# Target rules for targets named clear_costmap_recovery
+
+# Build rule for target.
+clear_costmap_recovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clear_costmap_recovery
+.PHONY : clear_costmap_recovery
+
+# fast build rule for target.
+clear_costmap_recovery/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/build
+.PHONY : clear_costmap_recovery/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_clear_costmap_recovery_rostest
+
+# Build rule for target.
+run_tests_clear_costmap_recovery_rostest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_clear_costmap_recovery_rostest
+.PHONY : run_tests_clear_costmap_recovery_rostest
+
+# fast build rule for target.
+run_tests_clear_costmap_recovery_rostest/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/build
+.PHONY : run_tests_clear_costmap_recovery_rostest/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_clear_costmap_recovery
+
+# Build rule for target.
+clean_test_results_clear_costmap_recovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_clear_costmap_recovery
+.PHONY : clean_test_results_clear_costmap_recovery
+
+# fast build rule for target.
+clean_test_results_clear_costmap_recovery/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/clean_test_results_clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/clean_test_results_clear_costmap_recovery.dir/build
+.PHONY : clean_test_results_clear_costmap_recovery/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
+
+# Build rule for target.
+run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
+.PHONY : run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
+
+# fast build rule for target.
+run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast:
+	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build
+.PHONY : run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast
+
+#=============================================================================
+# Target rules for targets named move_slow_and_clear
+
+# Build rule for target.
+move_slow_and_clear: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_slow_and_clear
+.PHONY : move_slow_and_clear
+
+# fast build rule for target.
+move_slow_and_clear/fast:
+	$(MAKE) -f modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build.make modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build
+.PHONY : move_slow_and_clear/fast
+
+#=============================================================================
+# Target rules for targets named rotate_recovery
+
+# Build rule for target.
+rotate_recovery: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rotate_recovery
+.PHONY : rotate_recovery
+
+# fast build rule for target.
+rotate_recovery/fast:
+	$(MAKE) -f modules/recovery/rotate_recovery/CMakeFiles/rotate_recovery.dir/build.make modules/recovery/rotate_recovery/CMakeFiles/rotate_recovery.dir/build
+.PHONY : rotate_recovery/fast
+
+#=============================================================================
 # Target rules for targets named _run_tests_map_server_rostest_test_rtest.xml
 
 # Build rule for target.
@@ -2495,56 +2638,17 @@ run_tests_base_local_planner_gtest_line_iterator/fast:
 .PHONY : run_tests_base_local_planner_gtest_line_iterator/fast
 
 #=============================================================================
-# Target rules for targets named navfn_generate_messages_cpp
+# Target rules for targets named planner
 
 # Build rule for target.
-navfn_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages_cpp
-.PHONY : navfn_generate_messages_cpp
+planner: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 planner
+.PHONY : planner
 
 # fast build rule for target.
-navfn_generate_messages_cpp/fast:
-	$(MAKE) -f modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/build.make modules/planner/global_planner/CMakeFiles/navfn_generate_messages_cpp.dir/build
-.PHONY : navfn_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named navfn_generate_messages_lisp
-
-# Build rule for target.
-navfn_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages_lisp
-.PHONY : navfn_generate_messages_lisp
-
-# fast build rule for target.
-navfn_generate_messages_lisp/fast:
-	$(MAKE) -f modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/build.make modules/planner/global_planner/CMakeFiles/navfn_generate_messages_lisp.dir/build
-.PHONY : navfn_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named navfn_generate_messages_py
-
-# Build rule for target.
-navfn_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages_py
-.PHONY : navfn_generate_messages_py
-
-# fast build rule for target.
-navfn_generate_messages_py/fast:
-	$(MAKE) -f modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/build.make modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/build
-.PHONY : navfn_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named global_planner_gencfg
-
-# Build rule for target.
-global_planner_gencfg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 global_planner_gencfg
-.PHONY : global_planner_gencfg
-
-# fast build rule for target.
-global_planner_gencfg/fast:
-	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build
-.PHONY : global_planner_gencfg/fast
+planner/fast:
+	$(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/build
+.PHONY : planner/fast
 
 #=============================================================================
 # Target rules for targets named global_planner
@@ -2560,17 +2664,17 @@ global_planner/fast:
 .PHONY : global_planner/fast
 
 #=============================================================================
-# Target rules for targets named planner
+# Target rules for targets named global_planner_gencfg
 
 # Build rule for target.
-planner: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 planner
-.PHONY : planner
+global_planner_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 global_planner_gencfg
+.PHONY : global_planner_gencfg
 
 # fast build rule for target.
-planner/fast:
-	$(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/build
-.PHONY : planner/fast
+global_planner_gencfg/fast:
+	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build
+.PHONY : global_planner_gencfg/fast
 
 #=============================================================================
 # Target rules for targets named navfn_node
@@ -2623,149 +2727,6 @@ dwa_local_planner_gencfg: cmake_check_build_system
 dwa_local_planner_gencfg/fast:
 	$(MAKE) -f modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build.make modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build
 .PHONY : dwa_local_planner_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_clear_costmap_recovery_rostest
-
-# Build rule for target.
-_run_tests_clear_costmap_recovery_rostest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_clear_costmap_recovery_rostest
-.PHONY : _run_tests_clear_costmap_recovery_rostest
-
-# fast build rule for target.
-_run_tests_clear_costmap_recovery_rostest/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/build
-.PHONY : _run_tests_clear_costmap_recovery_rostest/fast
-
-#=============================================================================
-# Target rules for targets named clear_tester
-
-# Build rule for target.
-clear_tester: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clear_tester
-.PHONY : clear_tester
-
-# fast build rule for target.
-clear_tester/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/build
-.PHONY : clear_tester/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
-
-# Build rule for target.
-_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
-.PHONY : _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
-
-# fast build rule for target.
-_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build
-.PHONY : _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_clear_costmap_recovery
-
-# Build rule for target.
-run_tests_clear_costmap_recovery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_clear_costmap_recovery
-.PHONY : run_tests_clear_costmap_recovery
-
-# fast build rule for target.
-run_tests_clear_costmap_recovery/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery.dir/build
-.PHONY : run_tests_clear_costmap_recovery/fast
-
-#=============================================================================
-# Target rules for targets named _run_tests_clear_costmap_recovery
-
-# Build rule for target.
-_run_tests_clear_costmap_recovery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_clear_costmap_recovery
-.PHONY : _run_tests_clear_costmap_recovery
-
-# fast build rule for target.
-_run_tests_clear_costmap_recovery/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/build
-.PHONY : _run_tests_clear_costmap_recovery/fast
-
-#=============================================================================
-# Target rules for targets named clear_costmap_recovery
-
-# Build rule for target.
-clear_costmap_recovery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clear_costmap_recovery
-.PHONY : clear_costmap_recovery
-
-# fast build rule for target.
-clear_costmap_recovery/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/clear_costmap_recovery.dir/build
-.PHONY : clear_costmap_recovery/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_clear_costmap_recovery_rostest
-
-# Build rule for target.
-run_tests_clear_costmap_recovery_rostest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_clear_costmap_recovery_rostest
-.PHONY : run_tests_clear_costmap_recovery_rostest
-
-# fast build rule for target.
-run_tests_clear_costmap_recovery_rostest/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest.dir/build
-.PHONY : run_tests_clear_costmap_recovery_rostest/fast
-
-#=============================================================================
-# Target rules for targets named clean_test_results_clear_costmap_recovery
-
-# Build rule for target.
-clean_test_results_clear_costmap_recovery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_clear_costmap_recovery
-.PHONY : clean_test_results_clear_costmap_recovery
-
-# fast build rule for target.
-clean_test_results_clear_costmap_recovery/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/clean_test_results_clear_costmap_recovery.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/clean_test_results_clear_costmap_recovery.dir/build
-.PHONY : clean_test_results_clear_costmap_recovery/fast
-
-#=============================================================================
-# Target rules for targets named run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
-
-# Build rule for target.
-run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
-.PHONY : run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
-
-# fast build rule for target.
-run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast:
-	$(MAKE) -f modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build.make modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/build
-.PHONY : run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch/fast
-
-#=============================================================================
-# Target rules for targets named move_slow_and_clear
-
-# Build rule for target.
-move_slow_and_clear: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 move_slow_and_clear
-.PHONY : move_slow_and_clear
-
-# fast build rule for target.
-move_slow_and_clear/fast:
-	$(MAKE) -f modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build.make modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build
-.PHONY : move_slow_and_clear/fast
-
-#=============================================================================
-# Target rules for targets named rotate_recovery
-
-# Build rule for target.
-rotate_recovery: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rotate_recovery
-.PHONY : rotate_recovery
-
-# fast build rule for target.
-rotate_recovery/fast:
-	$(MAKE) -f modules/recovery/rotate_recovery/CMakeFiles/rotate_recovery.dir/build.make modules/recovery/rotate_recovery/CMakeFiles/rotate_recovery.dir/build
-.PHONY : rotate_recovery/fast
 
 #=============================================================================
 # Target rules for targets named amcl
@@ -3095,6 +3056,17 @@ help:
 	@echo "... diagnostic_msgs_generate_messages_py"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
+	@echo "... _run_tests_clear_costmap_recovery_rostest"
+	@echo "... clear_tester"
+	@echo "... _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch"
+	@echo "... run_tests_clear_costmap_recovery"
+	@echo "... _run_tests_clear_costmap_recovery"
+	@echo "... clear_costmap_recovery"
+	@echo "... run_tests_clear_costmap_recovery_rostest"
+	@echo "... clean_test_results_clear_costmap_recovery"
+	@echo "... run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch"
+	@echo "... move_slow_and_clear"
+	@echo "... rotate_recovery"
 	@echo "... _run_tests_map_server_rostest_test_rtest.xml"
 	@echo "... run_tests_map_server_rostest"
 	@echo "... rtest"
@@ -3167,27 +3139,13 @@ help:
 	@echo "... _run_tests_base_local_planner"
 	@echo "... clean_test_results_base_local_planner"
 	@echo "... run_tests_base_local_planner_gtest_line_iterator"
-	@echo "... navfn_generate_messages_cpp"
-	@echo "... navfn_generate_messages_lisp"
-	@echo "... navfn_generate_messages_py"
-	@echo "... global_planner_gencfg"
-	@echo "... global_planner"
 	@echo "... planner"
+	@echo "... global_planner"
+	@echo "... global_planner_gencfg"
 	@echo "... navfn_node"
 	@echo "... navfn"
 	@echo "... dwa_local_planner"
 	@echo "... dwa_local_planner_gencfg"
-	@echo "... _run_tests_clear_costmap_recovery_rostest"
-	@echo "... clear_tester"
-	@echo "... _run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch"
-	@echo "... run_tests_clear_costmap_recovery"
-	@echo "... _run_tests_clear_costmap_recovery"
-	@echo "... clear_costmap_recovery"
-	@echo "... run_tests_clear_costmap_recovery_rostest"
-	@echo "... clean_test_results_clear_costmap_recovery"
-	@echo "... run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch"
-	@echo "... move_slow_and_clear"
-	@echo "... rotate_recovery"
 	@echo "... amcl"
 	@echo "... amcl_map"
 	@echo "... amcl_pf"

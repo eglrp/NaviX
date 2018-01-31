@@ -91,7 +91,7 @@ planner_EXTERNAL_OBJECTS =
 devel/lib/global_planner/planner: modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o
 devel/lib/global_planner/planner: modules/planner/global_planner/CMakeFiles/planner.dir/build.make
 devel/lib/global_planner/planner: devel/lib/libglobal_planner.so
-devel/lib/global_planner/planner: /opt/ros/indigo/lib/libnavfn.so
+devel/lib/global_planner/planner: devel/lib/libnavfn.so
 devel/lib/global_planner/planner: devel/lib/liblayers.so
 devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libboost_atomic.so

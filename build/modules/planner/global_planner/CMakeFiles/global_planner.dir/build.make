@@ -246,7 +246,7 @@ devel/lib/libglobal_planner.so: modules/planner/global_planner/CMakeFiles/global
 devel/lib/libglobal_planner.so: modules/planner/global_planner/CMakeFiles/global_planner.dir/src/orientation_filter.cpp.o
 devel/lib/libglobal_planner.so: modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o
 devel/lib/libglobal_planner.so: modules/planner/global_planner/CMakeFiles/global_planner.dir/build.make
-devel/lib/libglobal_planner.so: /opt/ros/indigo/lib/libnavfn.so
+devel/lib/libglobal_planner.so: devel/lib/libnavfn.so
 devel/lib/libglobal_planner.so: devel/lib/liblayers.so
 devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libglobal_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
