@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../modules/map/costmap_2d/include/costmap_2d/array_parser.h
+../include/costmap_2d/array_parser.h
 vector
 -
 string
 -
 
-../modules/map/costmap_2d/include/costmap_2d/cost_values.h
+../include/costmap_2d/cost_values.h
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
+../include/costmap_2d/costmap_2d.h
 vector
 -
 queue
@@ -24,7 +24,7 @@ geometry_msgs/Point.h
 boost/thread.hpp
 -
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
+../include/costmap_2d/costmap_2d_publisher.h
 ros/ros.h
 -
 costmap_2d/costmap_2d.h
@@ -36,7 +36,7 @@ map_msgs/OccupancyGridUpdate.h
 tf/transform_datatypes.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_2d_ros.h
+../include/costmap_2d/costmap_2d_ros.h
 costmap_2d/layered_costmap.h
 -
 costmap_2d/layer.h
@@ -56,7 +56,7 @@ dynamic_reconfigure/server.h
 pluginlib/class_loader.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_layer.h
+../include/costmap_2d/costmap_layer.h
 ros/ros.h
 -
 costmap_2d/layer.h
@@ -64,7 +64,7 @@ costmap_2d/layer.h
 costmap_2d/layered_costmap.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_math.h
+../include/costmap_2d/costmap_math.h
 math.h
 -
 algorithm
@@ -74,7 +74,7 @@ vector
 geometry_msgs/Point.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/footprint.h
+../include/costmap_2d/footprint.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
@@ -86,7 +86,7 @@ geometry_msgs/Point.h
 geometry_msgs/Point32.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/layer.h
+../include/costmap_2d/layer.h
 costmap_2d/costmap_2d.h
 -
 costmap_2d/layered_costmap.h
@@ -98,7 +98,7 @@ tf/tf.h
 tf/transform_listener.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+../include/costmap_2d/layered_costmap.h
 costmap_2d/cost_values.h
 -
 costmap_2d/layer.h
@@ -110,7 +110,7 @@ vector
 string
 -
 
-../modules/map/costmap_2d/include/costmap_2d/observation.h
+../include/costmap_2d/observation.h
 geometry_msgs/Point.h
 -
 pcl/point_types.h
@@ -118,7 +118,7 @@ pcl/point_types.h
 pcl/point_cloud.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/observation_buffer.h
+../include/costmap_2d/observation_buffer.h
 vector
 -
 list

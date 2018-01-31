@@ -3,6 +3,6 @@ prefix=/home/bailiqun/NaviX/build/devel
 Name: move_slow_and_clear
 Description: Description of move_slow_and_clear
 Version: 1.14.2
-Cflags: -I/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include
+Cflags: -I/home/bailiqun/NaviX/include
 Libs: -L/home/bailiqun/NaviX/build/devel/lib -lmove_slow_and_clear
 Requires: geometry_msgs nav_core pluginlib roscpp

@@ -24,7 +24,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -50,7 +50,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -76,7 +76,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -102,7 +102,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -128,7 +128,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -155,7 +155,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -182,7 +182,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -208,7 +208,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -234,7 +234,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -260,7 +260,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -286,7 +286,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/utils/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -313,7 +313,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/utils/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -340,7 +340,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/openslam/include/openslam" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -367,7 +367,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/openslam/include/openslam" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />

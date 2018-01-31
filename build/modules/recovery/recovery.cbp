@@ -36,7 +36,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -68,7 +68,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -130,7 +130,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -162,7 +162,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -224,7 +224,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;move_slow_and_clear&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -255,7 +255,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;move_slow_and_clear&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -286,7 +286,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;rotate_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/rotate_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -317,7 +317,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;rotate_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/rotate_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />

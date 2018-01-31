@@ -12,7 +12,7 @@ find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 
 include_directories(
-    include
+    ${NaviX_SOURCE_DIR}/include
     ${catkin_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIRS}
     ${PCL_INCLUDE_DIRS}
@@ -21,7 +21,7 @@ include_directories(
 add_definitions(${EIGEN3_DEFINITIONS})
 
 catkin_package(
-    INCLUDE_DIRS include
+    INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
     LIBRARIES clear_costmap_recovery
     CATKIN_DEPENDS
         pluginlib

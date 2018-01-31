@@ -27,7 +27,7 @@ catkin_package(
 include_directories(
     ${catkin_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIRS}
-    ../include
+    ${NaviX_SOURCE_DIR}/include/
     )
 
 add_executable(navix src/startup.cpp)

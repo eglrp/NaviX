@@ -8,14 +8,17 @@ find_package(catkin REQUIRED
 
 catkin_package(
   INCLUDE_DIRS
-    include
+    ${NaviX_SOURCE_DIR}/include
   LIBRARIES
     voxel_grid
   CATKIN_DEPENDS
     roscpp
 )
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(
+    ${NaviX_SOURCE_DIR}/include
+    ${catkin_INCLUDE_DIRS}
+)
 
 add_library(voxel_grid src/voxel_grid.cpp)
 add_dependencies(voxel_grid ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

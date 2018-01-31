@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -Dutils_EXPORTS
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping -I/home/bailiqun/NaviX/modules/slam/gmapping/utils/. 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/include/gmapping -I/home/bailiqun/NaviX/modules/slam/gmapping/utils/. 
 

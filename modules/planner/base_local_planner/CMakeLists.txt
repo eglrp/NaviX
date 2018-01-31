@@ -24,7 +24,7 @@ find_package(catkin REQUIRED
 find_package(Boost REQUIRED
     COMPONENTS
         thread
-        )
+)
 
 find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)

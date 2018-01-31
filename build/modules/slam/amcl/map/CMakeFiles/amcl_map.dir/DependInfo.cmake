@@ -15,6 +15,7 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../modules/slam/include"
+  "../include"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/bailiqun/NaviX/modules/slam/amcl/map/map_cspace.cpp" "/home/bailiqun/NaviX/build/modules/slam/amcl/map/CMakeFiles/amcl_map.dir/map_cspace.cpp.o"
@@ -24,6 +25,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../modules/slam/include"
+  "../include"
   )
 
 # Targets to which this target links.

@@ -3,6 +3,6 @@ prefix=/home/bailiqun/NaviX/build/devel
 Name: voxel_grid
 Description: Description of voxel_grid
 Version: 1.14.2
-Cflags: -I/home/bailiqun/NaviX/modules/map/voxel_grid/include
+Cflags: -I/home/bailiqun/NaviX/include
 Libs: -L/home/bailiqun/NaviX/build/devel/lib -lvoxel_grid
 Requires: roscpp

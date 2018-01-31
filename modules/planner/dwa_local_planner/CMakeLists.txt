@@ -19,7 +19,7 @@ find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 remove_definitions(-DDISABLE_LIBUSB-1.0)
 include_directories(
-    include
+    ${NaviX_SOURCE_DIR}/include
     ${catkin_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIRS}
     ${PCL_INCLUDE_DIRS}
@@ -32,7 +32,7 @@ generate_dynamic_reconfigure_options(
 )
 
 catkin_package(
-    INCLUDE_DIRS include
+    INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
     LIBRARIES dwa_local_planner
     CATKIN_DEPENDS
         dynamic_reconfigure

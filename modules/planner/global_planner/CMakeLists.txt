@@ -20,7 +20,7 @@ generate_dynamic_reconfigure_options(
 )
 
 catkin_package(
-  INCLUDE_DIRS include
+  INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS
     costmap_2d
@@ -35,7 +35,7 @@ catkin_package(
 )
 
 include_directories(
-  include
+  ${NaviX_SOURCE_DIR}/include
   ${catkin_INCLUDE_DIRS}
 )
 

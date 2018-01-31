@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(costmap_2d_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "include;/usr/include/pcl-1.7;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/vtk-5.8 " STREQUAL " ")
+if(NOT "include;/home/bailiqun/NaviX/include;/usr/include/pcl-1.7;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/vtk-5.8 " STREQUAL " ")
   set(costmap_2d_INCLUDE_DIRS "")
-  set(_include_dirs "include;/usr/include/pcl-1.7;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/vtk-5.8")
+  set(_include_dirs "include;/home/bailiqun/NaviX/include;/usr/include/pcl-1.7;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/vtk-5.8")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

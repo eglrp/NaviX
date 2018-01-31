@@ -8,6 +8,7 @@ find_package(Eigen3 REQUIRED)
 add_definitions(${EIGEN3_DEFINITIONS})
 
 include_directories(
+    ${NaviX_SOURCE_DIR}/include
     ${Boost_INCLUDE_DIRS}
     ${catkin_INCLUDE_DIRS}
 )

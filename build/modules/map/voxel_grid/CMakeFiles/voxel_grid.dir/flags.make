@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"voxel_grid\" -Dvoxel_grid_EXPORTS
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/map/voxel_grid/include -I/opt/ros/indigo/include 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/opt/ros/indigo/include 
 

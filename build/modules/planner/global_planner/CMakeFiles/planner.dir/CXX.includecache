@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../modules/map/costmap_2d/include/costmap_2d/cost_values.h
+../include/costmap_2d/cost_values.h
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
+../include/costmap_2d/costmap_2d.h
 vector
 -
 queue
@@ -18,7 +18,7 @@ geometry_msgs/Point.h
 boost/thread.hpp
 -
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
+../include/costmap_2d/costmap_2d_publisher.h
 ros/ros.h
 -
 costmap_2d/costmap_2d.h
@@ -30,7 +30,7 @@ map_msgs/OccupancyGridUpdate.h
 tf/transform_datatypes.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/costmap_2d_ros.h
+../include/costmap_2d/costmap_2d_ros.h
 costmap_2d/layered_costmap.h
 -
 costmap_2d/layer.h
@@ -50,7 +50,7 @@ dynamic_reconfigure/server.h
 pluginlib/class_loader.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/footprint.h
+../include/costmap_2d/footprint.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
@@ -62,7 +62,7 @@ geometry_msgs/Point.h
 geometry_msgs/Point32.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/layer.h
+../include/costmap_2d/layer.h
 costmap_2d/costmap_2d.h
 -
 costmap_2d/layered_costmap.h
@@ -74,7 +74,7 @@ tf/tf.h
 tf/transform_listener.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+../include/costmap_2d/layered_costmap.h
 costmap_2d/cost_values.h
 -
 costmap_2d/layer.h
@@ -86,23 +86,17 @@ vector
 string
 -
 
-../modules/move_base/nav_core/include/nav_core/base_global_planner.h
-geometry_msgs/PoseStamped.h
--
-costmap_2d/costmap_2d_ros.h
--
-
-../modules/planner/global_planner/include/global_planner/expander.h
+../include/global_planner/expander.h
 global_planner/potential_calculator.h
 -
 global_planner/planner_core.h
 -
 
-../modules/planner/global_planner/include/global_planner/orientation_filter.h
+../include/global_planner/orientation_filter.h
 nav_msgs/Path.h
 -
 
-../modules/planner/global_planner/include/global_planner/planner_core.h
+../include/global_planner/planner_core.h
 ros/ros.h
 -
 costmap_2d/costmap_2d.h
@@ -134,12 +128,18 @@ global_planner/orientation_filter.h
 global_planner/GlobalPlannerConfig.h
 -
 
-../modules/planner/global_planner/include/global_planner/potential_calculator.h
+../include/global_planner/potential_calculator.h
 
-../modules/planner/global_planner/include/global_planner/traceback.h
+../include/global_planner/traceback.h
 vector
 -
 global_planner/potential_calculator.h
+-
+
+../include/nav_core/base_global_planner.h
+geometry_msgs/PoseStamped.h
+-
+costmap_2d/costmap_2d_ros.h
 -
 
 /home/bailiqun/NaviX/modules/planner/global_planner/src/plan_node.cpp

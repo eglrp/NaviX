@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/slam/include 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/include 
 

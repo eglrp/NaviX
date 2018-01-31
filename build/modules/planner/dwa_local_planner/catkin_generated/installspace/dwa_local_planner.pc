@@ -3,6 +3,6 @@ prefix=/usr/local
 Name: dwa_local_planner
 Description: Description of dwa_local_planner
 Version: 1.14.2
-Cflags: -I/usr/local/include
+Cflags: -I/usr/local/include -I/home/bailiqun/NaviX/include
 Libs: -L/usr/local/lib -ldwa_local_planner
 Requires: dynamic_reconfigure nav_msgs pluginlib roscpp

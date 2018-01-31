@@ -24,7 +24,7 @@ find_package(PCL REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS system thread)
 include_directories(
-    include
+    ${NaviX_SOURCE_DIR}/include
     ${catkin_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIRS}
     ${PCL_INCLUDE_DIRS}
@@ -58,7 +58,7 @@ generate_dynamic_reconfigure_options(
 
 catkin_package(
     INCLUDE_DIRS
-        include
+        ${NaviX_SOURCE_DIR}/include
     LIBRARIES costmap_2d layers
     CATKIN_DEPENDS
         dynamic_reconfigure

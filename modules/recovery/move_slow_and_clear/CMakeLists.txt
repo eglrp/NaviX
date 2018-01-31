@@ -14,7 +14,7 @@ find_package(PCL REQUIRED)
 remove_definitions(-DDISABLE_LIBUSB-1.0)
 find_package(Boost REQUIRED COMPONENTS thread)
 include_directories(
-    include
+    ${NaviX_SOURCE_DIR}/include
     ${catkin_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIRS}
     ${PCL_INCLUDE_DIRS}
@@ -22,7 +22,7 @@ include_directories(
 add_definitions(${EIGEN3_DEFINITIONS})
 
 catkin_package(
-    INCLUDE_DIRS include
+    INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
     LIBRARIES move_slow_and_clear
     CATKIN_DEPENDS
         geometry_msgs

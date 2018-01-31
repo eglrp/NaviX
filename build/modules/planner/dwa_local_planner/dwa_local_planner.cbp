@@ -27,11 +27,8 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;dwa_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -63,11 +60,8 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;dwa_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />

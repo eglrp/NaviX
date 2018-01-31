@@ -1888,7 +1888,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -1920,7 +1920,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -1982,7 +1982,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -2014,7 +2014,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;clear_costmap_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -2076,7 +2076,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;move_slow_and_clear&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2107,7 +2107,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;move_slow_and_clear&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2138,7 +2138,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;rotate_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/rotate_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2169,7 +2169,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;rotate_recovery&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/recovery/rotate_recovery/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2610,7 +2610,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;voxel_grid&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2637,7 +2637,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;voxel_grid&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2664,7 +2664,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;voxel_grid&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2691,7 +2691,7 @@
          <Compiler>
             <Add option="-DROS_PACKAGE_NAME=&quot;voxel_grid&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2789,7 +2789,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2821,7 +2821,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2853,7 +2853,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2885,7 +2885,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -2977,7 +2977,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -3009,7 +3009,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -3151,7 +3151,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -3183,7 +3183,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -3235,7 +3235,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -3267,7 +3267,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;costmap_2d&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -3409,9 +3409,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3444,9 +3442,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3479,9 +3475,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3514,9 +3508,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3559,9 +3551,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3594,9 +3584,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3629,9 +3617,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3664,9 +3650,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3699,9 +3683,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3734,9 +3716,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;base_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3829,10 +3809,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;global_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/global_planner/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/navfn/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3865,10 +3842,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;global_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/global_planner/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/navfn/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3901,10 +3875,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;global_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/global_planner/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/navfn/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3937,10 +3908,7 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;global_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/global_planner/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/navfn/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -3984,9 +3952,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4019,9 +3984,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4054,9 +4016,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4089,9 +4048,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4123,11 +4079,8 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;dwa_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4159,11 +4112,8 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;dwa_local_planner&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/move_base/nav_core/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/planner/base_local_planner/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4202,6 +4152,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4227,6 +4178,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4252,6 +4204,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4277,6 +4230,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4302,6 +4256,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4327,6 +4282,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4352,6 +4308,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4377,6 +4334,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4402,7 +4360,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4428,7 +4386,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4454,7 +4412,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4480,7 +4438,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4506,7 +4464,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -4533,7 +4491,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -4560,7 +4518,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4586,7 +4544,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4612,7 +4570,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4638,7 +4596,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -4664,7 +4622,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/utils/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -4691,7 +4649,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/utils/." />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -4718,7 +4676,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/openslam/include/openslam" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -4745,7 +4703,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/openslam/include/openslam" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -4776,8 +4734,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4810,8 +4766,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4844,8 +4798,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4878,8 +4830,6 @@
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
             <Add directory="/home/bailiqun/NaviX/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/costmap_2d/include" />
-            <Add directory="/home/bailiqun/NaviX/modules/map/voxel_grid/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -4975,10 +4925,10 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;startup&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/driver/urg_node/include" />
             <Add directory="/home/bailiqun/NaviX/modules/driver/urg_node/laser_proc/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
-            <Add directory="/home/bailiqun/NaviX/startup/../include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />
@@ -5006,10 +4956,10 @@
             <Add option="-DROS_PACKAGE_NAME=&quot;startup&quot;" />
             <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
             <Add directory="/home/bailiqun/NaviX/build/devel/include" />
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/driver/urg_node/include" />
             <Add directory="/home/bailiqun/NaviX/modules/driver/urg_node/laser_proc/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
-            <Add directory="/home/bailiqun/NaviX/startup/../include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
             <Add directory="/usr/include/c++/4.8" />

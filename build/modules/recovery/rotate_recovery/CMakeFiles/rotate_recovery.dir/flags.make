@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wno-deprecated -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"rotate_recovery\" -Drotate_recovery_EXPORTS
 
-CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/bailiqun/NaviX/modules/recovery/rotate_recovery/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni 
+CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/bailiqun/NaviX/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni 
 

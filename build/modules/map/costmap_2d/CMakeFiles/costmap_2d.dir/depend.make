@@ -3,7 +3,7 @@
 
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/array_parser.cpp.o: ../modules/map/costmap_2d/src/array_parser.cpp
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: ../include/costmap_2d/costmap_2d.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: ../modules/map/costmap_2d/src/costmap_2d.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: /opt/ros/indigo/include/ros/builtin_message_traits.h
@@ -22,9 +22,9 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: /opt/ros/
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: /opt/ros/indigo/include/ros/time.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d.cpp.o: /opt/ros/indigo/include/ros/types.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/cost_values.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../include/costmap_2d/cost_values.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../include/costmap_2d/costmap_2d.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../include/costmap_2d/costmap_2d_publisher.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: ../modules/map/costmap_2d/src/costmap_2d_publisher.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -105,13 +105,13 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o:
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: /opt/ros/indigo/include/tf/transform_datatypes.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_publisher.cpp.o: devel/include/map_msgs/OccupancyGridUpdate.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/cost_values.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d_ros.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/cost_values.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/costmap_2d.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/costmap_2d_publisher.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/costmap_2d_ros.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/footprint.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/layer.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../include/costmap_2d/layered_costmap.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: ../modules/map/costmap_2d/src/costmap_2d_ros.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -253,11 +253,11 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: /opt/
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: devel/include/costmap_2d/Costmap2DConfig.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_2d_ros.cpp.o: devel/include/map_msgs/OccupancyGridUpdate.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/cost_values.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_layer.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../include/costmap_2d/cost_values.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../include/costmap_2d/costmap_2d.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../include/costmap_2d/costmap_layer.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../include/costmap_2d/layer.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../include/costmap_2d/layered_costmap.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: ../modules/map/costmap_2d/src/costmap_layer.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -366,7 +366,7 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: /opt/r
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: /opt/ros/indigo/include/tf2_ros/buffer_interface.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_layer.cpp.o: /opt/ros/indigo/include/tf2_ros/transform_listener.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_math.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: ../include/costmap_2d/costmap_math.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: ../modules/map/costmap_2d/src/costmap_math.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros/indigo/include/geometry_msgs/Point.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros/indigo/include/ros/builtin_message_traits.h
@@ -385,9 +385,9 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ro
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros/indigo/include/ros/time.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/costmap_math.cpp.o: /opt/ros/indigo/include/ros/types.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/array_parser.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_math.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../include/costmap_2d/array_parser.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../include/costmap_2d/costmap_math.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../include/costmap_2d/footprint.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: ../modules/map/costmap_2d/src/footprint.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -451,10 +451,10 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/i
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/rosconsole/macros_generated.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/footprint.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/cost_values.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../include/costmap_2d/cost_values.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../include/costmap_2d/costmap_2d.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../include/costmap_2d/layer.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../include/costmap_2d/layered_costmap.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: ../modules/map/costmap_2d/src/layer.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -563,11 +563,11 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /opt/ros/indig
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /opt/ros/indigo/include/tf2_ros/buffer_interface.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layer.cpp.o: /opt/ros/indigo/include/tf2_ros/transform_listener.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/cost_values.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../include/costmap_2d/cost_values.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../include/costmap_2d/costmap_2d.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../include/costmap_2d/footprint.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../include/costmap_2d/layer.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../include/costmap_2d/layered_costmap.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: ../modules/map/costmap_2d/src/layered_costmap.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -678,8 +678,8 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/tf2_ros/buffer_interface.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/layered_costmap.cpp.o: /opt/ros/indigo/include/tf2_ros/transform_listener.h
 
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/observation.h
-modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/observation_buffer.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: ../include/costmap_2d/observation.h
+modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: ../include/costmap_2d/observation_buffer.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: ../modules/map/costmap_2d/src/observation_buffer.cpp
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/src/observation_buffer.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h

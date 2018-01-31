@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wno-deprecated
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"clear_costmap_recovery\"
 
-CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni -I/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test 
+CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/bailiqun/NaviX/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni -I/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/test 
 

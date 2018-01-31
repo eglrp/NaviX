@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(move_slow_and_clear_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include " STREQUAL " ")
+if(NOT "/home/bailiqun/NaviX/include " STREQUAL " ")
   set(move_slow_and_clear_INCLUDE_DIRS "")
-  set(_include_dirs "/home/bailiqun/NaviX/modules/recovery/move_slow_and_clear/include")
+  set(_include_dirs "/home/bailiqun/NaviX/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

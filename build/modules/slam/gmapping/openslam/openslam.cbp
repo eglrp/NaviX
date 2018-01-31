@@ -24,7 +24,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/openslam/include/openslam" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
@@ -51,7 +51,7 @@
          <Option type="3" />
          <Option compiler="gcc" />
          <Compiler>
-            <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping" />
+            <Add directory="/home/bailiqun/NaviX/include/gmapping" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/gmapping/openslam/include/openslam" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />

@@ -12,7 +12,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../modules/slam/include"
-  "../modules/slam/gmapping/include/gmapping"
+  "../include/gmapping"
   "../modules/slam/gmapping/sensor/sensor_base/."
   )
 

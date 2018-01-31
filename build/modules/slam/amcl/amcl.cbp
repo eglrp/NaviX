@@ -24,6 +24,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -49,6 +50,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -74,6 +76,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -99,6 +102,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -124,6 +128,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -149,6 +154,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -174,6 +180,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />
@@ -199,6 +206,7 @@
          <Option type="2" />
          <Option compiler="gcc" />
          <Compiler>
+            <Add directory="/home/bailiqun/NaviX/include" />
             <Add directory="/home/bailiqun/NaviX/modules/slam/include" />
             <Add directory="/opt/ros/indigo/include" />
             <Add directory="/usr/include" />

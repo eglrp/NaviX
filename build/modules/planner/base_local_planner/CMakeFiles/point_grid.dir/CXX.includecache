@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../modules/map/costmap_2d/include/costmap_2d/footprint.h
+../include/costmap_2d/footprint.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
@@ -18,7 +18,7 @@ geometry_msgs/Point.h
 geometry_msgs/Point32.h
 -
 
-../modules/map/costmap_2d/include/costmap_2d/observation.h
+../include/costmap_2d/observation.h
 geometry_msgs/Point.h
 -
 pcl/point_types.h

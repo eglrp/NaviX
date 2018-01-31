@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
-  "../modules/recovery/clear_costmap_recovery/include"
+  "../include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"
   "/usr/include/eigen3"

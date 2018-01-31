@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(dwa_local_planner_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/bailiqun/NaviX/build/devel/include;/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include " STREQUAL " ")
+if(NOT "/home/bailiqun/NaviX/build/devel/include;/home/bailiqun/NaviX/include " STREQUAL " ")
   set(dwa_local_planner_INCLUDE_DIRS "")
-  set(_include_dirs "/home/bailiqun/NaviX/build/devel/include;/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include")
+  set(_include_dirs "/home/bailiqun/NaviX/build/devel/include;/home/bailiqun/NaviX/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})

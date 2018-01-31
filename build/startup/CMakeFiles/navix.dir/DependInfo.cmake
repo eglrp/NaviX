@@ -21,7 +21,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../modules/driver/urg_node/include"
   "../modules/driver/urg_node/laser_proc/include"
   "/opt/ros/indigo/include"
-  "../startup/../include"
+  "../include"
   )
 
 # Targets to which this target links.
