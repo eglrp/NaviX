@@ -331,6 +331,8 @@ modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/tra
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/observation.h
+modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/map/voxel_grid/include/voxel_grid/voxel_grid.h
+modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/footprint_helper.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
@@ -389,7 +391,6 @@ modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/tra
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/nav_core/base_local_planner.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/nav_msgs/Odometry.h
@@ -501,7 +502,6 @@ modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/tra
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/tf2_ros/buffer.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/tf2_ros/buffer_interface.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/tf2_ros/transform_listener.h
-modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /opt/ros/indigo/include/voxel_grid/voxel_grid.h
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /usr/include/eigen3/Eigen/Cholesky
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /usr/include/eigen3/Eigen/Core
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o: /usr/include/eigen3/Eigen/Eigen2Support

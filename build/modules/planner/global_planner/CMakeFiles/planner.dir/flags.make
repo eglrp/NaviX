@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"global_planner\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/planner/global_planner/include -I/home/bailiqun/NaviX/modules/map/costmap_2d/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni -I/usr/include/vtk-5.8 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/planner/global_planner/include -I/home/bailiqun/NaviX/modules/map/costmap_2d/include -I/home/bailiqun/NaviX/modules/map/voxel_grid/include -I/home/bailiqun/NaviX/modules/move_base/nav_core/include -I/opt/ros/indigo/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni -I/usr/include/vtk-5.8 
 

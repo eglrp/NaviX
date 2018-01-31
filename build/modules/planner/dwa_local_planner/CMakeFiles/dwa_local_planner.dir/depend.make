@@ -9,6 +9,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/observation.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/local_planner_limits.h
@@ -73,7 +74,6 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/nav_core/base_local_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/nav_msgs/Odometry.h
@@ -430,6 +430,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/observation.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/latched_stop_rotate_controller.h
@@ -497,7 +498,6 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/nav_core/base_local_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/nav_msgs/Odometry.h

@@ -293,12 +293,12 @@ modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=57,58,59 "Built target map_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=56,57,58,59 "Built target map_msgs_generate_messages_lisp"
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
@@ -369,7 +369,7 @@ modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=53,54,55,56 "Built target map_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=52,53,54,55 "Built target map_msgs_generate_messages_cpp"
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -502,7 +502,7 @@ modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_genlisp.dir/all: modul
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_genlisp.dir/rule
@@ -777,7 +777,7 @@ all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages.dir/rule
@@ -1026,6 +1026,7 @@ clean: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messa
 
 # All Build rule for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all: modules/map/map_server/CMakeFiles/map_server_utest.dir/all
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all: modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/all
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all: modules/planner/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all: modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all
@@ -1036,7 +1037,7 @@ modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all: modules/recovery
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/rule
@@ -1188,9 +1189,10 @@ clean: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/doxygen.dir/clean
 # Target rules for target modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir
 
 # All Build rule for target.
-modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/map/map_server/CMakeFiles/_run_tests_map_server.dir/all
-modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/all
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/all
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/map/map_server/CMakeFiles/_run_tests_map_server.dir/all
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/all
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/all
 	$(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target run_tests"
@@ -1198,7 +1200,7 @@ modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all: modules/reco
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/run_tests.dir/rule
@@ -1532,7 +1534,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=40 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1564,12 +1566,12 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=40 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
@@ -1668,7 +1670,7 @@ modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_m
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_py.dir/all: modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/_move_base_msgs_generate_messages_check_deps_MoveBaseActionGoal.dir/all
 	$(MAKE) -f modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=75,76,77 "Built target move_base_msgs_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=74,75,76 "Built target move_base_msgs_generate_messages_py"
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1708,12 +1710,12 @@ modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_m
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all: modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/_move_base_msgs_generate_messages_check_deps_MoveBaseActionGoal.dir/all
 	$(MAKE) -f modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=72,73,74 "Built target move_base_msgs_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=72,73 "Built target move_base_msgs_generate_messages_lisp"
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
@@ -1745,7 +1747,7 @@ modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_gencpp.dir
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_gencpp.dir/rule
@@ -2008,7 +2010,7 @@ modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_genlisp.di
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_genlisp.dir/rule
@@ -2107,12 +2109,12 @@ modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_m
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all: modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/_move_base_msgs_generate_messages_check_deps_MoveBaseActionGoal.dir/all
 	$(MAKE) -f modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=70,71 "Built target move_base_msgs_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=69,70,71 "Built target move_base_msgs_generate_messages_cpp"
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
@@ -2262,7 +2264,7 @@ modules/driver/urg_node/CMakeFiles/getID.dir/all: modules/driver/urg_node/laser_
 modules/driver/urg_node/CMakeFiles/getID.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/getID.dir/build.make modules/driver/urg_node/CMakeFiles/getID.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/getID.dir/build.make modules/driver/urg_node/CMakeFiles/getID.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target getID"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=33 "Built target getID"
 .PHONY : modules/driver/urg_node/CMakeFiles/getID.dir/all
 
 # Include target in all.
@@ -2307,7 +2309,7 @@ modules/driver/urg_node/CMakeFiles/urg_node.dir/all: modules/driver/urg_node/las
 modules/driver/urg_node/CMakeFiles/urg_node.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=95 "Built target urg_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=94 "Built target urg_node"
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node.dir/all
 
 # Include target in all.
@@ -2350,7 +2352,7 @@ modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/all: modules/driver/urg_nod
 modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/build.make modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/build.make modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=94 "Built target urg_c_wrapper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target urg_c_wrapper"
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/all
 
 # Include target in all.
@@ -2360,7 +2362,7 @@ all: modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_c_wrapper.dir/rule
@@ -2392,7 +2394,7 @@ modules/driver/urg_node/CMakeFiles/urg_node_genlisp.dir/all: modules/driver/urg_
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/CMakeFiles/urg_node_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_node_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_genlisp.dir/rule
@@ -2452,7 +2454,7 @@ modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/all: module
 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/all: modules/driver/urg_node/CMakeFiles/_urg_node_generate_messages_check_deps_Status.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=98 "Built target urg_node_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=97 "Built target urg_node_generate_messages_py"
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2549,12 +2551,12 @@ modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/all: modul
 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/all: modules/driver/urg_node/CMakeFiles/_urg_node_generate_messages_check_deps_Status.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target urg_node_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=96 "Built target urg_node_generate_messages_cpp"
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_cpp.dir/rule
@@ -2714,7 +2716,7 @@ modules/driver/urg_node/CMakeFiles/urg_node_gencpp.dir/all: modules/driver/urg_n
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/CMakeFiles/urg_node_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_node_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_gencpp.dir/rule
@@ -2966,12 +2968,12 @@ modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/all: modu
 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/all: modules/driver/urg_node/CMakeFiles/_urg_node_generate_messages_check_deps_Status.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=97 "Built target urg_node_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target urg_node_generate_messages_lisp"
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_lisp.dir/rule
@@ -3110,7 +3112,7 @@ modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/all: modules/driver/urg_n
 modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/all
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/depend
 	$(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=96 "Built target urg_node_driver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=95 "Built target urg_node_driver"
 .PHONY : modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/all
 
 # Include target in all.
@@ -3638,7 +3640,7 @@ clean: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_l
 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/all:
 	$(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/depend
 	$(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target laser_proc_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=43 "Built target laser_proc_library"
 .PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/all
 
 # Include target in all.
@@ -3648,7 +3650,7 @@ all: modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/rule
@@ -3741,7 +3743,7 @@ modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/all: modules/dr
 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/all
 	$(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/depend
 	$(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=43 "Built target laser_proc_ROS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target laser_proc_ROS"
 .PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/all
 
 # Include target in all.
@@ -3788,7 +3790,7 @@ all: modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
@@ -3858,7 +3860,7 @@ all: modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
@@ -4015,7 +4017,7 @@ modules/driver/serial/preinstall:
 modules/driver/serial/CMakeFiles/serial.dir/all:
 	$(MAKE) -f modules/driver/serial/CMakeFiles/serial.dir/build.make modules/driver/serial/CMakeFiles/serial.dir/depend
 	$(MAKE) -f modules/driver/serial/CMakeFiles/serial.dir/build.make modules/driver/serial/CMakeFiles/serial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target serial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=91 "Built target serial"
 .PHONY : modules/driver/serial/CMakeFiles/serial.dir/all
 
 # Include target in all.
@@ -4025,7 +4027,7 @@ all: modules/driver/serial/CMakeFiles/serial.dir/all
 
 # Build rule for subdir invocation for target.
 modules/driver/serial/CMakeFiles/serial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/driver/serial/CMakeFiles/serial.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/driver/serial/CMakeFiles/serial.dir/rule
@@ -4272,7 +4274,7 @@ modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.d
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest_test_rtest.xml.dir/rule
@@ -4362,7 +4364,7 @@ all: modules/map/map_server/CMakeFiles/rtest.dir/all
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/rtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/rtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/rtest.dir/rule
@@ -4441,7 +4443,7 @@ modules/map/map_server/CMakeFiles/map_server_image_loader.dir/all: modules/drive
 modules/map/map_server/CMakeFiles/map_server_image_loader.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/map/map_server/CMakeFiles/map_server_image_loader.dir/build.make modules/map/map_server/CMakeFiles/map_server_image_loader.dir/depend
 	$(MAKE) -f modules/map/map_server/CMakeFiles/map_server_image_loader.dir/build.make modules/map/map_server/CMakeFiles/map_server_image_loader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target map_server_image_loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=66 "Built target map_server_image_loader"
 .PHONY : modules/map/map_server/CMakeFiles/map_server_image_loader.dir/all
 
 # Include target in all.
@@ -4451,7 +4453,7 @@ all: modules/map/map_server/CMakeFiles/map_server_image_loader.dir/all
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/map_server_image_loader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/map_server_image_loader.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/map_server_image_loader.dir/rule
@@ -4531,7 +4533,7 @@ modules/map/map_server/CMakeFiles/map_server.dir/all: modules/driver/urg_node/la
 modules/map/map_server/CMakeFiles/map_server.dir/all: modules/map/map_server/CMakeFiles/map_server_image_loader.dir/all
 	$(MAKE) -f modules/map/map_server/CMakeFiles/map_server.dir/build.make modules/map/map_server/CMakeFiles/map_server.dir/depend
 	$(MAKE) -f modules/map/map_server/CMakeFiles/map_server.dir/build.make modules/map/map_server/CMakeFiles/map_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=65 "Built target map_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target map_server"
 .PHONY : modules/map/map_server/CMakeFiles/map_server.dir/all
 
 # Include target in all.
@@ -4588,7 +4590,7 @@ modules/map/map_server/CMakeFiles/map_server-map_saver.dir/all: modules/driver/u
 modules/map/map_server/CMakeFiles/map_server-map_saver.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/map/map_server/CMakeFiles/map_server-map_saver.dir/build.make modules/map/map_server/CMakeFiles/map_server-map_saver.dir/depend
 	$(MAKE) -f modules/map/map_server/CMakeFiles/map_server-map_saver.dir/build.make modules/map/map_server/CMakeFiles/map_server-map_saver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=66 "Built target map_server-map_saver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=65 "Built target map_server-map_saver"
 .PHONY : modules/map/map_server/CMakeFiles/map_server-map_saver.dir/all
 
 # Include target in all.
@@ -4632,7 +4634,7 @@ modules/map/map_server/CMakeFiles/map_server_utest.dir/all: modules/map/map_serv
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/map_server_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/map_server_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/map_server_utest.dir/rule
@@ -4665,7 +4667,7 @@ modules/map/map_server/CMakeFiles/_run_tests_map_server.dir/all: modules/map/map
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/_run_tests_map_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/_run_tests_map_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/_run_tests_map_server.dir/rule
@@ -4698,7 +4700,7 @@ modules/map/map_server/CMakeFiles/run_tests_map_server.dir/all: modules/map/map_
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/run_tests_map_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/run_tests_map_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/run_tests_map_server.dir/rule
@@ -4730,7 +4732,7 @@ modules/map/map_server/CMakeFiles/run_tests_map_server_gtest.dir/all: modules/ma
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/run_tests_map_server_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/run_tests_map_server_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/run_tests_map_server_gtest.dir/rule
@@ -4764,7 +4766,7 @@ modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.d
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest_map_server_utest.dir/rule
@@ -4796,7 +4798,7 @@ modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/all: modules/m
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/_run_tests_map_server_gtest.dir/rule
@@ -4828,7 +4830,7 @@ modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/all: modules
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/_run_tests_map_server_rostest.dir/rule
@@ -4860,7 +4862,7 @@ modules/map/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.di
 
 # Build rule for subdir invocation for target.
 modules/map/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/map_server/CMakeFiles/run_tests_map_server_gtest_map_server_utest.dir/rule
@@ -4890,6 +4892,14 @@ modules/map/voxel_grid/all: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
 
 # Convenience name for "clean" pass in the directory.
 modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/clean
+modules/map/voxel_grid/clean: modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/clean
 
 .PHONY : modules/map/voxel_grid/clean
 
@@ -4913,7 +4923,7 @@ modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all: modules/driver/urg_node/la
 modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/depend
 	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=100 "Built target voxel_grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=99 "Built target voxel_grid"
 .PHONY : modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
 
 # Include target in all.
@@ -4940,6 +4950,266 @@ modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/clean:
 
 # clean rule for target.
 clean: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all: gtest/CMakeFiles/gtest_main.dir/all
+modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all: gtest/CMakeFiles/gtest.dir/all
+modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=100 "Built target voxel_grid_tests"
+.PHONY : modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule
+
+# Convenience name for target.
+voxel_grid_tests: modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/rule
+
+.PHONY : voxel_grid_tests
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/tests.dir/all
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all: modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target _run_tests_voxel_grid_gtest_voxel_grid_tests"
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
+
+# Convenience name for target.
+_run_tests_voxel_grid_gtest_voxel_grid_tests: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
+
+.PHONY : _run_tests_voxel_grid_gtest_voxel_grid_tests
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target run_tests_voxel_grid"
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule
+
+# Convenience name for target.
+run_tests_voxel_grid: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/rule
+
+.PHONY : run_tests_voxel_grid
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/all: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target _run_tests_voxel_grid"
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/rule
+
+# Convenience name for target.
+_run_tests_voxel_grid: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/rule
+
+.PHONY : _run_tests_voxel_grid
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target run_tests_voxel_grid_gtest"
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule
+
+# Convenience name for target.
+run_tests_voxel_grid_gtest: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/rule
+
+.PHONY : run_tests_voxel_grid_gtest
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target run_tests_voxel_grid_gtest_voxel_grid_tests"
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
+
+# Convenience name for target.
+run_tests_voxel_grid_gtest_voxel_grid_tests: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/rule
+
+.PHONY : run_tests_voxel_grid_gtest_voxel_grid_tests
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/all: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/all
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target _run_tests_voxel_grid_gtest"
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/rule
+
+# Convenience name for target.
+_run_tests_voxel_grid_gtest: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/rule
+
+.PHONY : _run_tests_voxel_grid_gtest
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir
+
+# All Build rule for target.
+modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/all:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/depend
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target clean_test_results_voxel_grid"
+.PHONY : modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/all
+
+# Build rule for subdir invocation for target.
+modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/rule
+
+# Convenience name for target.
+clean_test_results_voxel_grid: modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/rule
+
+.PHONY : clean_test_results_voxel_grid
+
+# clean rule for target.
+modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/clean:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/clean
+.PHONY : modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/clean
+
+# clean rule for target.
+clean: modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/clean
 
 .PHONY : clean
 
@@ -5252,12 +5522,12 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all: modul
 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all: modules/map/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/all
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/depend
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=30 "Built target costmap_2d_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_py"
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
@@ -5289,7 +5559,7 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_gencpp.dir/all: modules/map/costmap
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_gencpp.dir/rule
@@ -5437,7 +5707,7 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all: modules/map/costma
 modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/depend
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target costmap_2d_markers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=30 "Built target costmap_2d_markers"
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all
 
 # Include target in all.
@@ -5447,7 +5717,7 @@ all: modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 21
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
@@ -5614,7 +5884,7 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_genpy.dir/all: modules/map/costmap_
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_genpy.dir/rule
@@ -5644,12 +5914,12 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all: modu
 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all: modules/map/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/all
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/depend
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=29 "Built target costmap_2d_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_cpp"
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
@@ -5679,12 +5949,12 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all: mod
 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all: modules/map/costmap_2d/CMakeFiles/_costmap_2d_generate_messages_check_deps_VoxelGrid.dir/all
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/depend
 	$(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target costmap_2d_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=29 "Built target costmap_2d_generate_messages_lisp"
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
@@ -5748,7 +6018,7 @@ modules/map/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/all: modules/map/costma
 
 # Build rule for subdir invocation for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_genlisp.dir/rule
@@ -6263,7 +6533,7 @@ clean: modules/planner/base_local_planner/CMakeFiles/base_local_planner_genlisp.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all:
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/build.make modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/depend
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/build.make modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=16 "Built target base_local_planner_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target base_local_planner_gencfg"
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all
 
 # Include target in all.
@@ -6273,7 +6543,7 @@ all: modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencfg.dir/rule
@@ -6306,7 +6576,7 @@ modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtes
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest.dir/rule
@@ -6373,7 +6643,7 @@ modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtes
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule
@@ -6438,7 +6708,7 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/all:
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_gencpp.dir/rule
@@ -6466,12 +6736,12 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messag
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all: modules/planner/base_local_planner/CMakeFiles/_base_local_planner_generate_messages_check_deps_Position2DInt.dir/all
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/build.make modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/depend
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/build.make modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target base_local_planner_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=16 "Built target base_local_planner_generate_messages_cpp"
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/rule
@@ -6505,7 +6775,7 @@ modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtes
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner_gtest_line_iterator.dir/rule
@@ -6537,7 +6807,7 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/all: module
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/all: modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/build.make modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/depend
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/build.make modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=9,10,11,12,13,14,15 "Built target base_local_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15 "Built target base_local_planner"
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/all
 
 # Include target in all.
@@ -6547,7 +6817,7 @@ all: modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 32
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/rule
@@ -6649,7 +6919,7 @@ all: modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/al
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 34
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/rule
@@ -6688,7 +6958,7 @@ all: modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_m
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages.dir/rule
@@ -6779,7 +7049,7 @@ modules/planner/base_local_planner/CMakeFiles/point_grid.dir/all: modules/planne
 modules/planner/base_local_planner/CMakeFiles/point_grid.dir/all: modules/planner/base_local_planner/CMakeFiles/base_local_planner_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/point_grid.dir/build.make modules/planner/base_local_planner/CMakeFiles/point_grid.dir/depend
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/point_grid.dir/build.make modules/planner/base_local_planner/CMakeFiles/point_grid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target point_grid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=83 "Built target point_grid"
 .PHONY : modules/planner/base_local_planner/CMakeFiles/point_grid.dir/all
 
 # Include target in all.
@@ -6789,7 +7059,7 @@ all: modules/planner/base_local_planner/CMakeFiles/point_grid.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/point_grid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/point_grid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/point_grid.dir/rule
@@ -6817,12 +7087,12 @@ modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/all: gtest/CMake
 modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/build.make modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/depend
 	$(MAKE) -f modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/build.make modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=52 "Built target line_iterator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target line_iterator"
 .PHONY : modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/line_iterator.dir/rule
@@ -6860,7 +7130,7 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all: 
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 38
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/base_local_planner_utest.dir/rule
@@ -6924,7 +7194,7 @@ modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 38
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_base_local_planner_utest.dir/rule
@@ -6988,7 +7258,7 @@ modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/_run_tests_base_local_planner.dir/rule
@@ -7052,7 +7322,7 @@ modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest
 
 # Build rule for subdir invocation for target.
 modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator.dir/rule
@@ -7200,7 +7470,7 @@ clean: modules/planner/global_planner/CMakeFiles/navfn_generate_messages_py.dir/
 modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all:
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/depend
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target global_planner_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=37 "Built target global_planner_gencfg"
 .PHONY : modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 
 # Include target in all.
@@ -7210,7 +7480,7 @@ all: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/rule
@@ -7301,7 +7571,7 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/planne
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner.dir/depend
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=34,35,36,37 "Built target global_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=34,35,36 "Built target global_planner"
 .PHONY : modules/planner/global_planner/CMakeFiles/global_planner.dir/all
 
 # Include target in all.
@@ -7403,7 +7673,7 @@ modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/planner/globa
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner.dir/all
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/depend
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=83 "Built target planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=82 "Built target planner"
 .PHONY : modules/planner/global_planner/CMakeFiles/planner.dir/all
 
 # Include target in all.
@@ -7460,7 +7730,7 @@ modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFile
 modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
 	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/depend
 	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=80 "Built target navfn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=79 "Built target navfn"
 .PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/all
 
 # Include target in all.
@@ -7621,7 +7891,7 @@ clean: modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/clean
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all:
 	$(MAKE) -f modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build.make modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/depend
 	$(MAKE) -f modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build.make modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=33 "Built target dwa_local_planner_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target dwa_local_planner_gencfg"
 .PHONY : modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all
 
 # Include target in all.
@@ -7631,7 +7901,7 @@ all: modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/a
 
 # Build rule for subdir invocation for target.
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg.dir/rule
@@ -7713,7 +7983,7 @@ modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_reco
 
 # Build rule for subdir invocation for target.
 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest.dir/rule
@@ -7746,7 +8016,7 @@ modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all: modules
 
 # Build rule for subdir invocation for target.
 modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/recovery/clear_costmap_recovery/CMakeFiles/clear_tester.dir/rule
@@ -7779,7 +8049,7 @@ modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_reco
 
 # Build rule for subdir invocation for target.
 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch.dir/rule
@@ -7843,7 +8113,7 @@ modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_reco
 
 # Build rule for subdir invocation for target.
 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 42
 	$(MAKE) -f CMakeFiles/Makefile2 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery.dir/rule
@@ -8058,7 +8328,7 @@ modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all: mod
 modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(MAKE) -f modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build.make modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/depend
 	$(MAKE) -f modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build.make modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=79 "Built target move_slow_and_clear"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=78 "Built target move_slow_and_clear"
 .PHONY : modules/recovery/move_slow_and_clear/CMakeFiles/move_slow_and_clear.dir/all
 
 # Include target in all.
@@ -8235,7 +8505,7 @@ all: modules/slam/amcl/CMakeFiles/amcl.dir/all
 
 # Build rule for subdir invocation for target.
 modules/slam/amcl/CMakeFiles/amcl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 modules/slam/amcl/CMakeFiles/amcl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/slam/amcl/CMakeFiles/amcl.dir/rule
@@ -8391,7 +8661,7 @@ modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/all: modules/slam/amcl/map
 modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/all: modules/slam/amcl/pf/CMakeFiles/amcl_pf.dir/all
 	$(MAKE) -f modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/build.make modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/depend
 	$(MAKE) -f modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/build.make modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=7,8 "Built target amcl_sensors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=7 "Built target amcl_sensors"
 .PHONY : modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/all
 
 # Include target in all.
@@ -8401,7 +8671,7 @@ all: modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/all
 
 # Build rule for subdir invocation for target.
 modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/slam/amcl/sensors/CMakeFiles/amcl_sensors.dir/rule
@@ -8667,7 +8937,7 @@ modules/slam/gmapping/sensor/sensor_odometry/preinstall:
 modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all: modules/slam/gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/all
 	$(MAKE) -f modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/depend
 	$(MAKE) -f modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build.make modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=89,90 "Built target sensor_odometry"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=89 "Built target sensor_odometry"
 .PHONY : modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all
 
 # Include target in all.
@@ -8677,7 +8947,7 @@ all: modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir
 
 # Build rule for subdir invocation for target.
 modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/slam/gmapping/sensor/sensor_odometry/CMakeFiles/sensor_odometry.dir/rule
@@ -8722,7 +8992,7 @@ modules/slam/gmapping/sensor/sensor_range/preinstall:
 modules/slam/gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/all: modules/slam/gmapping/sensor/sensor_base/CMakeFiles/sensor_base.dir/all
 	$(MAKE) -f modules/slam/gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make modules/slam/gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/depend
 	$(MAKE) -f modules/slam/gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/build.make modules/slam/gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=91 "Built target sensor_range"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=90 "Built target sensor_range"
 .PHONY : modules/slam/gmapping/sensor/sensor_range/CMakeFiles/sensor_range.dir/all
 
 # Include target in all.
@@ -8777,7 +9047,7 @@ modules/slam/gmapping/utils/preinstall:
 modules/slam/gmapping/utils/CMakeFiles/utils.dir/all:
 	$(MAKE) -f modules/slam/gmapping/utils/CMakeFiles/utils.dir/build.make modules/slam/gmapping/utils/CMakeFiles/utils.dir/depend
 	$(MAKE) -f modules/slam/gmapping/utils/CMakeFiles/utils.dir/build.make modules/slam/gmapping/utils/CMakeFiles/utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=99 "Built target utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=98 "Built target utils"
 .PHONY : modules/slam/gmapping/utils/CMakeFiles/utils.dir/all
 
 # Include target in all.
@@ -8837,7 +9107,7 @@ modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/all: modules/slam/gmappin
 modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/all: modules/slam/gmapping/utils/CMakeFiles/utils.dir/all
 	$(MAKE) -f modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/build.make modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/depend
 	$(MAKE) -f modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/build.make modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=82 "Built target openslam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target openslam"
 .PHONY : modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/all
 
 # Include target in all.
@@ -8847,7 +9117,7 @@ all: modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/all
 
 # Build rule for subdir invocation for target.
 modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/rule
@@ -9038,7 +9308,7 @@ modules/move_base/move_base/CMakeFiles/move_base_node.dir/all: modules/move_base
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/all: modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/all
 	$(MAKE) -f modules/move_base/move_base/CMakeFiles/move_base_node.dir/build.make modules/move_base/move_base/CMakeFiles/move_base_node.dir/depend
 	$(MAKE) -f modules/move_base/move_base/CMakeFiles/move_base_node.dir/build.make modules/move_base/move_base/CMakeFiles/move_base_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=78 "Built target move_base_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=77 "Built target move_base_node"
 .PHONY : modules/move_base/move_base/CMakeFiles/move_base_node.dir/all
 
 # Include target in all.
@@ -9048,7 +9318,7 @@ all: modules/move_base/move_base/CMakeFiles/move_base_node.dir/all
 
 # Build rule for subdir invocation for target.
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 modules/move_base/move_base/CMakeFiles/move_base_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/move_base/move_base/CMakeFiles/move_base_node.dir/rule
@@ -9148,7 +9418,7 @@ all: modules/move_base/move_base/CMakeFiles/move_base.dir/all
 
 # Build rule for subdir invocation for target.
 modules/move_base/move_base/CMakeFiles/move_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 24
 	$(MAKE) -f CMakeFiles/Makefile2 modules/move_base/move_base/CMakeFiles/move_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/move_base/move_base/CMakeFiles/move_base.dir/rule
@@ -9175,7 +9445,7 @@ clean: modules/move_base/move_base/CMakeFiles/move_base.dir/clean
 modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/all:
 	$(MAKE) -f modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/build.make modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/depend
 	$(MAKE) -f modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/build.make modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=69 "Built target move_base_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target move_base_gencfg"
 .PHONY : modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/all
 
 # Include target in all.
@@ -9185,7 +9455,7 @@ all: modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/all
 
 # Build rule for subdir invocation for target.
 modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/move_base/move_base/CMakeFiles/move_base_gencfg.dir/rule
@@ -9407,7 +9677,7 @@ startup/CMakeFiles/navix.dir/all: modules/slam/gmapping/utils/CMakeFiles/utils.d
 startup/CMakeFiles/navix.dir/all: modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/all
 	$(MAKE) -f startup/CMakeFiles/navix.dir/build.make startup/CMakeFiles/navix.dir/depend
 	$(MAKE) -f startup/CMakeFiles/navix.dir/build.make startup/CMakeFiles/navix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num= "Built target navix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=80 "Built target navix"
 .PHONY : startup/CMakeFiles/navix.dir/all
 
 # Include target in all.
@@ -9417,7 +9687,7 @@ all: startup/CMakeFiles/navix.dir/all
 
 # Build rule for subdir invocation for target.
 startup/CMakeFiles/navix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 28
 	$(MAKE) -f CMakeFiles/Makefile2 startup/CMakeFiles/navix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : startup/CMakeFiles/navix.dir/rule

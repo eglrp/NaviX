@@ -86,6 +86,12 @@ vector
 string
 -
 
+../modules/move_base/nav_core/include/nav_core/base_global_planner.h
+geometry_msgs/PoseStamped.h
+-
+costmap_2d/costmap_2d_ros.h
+-
+
 ../modules/planner/global_planner/include/global_planner/expander.h
 global_planner/potential_calculator.h
 -
@@ -740,12 +746,6 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 geometry_msgs/Vector3.h
--
-
-/opt/ros/indigo/include/nav_core/base_global_planner.h
-geometry_msgs/PoseStamped.h
--
-costmap_2d/costmap_2d_ros.h
 -
 
 /opt/ros/indigo/include/nav_msgs/GetPlan.h

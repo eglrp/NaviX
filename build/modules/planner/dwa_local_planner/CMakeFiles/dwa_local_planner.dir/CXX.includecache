@@ -94,6 +94,16 @@ pcl/point_types.h
 pcl/point_cloud.h
 -
 
+../modules/move_base/nav_core/include/nav_core/base_local_planner.h
+geometry_msgs/PoseStamped.h
+-
+geometry_msgs/Twist.h
+-
+costmap_2d/costmap_2d_ros.h
+-
+tf/transform_listener.h
+-
+
 ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
 base_local_planner/world_model.h
 -
@@ -1020,16 +1030,6 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 geometry_msgs/Vector3.h
--
-
-/opt/ros/indigo/include/nav_core/base_local_planner.h
-geometry_msgs/PoseStamped.h
--
-geometry_msgs/Twist.h
--
-costmap_2d/costmap_2d_ros.h
--
-tf/transform_listener.h
 -
 
 /opt/ros/indigo/include/nav_msgs/MapMetaData.h

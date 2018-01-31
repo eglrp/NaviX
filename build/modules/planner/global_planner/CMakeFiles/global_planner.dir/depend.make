@@ -8,6 +8,7 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ..
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/planner/global_planner/include/global_planner/astar.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/planner/global_planner/include/global_planner/expander.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: ../modules/planner/global_planner/include/global_planner/orientation_filter.h
@@ -53,7 +54,6 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /o
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlan.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/astar.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h
@@ -168,6 +168,7 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o:
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/planner/global_planner/include/global_planner/dijkstra.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/planner/global_planner/include/global_planner/expander.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: ../modules/planner/global_planner/include/global_planner/orientation_filter.h
@@ -213,7 +214,6 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o:
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlan.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/dijkstra.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h
@@ -328,6 +328,7 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.c
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/planner/global_planner/include/global_planner/expander.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/planner/global_planner/include/global_planner/gradient_path.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: ../modules/planner/global_planner/include/global_planner/orientation_filter.h
@@ -373,7 +374,6 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.c
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlan.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/gradient_path.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h
@@ -591,6 +591,7 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cp
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/planner/global_planner/include/global_planner/astar.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/planner/global_planner/include/global_planner/dijkstra.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: ../modules/planner/global_planner/include/global_planner/expander.h
@@ -640,7 +641,6 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cp
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/nav_core/base_global_planner.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlan.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
 modules/planner/global_planner/CMakeFiles/global_planner.dir/src/planner_core.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h

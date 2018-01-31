@@ -159,7 +159,7 @@ devel/lib/move_base/move_base: /opt/ros/indigo/lib/libtf2_ros.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libactionlib.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libmessage_filters.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libtf2.so
-devel/lib/move_base/move_base: modules/map/voxel_grid/libvoxel_grid.so
+devel/lib/move_base/move_base: devel/lib/libvoxel_grid.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libroscpp.so
 devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so

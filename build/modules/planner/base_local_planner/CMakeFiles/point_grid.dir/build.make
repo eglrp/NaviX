@@ -143,7 +143,7 @@ devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libtf2_ros.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libactionlib.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libmessage_filters.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libtf2.so
-devel/lib/base_local_planner/point_grid: modules/map/voxel_grid/libvoxel_grid.so
+devel/lib/base_local_planner/point_grid: devel/lib/libvoxel_grid.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libroscpp.so
 devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so

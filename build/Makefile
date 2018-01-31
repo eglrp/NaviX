@@ -1780,6 +1780,110 @@ voxel_grid/fast:
 .PHONY : voxel_grid/fast
 
 #=============================================================================
+# Target rules for targets named voxel_grid_tests
+
+# Build rule for target.
+voxel_grid_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 voxel_grid_tests
+.PHONY : voxel_grid_tests
+
+# fast build rule for target.
+voxel_grid_tests/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/voxel_grid_tests.dir/build
+.PHONY : voxel_grid_tests/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_voxel_grid_gtest_voxel_grid_tests
+
+# Build rule for target.
+_run_tests_voxel_grid_gtest_voxel_grid_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_voxel_grid_gtest_voxel_grid_tests
+.PHONY : _run_tests_voxel_grid_gtest_voxel_grid_tests
+
+# fast build rule for target.
+_run_tests_voxel_grid_gtest_voxel_grid_tests/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build
+.PHONY : _run_tests_voxel_grid_gtest_voxel_grid_tests/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_voxel_grid
+
+# Build rule for target.
+run_tests_voxel_grid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_voxel_grid
+.PHONY : run_tests_voxel_grid
+
+# fast build rule for target.
+run_tests_voxel_grid/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid.dir/build
+.PHONY : run_tests_voxel_grid/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_voxel_grid
+
+# Build rule for target.
+_run_tests_voxel_grid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_voxel_grid
+.PHONY : _run_tests_voxel_grid
+
+# fast build rule for target.
+_run_tests_voxel_grid/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid.dir/build
+.PHONY : _run_tests_voxel_grid/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_voxel_grid_gtest
+
+# Build rule for target.
+run_tests_voxel_grid_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_voxel_grid_gtest
+.PHONY : run_tests_voxel_grid_gtest
+
+# fast build rule for target.
+run_tests_voxel_grid_gtest/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest.dir/build
+.PHONY : run_tests_voxel_grid_gtest/fast
+
+#=============================================================================
+# Target rules for targets named run_tests_voxel_grid_gtest_voxel_grid_tests
+
+# Build rule for target.
+run_tests_voxel_grid_gtest_voxel_grid_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests_voxel_grid_gtest_voxel_grid_tests
+.PHONY : run_tests_voxel_grid_gtest_voxel_grid_tests
+
+# fast build rule for target.
+run_tests_voxel_grid_gtest_voxel_grid_tests/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build.make modules/map/voxel_grid/CMakeFiles/run_tests_voxel_grid_gtest_voxel_grid_tests.dir/build
+.PHONY : run_tests_voxel_grid_gtest_voxel_grid_tests/fast
+
+#=============================================================================
+# Target rules for targets named _run_tests_voxel_grid_gtest
+
+# Build rule for target.
+_run_tests_voxel_grid_gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _run_tests_voxel_grid_gtest
+.PHONY : _run_tests_voxel_grid_gtest
+
+# fast build rule for target.
+_run_tests_voxel_grid_gtest/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/build.make modules/map/voxel_grid/CMakeFiles/_run_tests_voxel_grid_gtest.dir/build
+.PHONY : _run_tests_voxel_grid_gtest/fast
+
+#=============================================================================
+# Target rules for targets named clean_test_results_voxel_grid
+
+# Build rule for target.
+clean_test_results_voxel_grid: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results_voxel_grid
+.PHONY : clean_test_results_voxel_grid
+
+# fast build rule for target.
+clean_test_results_voxel_grid/fast:
+	$(MAKE) -f modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/build.make modules/map/voxel_grid/CMakeFiles/clean_test_results_voxel_grid.dir/build
+.PHONY : clean_test_results_voxel_grid/fast
+
+#=============================================================================
 # Target rules for targets named costmap_2d_node
 
 # Build rule for target.
@@ -2995,6 +3099,14 @@ help:
 	@echo "... _run_tests_map_server_rostest"
 	@echo "... run_tests_map_server_gtest_map_server_utest"
 	@echo "... voxel_grid"
+	@echo "... voxel_grid_tests"
+	@echo "... _run_tests_voxel_grid_gtest_voxel_grid_tests"
+	@echo "... run_tests_voxel_grid"
+	@echo "... _run_tests_voxel_grid"
+	@echo "... run_tests_voxel_grid_gtest"
+	@echo "... run_tests_voxel_grid_gtest_voxel_grid_tests"
+	@echo "... _run_tests_voxel_grid_gtest"
+	@echo "... clean_test_results_voxel_grid"
 	@echo "... costmap_2d_node"
 	@echo "... costmap_2d_cloud"
 	@echo "... visualization_msgs_generate_messages_py"

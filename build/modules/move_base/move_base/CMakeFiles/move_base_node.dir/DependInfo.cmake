@@ -19,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
   "../include"
   "../modules/map/costmap_2d/include"
+  "../modules/map/voxel_grid/include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"
   "/usr/include/eigen3"

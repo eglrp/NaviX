@@ -332,6 +332,8 @@ modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/tra
  ../modules/map/costmap_2d/include/costmap_2d/layer.h
  ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
  ../modules/map/costmap_2d/include/costmap_2d/observation.h
+ ../modules/map/voxel_grid/include/voxel_grid/voxel_grid.h
+ ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
  ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
  ../modules/planner/base_local_planner/include/base_local_planner/footprint_helper.h
  ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
@@ -390,7 +392,6 @@ modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/tra
  /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/indigo/include/geometry_msgs/Vector3.h
  /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
- /opt/ros/indigo/include/nav_core/base_local_planner.h
  /opt/ros/indigo/include/nav_msgs/MapMetaData.h
  /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
  /opt/ros/indigo/include/nav_msgs/Odometry.h
@@ -502,7 +503,6 @@ modules/planner/base_local_planner/CMakeFiles/trajectory_planner_ros.dir/src/tra
  /opt/ros/indigo/include/tf2_ros/buffer.h
  /opt/ros/indigo/include/tf2_ros/buffer_interface.h
  /opt/ros/indigo/include/tf2_ros/transform_listener.h
- /opt/ros/indigo/include/voxel_grid/voxel_grid.h
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Eigen2Support

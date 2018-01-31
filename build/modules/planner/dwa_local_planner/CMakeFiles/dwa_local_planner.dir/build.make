@@ -231,7 +231,7 @@ devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_program_op
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libroslz4.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/liblz4.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libtopic_tools.so
-devel/lib/libdwa_local_planner.so: modules/map/voxel_grid/libvoxel_grid.so
+devel/lib/libdwa_local_planner.so: devel/lib/libvoxel_grid.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libclass_loader.so
 devel/lib/libdwa_local_planner.so: /usr/lib/libPocoFoundation.so

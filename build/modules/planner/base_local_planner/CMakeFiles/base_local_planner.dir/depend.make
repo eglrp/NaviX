@@ -553,6 +553,7 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/latched_stop_rotate_controller.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/local_planner_limits.h
@@ -600,7 +601,6 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/nav_core/base_local_planner.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o: /opt/ros/indigo/include/nav_msgs/Odometry.h
@@ -833,6 +833,7 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_p
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layer.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/local_planner_limits.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/local_planner_util.h
@@ -878,7 +879,6 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_p
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/nav_core/base_local_planner.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o: /opt/ros/indigo/include/nav_msgs/Odometry.h
@@ -2500,6 +2500,7 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/twirlin
 
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/footprint.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: ../modules/map/costmap_2d/include/costmap_2d/observation.h
+modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: ../modules/map/voxel_grid/include/voxel_grid/voxel_grid.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/planar_laser_scan.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/voxel_grid_model.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: ../modules/planner/base_local_planner/include/base_local_planner/world_model.h
@@ -2567,7 +2568,6 @@ modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_g
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/sensor_msgs/ChannelFloat32.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/sensor_msgs/PointCloud.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/std_msgs/Header.h
-modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /opt/ros/indigo/include/voxel_grid/voxel_grid.h
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /usr/include/eigen3/Eigen/Cholesky
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /usr/include/eigen3/Eigen/Core
 modules/planner/base_local_planner/CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o: /usr/include/eigen3/Eigen/Eigen2Support

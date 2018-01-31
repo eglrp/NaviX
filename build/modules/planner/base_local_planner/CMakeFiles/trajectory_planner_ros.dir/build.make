@@ -199,7 +199,7 @@ devel/lib/libtrajectory_planner_ros.so: /opt/ros/indigo/lib/libtf2_ros.so
 devel/lib/libtrajectory_planner_ros.so: /opt/ros/indigo/lib/libactionlib.so
 devel/lib/libtrajectory_planner_ros.so: /opt/ros/indigo/lib/libmessage_filters.so
 devel/lib/libtrajectory_planner_ros.so: /opt/ros/indigo/lib/libtf2.so
-devel/lib/libtrajectory_planner_ros.so: modules/map/voxel_grid/libvoxel_grid.so
+devel/lib/libtrajectory_planner_ros.so: devel/lib/libvoxel_grid.so
 devel/lib/libtrajectory_planner_ros.so: /opt/ros/indigo/lib/libroscpp.so
 devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 devel/lib/libtrajectory_planner_ros.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so

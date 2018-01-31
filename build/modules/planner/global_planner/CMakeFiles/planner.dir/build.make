@@ -135,7 +135,7 @@ devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libboost_program_opt
 devel/lib/global_planner/planner: /opt/ros/indigo/lib/libroslz4.so
 devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/liblz4.so
 devel/lib/global_planner/planner: /opt/ros/indigo/lib/libtopic_tools.so
-devel/lib/global_planner/planner: modules/map/voxel_grid/libvoxel_grid.so
+devel/lib/global_planner/planner: devel/lib/libvoxel_grid.so
 devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 devel/lib/global_planner/planner: /opt/ros/indigo/lib/libclass_loader.so
 devel/lib/global_planner/planner: /usr/lib/libPocoFoundation.so

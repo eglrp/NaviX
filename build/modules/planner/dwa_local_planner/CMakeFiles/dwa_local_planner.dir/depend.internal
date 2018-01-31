@@ -10,6 +10,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
  ../modules/map/costmap_2d/include/costmap_2d/layer.h
  ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
  ../modules/map/costmap_2d/include/costmap_2d/observation.h
+ ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
  ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
  ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
  ../modules/planner/base_local_planner/include/base_local_planner/local_planner_limits.h
@@ -74,7 +75,6 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
  /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/indigo/include/geometry_msgs/Vector3.h
  /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
- /opt/ros/indigo/include/nav_core/base_local_planner.h
  /opt/ros/indigo/include/nav_msgs/MapMetaData.h
  /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
  /opt/ros/indigo/include/nav_msgs/Odometry.h
@@ -431,6 +431,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
  ../modules/map/costmap_2d/include/costmap_2d/layer.h
  ../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
  ../modules/map/costmap_2d/include/costmap_2d/observation.h
+ ../modules/move_base/nav_core/include/nav_core/base_local_planner.h
  ../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
  ../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
  ../modules/planner/base_local_planner/include/base_local_planner/latched_stop_rotate_controller.h
@@ -498,7 +499,6 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
  /opt/ros/indigo/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/indigo/include/geometry_msgs/Vector3.h
  /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
- /opt/ros/indigo/include/nav_core/base_local_planner.h
  /opt/ros/indigo/include/nav_msgs/MapMetaData.h
  /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
  /opt/ros/indigo/include/nav_msgs/Odometry.h
