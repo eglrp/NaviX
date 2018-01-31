@@ -11,23 +11,17 @@ INCLUDE_DIRECTORIES(include)
 add_subdirectory(amcl)
 add_subdirectory(gmapping)
 
-#find_package(catkin REQUIRED  roscpp tf rosbag_storage)
-#find_package(Boost REQUIRED signals)
+find_package(catkin REQUIRED)
+find_package(Boost REQUIRED)
 
-#catkin_package(
-#    INCLUDE_DIRS
-#        include
-#    LIBRARIES amcl openslam
-#)
+catkin_package(
+    INCLUDE_DIRS
+        include
+    LIBRARIES amcl openslam
+)
 
-#add_executable(mapping main.cpp)
-#target_link_libraries(mapping
-#    ${Boost_LIBRARIES}
-#    ${catkin_LIBRARIES}
-#    openslam
-#    amcl)
-
-#install(DIRECTORY include
-#  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#  PATTERN ".svn" EXCLUDE
-#)
+# Install targets
+install(DIRECTORY include
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+  PATTERN ".svn" EXCLUDE
+)

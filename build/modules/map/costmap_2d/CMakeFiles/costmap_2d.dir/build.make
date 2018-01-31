@@ -375,7 +375,6 @@ devel/lib/libcostmap_2d.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libcostmap_2d.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
 devel/lib/libcostmap_2d.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libcostmap_2d.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -471,7 +470,6 @@ devel/lib/libcostmap_2d.so: /usr/lib/libpcl_surface.so
 devel/lib/libcostmap_2d.so: /usr/lib/libpcl_people.so
 devel/lib/libcostmap_2d.so: /usr/lib/libpcl_tracking.so
 devel/lib/libcostmap_2d.so: /usr/lib/libpcl_apps.so
-devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libcostmap_2d.so: /opt/ros/indigo/lib/libpcl_ros_tf.so

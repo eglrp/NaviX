@@ -561,7 +561,6 @@ devel/lib/libbase_local_planner.so: modules/planner/base_local_planner/CMakeFile
 devel/lib/libbase_local_planner.so: devel/lib/liblayers.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -687,7 +686,6 @@ devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/libbase_local_planner.so: devel/lib/libcostmap_2d.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -716,7 +714,6 @@ devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so

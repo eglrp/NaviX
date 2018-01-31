@@ -119,7 +119,6 @@ modules/planner/navfn/libnavfn.so: modules/planner/navfn/CMakeFiles/navfn.dir/bu
 modules/planner/navfn/libnavfn.so: devel/lib/liblayers.so
 modules/planner/navfn/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 modules/planner/navfn/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/liblaser_geometry.so
 modules/planner/navfn/libnavfn.so: modules/map/voxel_grid/libvoxel_grid.so
 modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/libpcl_ros_io.so
@@ -191,7 +190,6 @@ modules/planner/navfn/libnavfn.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.s
 modules/planner/navfn/libnavfn.so: devel/lib/libcostmap_2d.so
 modules/planner/navfn/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 modules/planner/navfn/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/liblaser_geometry.so
 modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 modules/planner/navfn/libnavfn.so: /opt/ros/indigo/lib/libpcl_ros_tf.so

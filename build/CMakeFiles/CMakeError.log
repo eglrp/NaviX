@@ -1,21 +1,20 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2554611787/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2554611787.dir/build.make CMakeFiles/cmTryCompileExec2554611787.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b7107/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7107.dir/build.make CMakeFiles/cmTC_b7107.dir/build
 make[1]: Entering directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2554611787.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2554611787.dir/CheckSymbolExists.c.o   -c /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec2554611787
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2554611787.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2554611787.dir/CheckSymbolExists.c.o  -o cmTryCompileExec2554611787 -rdynamic 
-CMakeFiles/cmTryCompileExec2554611787.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTC_b7107.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b7107.dir/CheckSymbolExists.c.o   -c /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b7107
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7107.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_b7107.dir/CheckSymbolExists.c.o  -o cmTC_b7107 -rdynamic 
+CMakeFiles/cmTC_b7107.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
+make[1]: *** [cmTC_b7107] Error 1
 make[1]: Leaving directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec2554611787] Error 1
-make: *** [cmTryCompileExec2554611787/fast] Error 2
+make: *** [cmTC_b7107/fast] Error 2
 
 File /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -35,19 +34,18 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec497843016/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec497843016.dir/build.make CMakeFiles/cmTryCompileExec497843016.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_aae4a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aae4a.dir/build.make CMakeFiles/cmTC_aae4a.dir/build
 make[1]: Entering directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec497843016.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec497843016.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec497843016
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec497843016.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec497843016.dir/CheckFunctionExists.c.o  -o cmTryCompileExec497843016 -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTC_aae4a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_aae4a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aae4a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aae4a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_aae4a.dir/CheckFunctionExists.c.o  -o cmTC_aae4a -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec497843016] Error 1
+make[1]: *** [cmTC_aae4a] Error 1
 make[1]: Leaving directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec497843016/fast] Error 2
+make: *** [cmTC_aae4a/fast] Error 2
 
 

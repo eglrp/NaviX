@@ -119,7 +119,6 @@ devel/lib/libdwa_local_planner.so: modules/planner/dwa_local_planner/CMakeFiles/
 devel/lib/libdwa_local_planner.so: devel/lib/libtrajectory_planner_ros.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -192,7 +191,6 @@ devel/lib/libdwa_local_planner.so: devel/lib/liblayers.so
 devel/lib/libdwa_local_planner.so: devel/lib/libcostmap_2d.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so

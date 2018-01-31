@@ -15,6 +15,31 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o
  ../modules/driver/urg_node/laser_proc/include/laser_proc/LaserProc.h
  ../modules/driver/urg_node/laser_proc/include/laser_proc/LaserPublisher.h
  ../modules/driver/urg_node/laser_proc/include/laser_proc/LaserTransport.h
+ ../modules/slam/include/gmapping/grid/accessstate.h
+ ../modules/slam/include/gmapping/grid/array2d.h
+ ../modules/slam/include/gmapping/grid/harray2d.h
+ ../modules/slam/include/gmapping/grid/map.h
+ ../modules/slam/include/gmapping/gridfastslam/gridslamprocessor.h
+ ../modules/slam/include/gmapping/gridfastslam/gridslamprocessor.hxx
+ ../modules/slam/include/gmapping/gridfastslam/motionmodel.h
+ ../modules/slam/include/gmapping/log/configuration.h
+ ../modules/slam/include/gmapping/log/sensorlog.h
+ ../modules/slam/include/gmapping/openslam/slam_gmapping.h
+ ../modules/slam/include/gmapping/particlefilter/particlefilter.h
+ ../modules/slam/include/gmapping/scanmatcher/icp.h
+ ../modules/slam/include/gmapping/scanmatcher/scanmatcher.h
+ ../modules/slam/include/gmapping/scanmatcher/smmap.h
+ ../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
+ ../modules/slam/include/gmapping/sensor/sensor_base/sensorreading.h
+ ../modules/slam/include/gmapping/sensor/sensor_odometry/odometryreading.h
+ ../modules/slam/include/gmapping/sensor/sensor_odometry/odometrysensor.h
+ ../modules/slam/include/gmapping/sensor/sensor_range/rangereading.h
+ ../modules/slam/include/gmapping/sensor/sensor_range/rangesensor.h
+ ../modules/slam/include/gmapping/utils/autoptr.h
+ ../modules/slam/include/gmapping/utils/gvalues.h
+ ../modules/slam/include/gmapping/utils/macro_params.h
+ ../modules/slam/include/gmapping/utils/point.h
+ ../modules/slam/include/gmapping/utils/stat.h
  ../startup/../include/joy/joy.h
  ../startup/../include/serial/hardwareSerial.h
  ../startup/../include/serial/msgs/OdometryMsg.hpp
@@ -28,31 +53,6 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o
  ../startup/../include/serial/serial/subscriber.h
  ../startup/../include/thread_assist/thread_assist.hpp
  /home/bailiqun/NaviX/startup/src/startup.cpp
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/grid/accessstate.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/grid/array2d.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/grid/harray2d.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/grid/map.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/gridfastslam/gridslamprocessor.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/gridfastslam/gridslamprocessor.hxx
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/gridfastslam/motionmodel.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/log/configuration.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/log/sensorlog.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/openslam/slam_gmapping.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/particlefilter/particlefilter.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/scanmatcher/icp.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/scanmatcher/scanmatcher.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/scanmatcher/smmap.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/sensor/sensor_base/sensor.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/sensor/sensor_base/sensorreading.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/sensor/sensor_odometry/odometryreading.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/sensor/sensor_odometry/odometrysensor.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/sensor/sensor_range/rangereading.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/sensor/sensor_range/rangesensor.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/utils/autoptr.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/utils/gvalues.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/utils/macro_params.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/utils/point.h
- /home/bailiqun/catkin_ws/src/NaviX/modules/slam/include/gmapping/utils/stat.h
  /opt/ros/indigo/include/XmlRpc.h
  /opt/ros/indigo/include/XmlRpcClient.h
  /opt/ros/indigo/include/XmlRpcDecl.h

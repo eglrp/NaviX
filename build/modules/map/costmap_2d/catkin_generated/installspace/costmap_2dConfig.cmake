@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/home/bailiqun/catkin_ws/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /usr/local/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -153,7 +153,7 @@ foreach(t ${costmap_2d_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "dynamic_reconfigure;geometry_msgs;laser_geometry;map_msgs;message_filters;message_runtime;nav_msgs;pcl_ros;pluginlib;roscpp;sensor_msgs;std_msgs;tf;visualization_msgs;voxel_grid")
+set(depends "dynamic_reconfigure;geometry_msgs;map_msgs;message_filters;message_runtime;nav_msgs;pcl_ros;pluginlib;roscpp;sensor_msgs;std_msgs;tf;visualization_msgs;voxel_grid")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

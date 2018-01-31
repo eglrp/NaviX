@@ -109,7 +109,6 @@ devel/lib/move_base/move_base: /usr/lib/libvtkCommon.so.5.8.0
 devel/lib/move_base/move_base: /usr/lib/libvtksys.so.5.8.0
 devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/move_base/move_base: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/move_base/move_base: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/move_base/move_base: /opt/ros/indigo/lib/libpcl_ros_tf.so

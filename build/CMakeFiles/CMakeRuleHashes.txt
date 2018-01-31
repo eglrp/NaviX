@@ -11,7 +11,7 @@ d1c03a84b234f3605a84d674493d37ab devel/include/dwa_local_planner/DWAPlannerConfi
 c95cc54e119806a970861f51a413321c devel/include/global_planner/GlobalPlannerConfig.h
 e52e4cdf1b4626f095fa339f734ce529 devel/include/move_base/MoveBaseConfig.h
 66b464dc30c3f28da9efb248acc8c3d1 devel/include/urg_node/Status.h
-f6dbfec022171cab8c562ae32bf99881 devel/include/urg_node/URGConfig.h
+bec4959b1b5b56b5496174a9ed8b7958 devel/include/urg_node/URGConfig.h
 71e4a771d1831112413755a4d342c328 devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py
 95bd28ac8e4d66eea5813e1ce2cc9e8d devel/lib/python2.7/dist-packages/base_local_planner/msg/__init__.py
 fbc5f1d2490f66254e81a6ddbccddc82 devel/lib/python2.7/dist-packages/costmap_2d/msg/_VoxelGrid.py

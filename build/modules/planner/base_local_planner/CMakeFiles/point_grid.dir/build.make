@@ -93,7 +93,6 @@ devel/lib/base_local_planner/point_grid: modules/planner/base_local_planner/CMak
 devel/lib/base_local_planner/point_grid: devel/lib/liblayers.so
 devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -165,7 +164,6 @@ devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libconsole_br
 devel/lib/base_local_planner/point_grid: devel/lib/libcostmap_2d.so
 devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/base_local_planner/point_grid: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/base_local_planner/point_grid: /opt/ros/indigo/lib/libpcl_ros_tf.so

@@ -1,1 +1,1 @@
-/usr/bin/g++  -fPIC    -shared -Wl,-soname,libsensor_base.so -o libsensor_base.so CMakeFiles/sensor_base.dir/sensor.cpp.o CMakeFiles/sensor_base.dir/sensorreading.cpp.o 
+/usr/bin/g++  -fPIC   -shared -Wl,-soname,libsensor_base.so -o libsensor_base.so CMakeFiles/sensor_base.dir/sensor.cpp.o CMakeFiles/sensor_base.dir/sensorreading.cpp.o 

@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: slam
+Description: Description of slam
+Version: 0.0.0
+Cflags: -I/home/bailiqun/NaviX/modules/slam/include
+Libs: -L/home/bailiqun/NaviX/build/devel/lib -lamcl -lopenslam
+Requires: 

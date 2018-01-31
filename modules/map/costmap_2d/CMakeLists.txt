@@ -6,7 +6,6 @@ find_package(catkin REQUIRED
             cmake_modules
             dynamic_reconfigure
             geometry_msgs
-            laser_geometry
             map_msgs
             message_filters
             message_generation
@@ -64,7 +63,6 @@ catkin_package(
     CATKIN_DEPENDS
         dynamic_reconfigure
         geometry_msgs
-        laser_geometry
         map_msgs
         message_filters
         message_runtime

@@ -136,7 +136,6 @@ devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_surface.so
 devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_people.so
 devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_tracking.so
 devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_apps.so
-devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -205,7 +204,6 @@ devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_surface.so
 devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_people.so
 devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_tracking.so
 devel/lib/costmap_2d/costmap_2d_cloud: /usr/lib/libpcl_apps.so
-devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/costmap_2d/costmap_2d_cloud: /opt/ros/indigo/lib/libpcl_ros_tf.so

@@ -93,7 +93,6 @@ devel/lib/libmove_base.so: modules/move_base/move_base/CMakeFiles/move_base.dir/
 devel/lib/libmove_base.so: devel/lib/liblayers.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libmove_base.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -165,7 +164,6 @@ devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 devel/lib/libmove_base.so: devel/lib/libcostmap_2d.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libmove_base.so: /opt/ros/indigo/lib/liblaser_geometry.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_tf.so

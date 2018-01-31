@@ -17,10 +17,10 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
+  "../modules/slam/include"
   "../modules/driver/urg_node/include"
   "../modules/driver/urg_node/laser_proc/include"
   "../modules/driver/serial/../../../include/serial"
-  "/home/bailiqun/catkin_ws/src/NaviX/modules/slam/include"
   "/opt/ros/indigo/include"
   "../startup/../include"
   )
