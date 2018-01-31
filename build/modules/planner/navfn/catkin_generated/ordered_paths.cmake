@@ -1,1 +1,1 @@
-set(ORDERED_PATHS "/opt/ros/indigo/lib")
+set(ORDERED_PATHS "/home/bailiqun/NaviX/build/devel/lib;/opt/ros/indigo/lib")

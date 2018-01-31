@@ -6880,28 +6880,185 @@ clean: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/clean
 # Directory level rules for directory modules/planner
 
 # Convenience name for "all" pass in the directory.
+modules/planner/all: modules/planner/navfn/all
 modules/planner/all: modules/planner/base_local_planner/all
 modules/planner/all: modules/planner/global_planner/all
-modules/planner/all: modules/planner/navfn/all
 modules/planner/all: modules/planner/dwa_local_planner/all
 
 .PHONY : modules/planner/all
 
 # Convenience name for "clean" pass in the directory.
+modules/planner/clean: modules/planner/navfn/clean
 modules/planner/clean: modules/planner/base_local_planner/clean
 modules/planner/clean: modules/planner/global_planner/clean
-modules/planner/clean: modules/planner/navfn/clean
 modules/planner/clean: modules/planner/dwa_local_planner/clean
 
 .PHONY : modules/planner/clean
 
 # Convenience name for "preinstall" pass in the directory.
+modules/planner/preinstall: modules/planner/navfn/preinstall
 modules/planner/preinstall: modules/planner/base_local_planner/preinstall
 modules/planner/preinstall: modules/planner/global_planner/preinstall
-modules/planner/preinstall: modules/planner/navfn/preinstall
 modules/planner/preinstall: modules/planner/dwa_local_planner/preinstall
 
 .PHONY : modules/planner/preinstall
+
+#=============================================================================
+# Directory level rules for directory modules/planner/navfn
+
+# Convenience name for "all" pass in the directory.
+modules/planner/navfn/all: modules/planner/navfn/CMakeFiles/navfn_node.dir/all
+modules/planner/navfn/all: modules/planner/navfn/CMakeFiles/navfn.dir/all
+
+.PHONY : modules/planner/navfn/all
+
+# Convenience name for "clean" pass in the directory.
+modules/planner/navfn/clean: modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
+modules/planner/navfn/clean: modules/planner/navfn/CMakeFiles/navfn.dir/clean
+
+.PHONY : modules/planner/navfn/clean
+
+# Convenience name for "preinstall" pass in the directory.
+modules/planner/navfn/preinstall:
+
+.PHONY : modules/planner/navfn/preinstall
+
+#=============================================================================
+# Target rules for target modules/planner/navfn/CMakeFiles/navfn_node.dir
+
+# All Build rule for target.
+modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
+modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/map/costmap_2d/CMakeFiles/layers.dir/all
+modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
+modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/planner/navfn/CMakeFiles/navfn.dir/all
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/depend
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=79 "Built target navfn_node"
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/all
+
+# Include target in all.
+all: modules/planner/navfn/CMakeFiles/navfn_node.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+modules/planner/navfn/CMakeFiles/navfn_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 24
+	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
+
+# Convenience name for target.
+navfn_node: modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
+
+.PHONY : navfn_node
+
+# clean rule for target.
+modules/planner/navfn/CMakeFiles/navfn_node.dir/clean:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
+
+# clean rule for target.
+clean: modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target modules/planner/navfn/CMakeFiles/navfn.dir
+
+# All Build rule for target.
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/_catkin_empty_exported_target.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/actionlib_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_ros_gencfg.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/layers.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_py.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/depend
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=78 "Built target navfn"
+.PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/all
+
+# Include target in all.
+all: modules/planner/navfn/CMakeFiles/navfn.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+modules/planner/navfn/CMakeFiles/navfn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 23
+	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
+.PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/rule
+
+# Convenience name for target.
+navfn: modules/planner/navfn/CMakeFiles/navfn.dir/rule
+
+.PHONY : navfn
+
+# clean rule for target.
+modules/planner/navfn/CMakeFiles/navfn.dir/clean:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/clean
+.PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/clean
+
+# clean rule for target.
+clean: modules/planner/navfn/CMakeFiles/navfn.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory modules/planner/base_local_planner
@@ -7924,7 +8081,6 @@ modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_no
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_lisp.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/all
@@ -7948,7 +8104,9 @@ modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/map/costmap_2
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_py.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
+modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/planner/navfn/CMakeFiles/navfn.dir/all
 modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner.dir/all
+modules/planner/global_planner/CMakeFiles/planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/depend
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/planner.dir/build.make modules/planner/global_planner/CMakeFiles/planner.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=82 "Built target planner"
@@ -7961,7 +8119,7 @@ all: modules/planner/global_planner/CMakeFiles/planner.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/global_planner/CMakeFiles/planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/global_planner/CMakeFiles/planner.dir/rule
@@ -8023,7 +8181,6 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_lisp.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/all
@@ -8047,6 +8204,8 @@ modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/map/co
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_py.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
 modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
+modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/planner/navfn/CMakeFiles/navfn.dir/all
+modules/planner/global_planner/CMakeFiles/global_planner.dir/all: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/all
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner.dir/depend
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=34,35,36 "Built target global_planner"
@@ -8059,7 +8218,7 @@ all: modules/planner/global_planner/CMakeFiles/global_planner.dir/all
 
 # Build rule for subdir invocation for target.
 modules/planner/global_planner/CMakeFiles/global_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/global_planner/CMakeFiles/global_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
 .PHONY : modules/planner/global_planner/CMakeFiles/global_planner.dir/rule
@@ -8113,163 +8272,6 @@ modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/clean:
 
 # clean rule for target.
 clean: modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory modules/planner/navfn
-
-# Convenience name for "all" pass in the directory.
-modules/planner/navfn/all: modules/planner/navfn/CMakeFiles/navfn_node.dir/all
-modules/planner/navfn/all: modules/planner/navfn/CMakeFiles/navfn.dir/all
-
-.PHONY : modules/planner/navfn/all
-
-# Convenience name for "clean" pass in the directory.
-modules/planner/navfn/clean: modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
-modules/planner/navfn/clean: modules/planner/navfn/CMakeFiles/navfn.dir/clean
-
-.PHONY : modules/planner/navfn/clean
-
-# Convenience name for "preinstall" pass in the directory.
-modules/planner/navfn/preinstall:
-
-.PHONY : modules/planner/navfn/preinstall
-
-#=============================================================================
-# Target rules for target modules/planner/navfn/CMakeFiles/navfn_node.dir
-
-# All Build rule for target.
-modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
-modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/map/costmap_2d/CMakeFiles/layers.dir/all
-modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
-modules/planner/navfn/CMakeFiles/navfn_node.dir/all: modules/planner/navfn/CMakeFiles/navfn.dir/all
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/depend
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=79 "Built target navfn_node"
-.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/all
-
-# Include target in all.
-all: modules/planner/navfn/CMakeFiles/navfn_node.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-modules/planner/navfn/CMakeFiles/navfn_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 24
-	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
-.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
-
-# Convenience name for target.
-navfn_node: modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
-
-.PHONY : navfn_node
-
-# clean rule for target.
-modules/planner/navfn/CMakeFiles/navfn_node.dir/clean:
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
-.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
-
-# clean rule for target.
-clean: modules/planner/navfn/CMakeFiles/navfn_node.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target modules/planner/navfn/CMakeFiles/navfn.dir
-
-# All Build rule for target.
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/std_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/msgs/navigation_msgs/move_base_msgs/CMakeFiles/_catkin_empty_exported_target.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/actionlib_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/actionlib_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/actionlib_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/voxel_grid/CMakeFiles/voxel_grid.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_ros_gencfg.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/layers.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_py.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
-modules/planner/navfn/CMakeFiles/navfn.dir/all: modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/all
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/depend
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=78 "Built target navfn"
-.PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/all
-
-# Include target in all.
-all: modules/planner/navfn/CMakeFiles/navfn.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-modules/planner/navfn/CMakeFiles/navfn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 23
-	$(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles 0
-.PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/rule
-
-# Convenience name for target.
-navfn: modules/planner/navfn/CMakeFiles/navfn.dir/rule
-
-.PHONY : navfn
-
-# clean rule for target.
-modules/planner/navfn/CMakeFiles/navfn.dir/clean:
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/clean
-.PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/clean
-
-# clean rule for target.
-clean: modules/planner/navfn/CMakeFiles/navfn.dir/clean
 
 .PHONY : clean
 

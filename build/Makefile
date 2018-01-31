@@ -2339,6 +2339,32 @@ costmap_2d/fast:
 .PHONY : costmap_2d/fast
 
 #=============================================================================
+# Target rules for targets named navfn_node
+
+# Build rule for target.
+navfn_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_node
+.PHONY : navfn_node
+
+# fast build rule for target.
+navfn_node/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/build
+.PHONY : navfn_node/fast
+
+#=============================================================================
+# Target rules for targets named navfn
+
+# Build rule for target.
+navfn: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn
+.PHONY : navfn
+
+# fast build rule for target.
+navfn/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
+.PHONY : navfn/fast
+
+#=============================================================================
 # Target rules for targets named base_local_planner_genpy
 
 # Build rule for target.
@@ -2675,32 +2701,6 @@ global_planner_gencfg: cmake_check_build_system
 global_planner_gencfg/fast:
 	$(MAKE) -f modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build.make modules/planner/global_planner/CMakeFiles/global_planner_gencfg.dir/build
 .PHONY : global_planner_gencfg/fast
-
-#=============================================================================
-# Target rules for targets named navfn_node
-
-# Build rule for target.
-navfn_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 navfn_node
-.PHONY : navfn_node
-
-# fast build rule for target.
-navfn_node/fast:
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/build
-.PHONY : navfn_node/fast
-
-#=============================================================================
-# Target rules for targets named navfn
-
-# Build rule for target.
-navfn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 navfn
-.PHONY : navfn
-
-# fast build rule for target.
-navfn/fast:
-	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
-.PHONY : navfn/fast
 
 #=============================================================================
 # Target rules for targets named dwa_local_planner
@@ -3116,6 +3116,8 @@ help:
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... costmap_2d"
+	@echo "... navfn_node"
+	@echo "... navfn"
 	@echo "... base_local_planner_genpy"
 	@echo "... base_local_planner_generate_messages_py"
 	@echo "... base_local_planner_genlisp"
@@ -3142,8 +3144,6 @@ help:
 	@echo "... planner"
 	@echo "... global_planner"
 	@echo "... global_planner_gencfg"
-	@echo "... navfn_node"
-	@echo "... navfn"
 	@echo "... dwa_local_planner"
 	@echo "... dwa_local_planner_gencfg"
 	@echo "... amcl"
