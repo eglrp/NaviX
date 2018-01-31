@@ -113,7 +113,7 @@ class AmclNode
     static std::vector<std::pair<int,int> > free_space_indices;
 
     // Callbacks
-    bool globalLocalizationCallback(std_srvs::Empty::Request& req,
+    bool global_localization_callback(std_srvs::Empty::Request& req,
                                     std_srvs::Empty::Response& res);
     bool nomotionUpdateCallback(std_srvs::Empty::Request& req,
                                     std_srvs::Empty::Response& res);

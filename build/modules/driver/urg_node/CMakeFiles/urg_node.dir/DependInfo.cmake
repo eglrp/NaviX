@@ -18,7 +18,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
   "../include"
-  "../modules/driver/urg_node/../../../include"
   "../modules/driver/urg_node/laser_proc/include"
   "/opt/ros/indigo/include"
   )

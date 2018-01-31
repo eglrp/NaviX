@@ -6,13 +6,33 @@
 
 #IncludeRegexTransform: 
 
-../include/base_local_planner/planar_laser_scan.h
+../modules/map/costmap_2d/include/costmap_2d/footprint.h
+ros/ros.h
+-
+geometry_msgs/Polygon.h
+-
+geometry_msgs/PolygonStamped.h
+-
+geometry_msgs/Point.h
+-
+geometry_msgs/Point32.h
+-
+
+../modules/map/costmap_2d/include/costmap_2d/observation.h
+geometry_msgs/Point.h
+-
+pcl/point_types.h
+-
+pcl/point_cloud.h
+-
+
+../modules/planner/base_local_planner/include/base_local_planner/planar_laser_scan.h
 geometry_msgs/Point32.h
 -
 sensor_msgs/PointCloud.h
 -
 
-../include/base_local_planner/point_grid.h
+../modules/planner/base_local_planner/include/base_local_planner/point_grid.h
 vector
 -
 list
@@ -30,7 +50,7 @@ pcl/point_types.h
 pcl/point_cloud.h
 -
 
-../include/base_local_planner/world_model.h
+../modules/planner/base_local_planner/include/base_local_planner/world_model.h
 vector
 -
 costmap_2d/observation.h
@@ -40,26 +60,6 @@ costmap_2d/footprint.h
 geometry_msgs/Point.h
 -
 base_local_planner/planar_laser_scan.h
--
-
-../include/costmap_2d/footprint.h
-ros/ros.h
--
-geometry_msgs/Polygon.h
--
-geometry_msgs/PolygonStamped.h
--
-geometry_msgs/Point.h
--
-geometry_msgs/Point32.h
--
-
-../include/costmap_2d/observation.h
-geometry_msgs/Point.h
--
-pcl/point_types.h
--
-pcl/point_cloud.h
 -
 
 /home/bailiqun/NaviX/modules/planner/base_local_planner/src/point_grid.cpp

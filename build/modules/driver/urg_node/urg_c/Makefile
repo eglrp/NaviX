@@ -78,6 +78,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -90,15 +100,16 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : list_install_components/fast
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -110,17 +121,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,51 +155,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-modules/driver/urg_node/urg_c/CMakeFiles/download_extra_data.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/download_extra_data.dir/rule
-.PHONY : modules/driver/urg_node/urg_c/CMakeFiles/download_extra_data.dir/rule
-
-# Convenience name for target.
-download_extra_data: modules/driver/urg_node/urg_c/CMakeFiles/download_extra_data.dir/rule
-
-.PHONY : download_extra_data
-
-# fast build rule for target.
-download_extra_data/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/download_extra_data.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/download_extra_data.dir/build
-.PHONY : download_extra_data/fast
-
-# Convenience name for target.
-modules/driver/urg_node/urg_c/CMakeFiles/run_tests.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/run_tests.dir/rule
-.PHONY : modules/driver/urg_node/urg_c/CMakeFiles/run_tests.dir/rule
-
-# Convenience name for target.
-run_tests: modules/driver/urg_node/urg_c/CMakeFiles/run_tests.dir/rule
-
-.PHONY : run_tests
-
-# fast build rule for target.
-run_tests/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/run_tests.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/run_tests.dir/build
-.PHONY : run_tests/fast
-
-# Convenience name for target.
-modules/driver/urg_node/urg_c/CMakeFiles/tests.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/tests.dir/rule
-.PHONY : modules/driver/urg_node/urg_c/CMakeFiles/tests.dir/rule
-
-# Convenience name for target.
-tests: modules/driver/urg_node/urg_c/CMakeFiles/tests.dir/rule
-
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/tests.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
-# Convenience name for target.
 modules/driver/urg_node/urg_c/CMakeFiles/open_urg_sensor.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/open_urg_sensor.dir/rule
 .PHONY : modules/driver/urg_node/urg_c/CMakeFiles/open_urg_sensor.dir/rule
@@ -213,51 +168,6 @@ open_urg_sensor: modules/driver/urg_node/urg_c/CMakeFiles/open_urg_sensor.dir/ru
 open_urg_sensor/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/open_urg_sensor.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/open_urg_sensor.dir/build
 .PHONY : open_urg_sensor/fast
-
-# Convenience name for target.
-modules/driver/urg_node/urg_c/CMakeFiles/clean_test_results.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/clean_test_results.dir/rule
-.PHONY : modules/driver/urg_node/urg_c/CMakeFiles/clean_test_results.dir/rule
-
-# Convenience name for target.
-clean_test_results: modules/driver/urg_node/urg_c/CMakeFiles/clean_test_results.dir/rule
-
-.PHONY : clean_test_results
-
-# fast build rule for target.
-clean_test_results/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/clean_test_results.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/clean_test_results.dir/build
-.PHONY : clean_test_results/fast
-
-# Convenience name for target.
-modules/driver/urg_node/urg_c/CMakeFiles/doxygen.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/doxygen.dir/rule
-.PHONY : modules/driver/urg_node/urg_c/CMakeFiles/doxygen.dir/rule
-
-# Convenience name for target.
-doxygen: modules/driver/urg_node/urg_c/CMakeFiles/doxygen.dir/rule
-
-.PHONY : doxygen
-
-# fast build rule for target.
-doxygen/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/doxygen.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/doxygen.dir/build
-.PHONY : doxygen/fast
-
-# Convenience name for target.
-modules/driver/urg_node/urg_c/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/urg_c/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : modules/driver/urg_node/urg_c/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: modules/driver/urg_node/urg_c/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/urg_c/CMakeFiles/_catkin_empty_exported_target.dir/build.make modules/driver/urg_node/urg_c/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
 
 # Convenience name for target.
 modules/driver/urg_node/urg_c/CMakeFiles/liburg_c.dir/rule:
@@ -552,18 +462,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... install"
-	@echo "... download_extra_data"
-	@echo "... run_tests"
-	@echo "... tests"
-	@echo "... open_urg_sensor"
-	@echo "... clean_test_results"
-	@echo "... doxygen"
-	@echo "... _catkin_empty_exported_target"
-	@echo "... liburg_c"
 	@echo "... list_install_components"
-	@echo "... install/strip"
+	@echo "... install"
 	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... open_urg_sensor"
+	@echo "... liburg_c"
 	@echo "... current/samples/open_urg_sensor.o"
 	@echo "... current/samples/open_urg_sensor.i"
 	@echo "... current/samples/open_urg_sensor.s"

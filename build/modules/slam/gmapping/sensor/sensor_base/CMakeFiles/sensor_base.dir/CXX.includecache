@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-../include/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
 string
 -
 map
 -
 
-../include/gmapping/sensor/sensor_base/sensorreading.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensorreading.h
 sensor.h
-../include/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
 
 /home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/sensor.cpp
 gmapping/sensor/sensor_base/sensor.h

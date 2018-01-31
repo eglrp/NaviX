@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-../include/urg_c/urg_connection.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_connection.h
 urg_c/urg_serial.h
-../include/urg_c/urg_c/urg_serial.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_serial.h
 urg_c/urg_tcpclient.h
-../include/urg_c/urg_c/urg_tcpclient.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_tcpclient.h
 
-../include/urg_c/urg_detect_os.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_detect_os.h
 
-../include/urg_c/urg_ring_buffer.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_ring_buffer.h
 
-../include/urg_c/urg_sensor.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_sensor.h
 urg_c/urg_connection.h
-../include/urg_c/urg_c/urg_connection.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_connection.h
 urg_c/urg_time.h
-../include/urg_c/urg_c/urg_time.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_time.h
 
-../include/urg_c/urg_serial.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_serial.h
 urg_c/urg_detect_os.h
-../include/urg_c/urg_c/urg_detect_os.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_detect_os.h
 windows.h
 -
 termios.h
@@ -34,13 +34,13 @@ termios.h
 sys/select.h
 -
 urg_ring_buffer.h
-../include/urg_c/urg_ring_buffer.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_ring_buffer.h
 
-../include/urg_c/urg_tcpclient.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_tcpclient.h
 urg_c/urg_ring_buffer.h
-../include/urg_c/urg_c/urg_ring_buffer.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_ring_buffer.h
 urg_c/urg_detect_os.h
-../include/urg_c/urg_c/urg_detect_os.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_detect_os.h
 sys/types.h
 -
 windows.h
@@ -52,7 +52,7 @@ netinet/in.h
 arpa/inet.h
 -
 
-../include/urg_c/urg_time.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_time.h
 time.h
 -
 sys/time.h
@@ -62,9 +62,9 @@ sys/timeb.h
 sys/time.h
 -
 
-../include/urg_c/urg_utils.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_utils.h
 urg_c/urg_sensor.h
-../include/urg_c/urg_c/urg_sensor.h
+../modules/driver/urg_node/urg_c/current/include/urg_c/urg_c/urg_sensor.h
 
 /home/bailiqun/NaviX/modules/driver/urg_node/urg_c/current/samples/open_urg_sensor.c
 open_urg_sensor.h

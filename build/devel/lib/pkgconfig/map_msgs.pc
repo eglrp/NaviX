@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: map_msgs
+Description: Description of map_msgs
+Version: 1.13.0
+Cflags: -I/home/bailiqun/NaviX/build/devel/include
+Libs: -L/home/bailiqun/NaviX/build/devel/lib 
+Requires: std_msgs sensor_msgs nav_msgs

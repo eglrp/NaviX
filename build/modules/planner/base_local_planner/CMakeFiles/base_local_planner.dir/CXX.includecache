@@ -6,13 +6,101 @@
 
 #IncludeRegexTransform: 
 
-../include/base_local_planner/costmap_model.h
+../modules/map/costmap_2d/include/costmap_2d/cost_values.h
+
+../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
+vector
+-
+queue
+-
+geometry_msgs/Point.h
+-
+boost/thread.hpp
+-
+
+../modules/map/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
+ros/ros.h
+-
+costmap_2d/costmap_2d.h
+-
+nav_msgs/OccupancyGrid.h
+-
+map_msgs/OccupancyGridUpdate.h
+-
+tf/transform_datatypes.h
+-
+
+../modules/map/costmap_2d/include/costmap_2d/costmap_2d_ros.h
+costmap_2d/layered_costmap.h
+-
+costmap_2d/layer.h
+-
+costmap_2d/costmap_2d_publisher.h
+-
+costmap_2d/Costmap2DConfig.h
+-
+costmap_2d/footprint.h
+-
+geometry_msgs/Polygon.h
+-
+geometry_msgs/PolygonStamped.h
+-
+dynamic_reconfigure/server.h
+-
+pluginlib/class_loader.h
+-
+
+../modules/map/costmap_2d/include/costmap_2d/footprint.h
+ros/ros.h
+-
+geometry_msgs/Polygon.h
+-
+geometry_msgs/PolygonStamped.h
+-
+geometry_msgs/Point.h
+-
+geometry_msgs/Point32.h
+-
+
+../modules/map/costmap_2d/include/costmap_2d/layer.h
+costmap_2d/costmap_2d.h
+-
+costmap_2d/layered_costmap.h
+-
+string
+-
+tf/tf.h
+-
+tf/transform_listener.h
+-
+
+../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
+costmap_2d/cost_values.h
+-
+costmap_2d/layer.h
+-
+costmap_2d/costmap_2d.h
+-
+vector
+-
+string
+-
+
+../modules/map/costmap_2d/include/costmap_2d/observation.h
+geometry_msgs/Point.h
+-
+pcl/point_types.h
+-
+pcl/point_cloud.h
+-
+
+../modules/planner/base_local_planner/include/base_local_planner/costmap_model.h
 base_local_planner/world_model.h
 -
 costmap_2d/costmap_2d.h
 -
 
-../include/base_local_planner/footprint_helper.h
+../modules/planner/base_local_planner/include/base_local_planner/footprint_helper.h
 vector
 -
 costmap_2d/costmap_2d.h
@@ -24,7 +112,7 @@ Eigen/Core
 base_local_planner/Position2DInt.h
 -
 
-../include/base_local_planner/goal_functions.h
+../modules/planner/base_local_planner/include/base_local_planner/goal_functions.h
 ros/ros.h
 -
 tf/transform_listener.h
@@ -52,7 +140,7 @@ angles/angles.h
 costmap_2d/costmap_2d.h
 -
 
-../include/base_local_planner/latched_stop_rotate_controller.h
+../modules/planner/base_local_planner/include/base_local_planner/latched_stop_rotate_controller.h
 string
 -
 Eigen/Core
@@ -64,15 +152,15 @@ base_local_planner/local_planner_util.h
 base_local_planner/odometry_helper_ros.h
 -
 
-../include/base_local_planner/line_iterator.h
+../modules/planner/base_local_planner/include/base_local_planner/line_iterator.h
 stdlib.h
 -
 
-../include/base_local_planner/local_planner_limits.h
+../modules/planner/base_local_planner/include/base_local_planner/local_planner_limits.h
 Eigen/Core
 -
 
-../include/base_local_planner/local_planner_util.h
+../modules/planner/base_local_planner/include/base_local_planner/local_planner_util.h
 nav_core/base_local_planner.h
 -
 boost/thread.hpp
@@ -86,11 +174,11 @@ tf/transform_listener.h
 base_local_planner/local_planner_limits.h
 -
 
-../include/base_local_planner/map_cell.h
+../modules/planner/base_local_planner/include/base_local_planner/map_cell.h
 base_local_planner/trajectory_inc.h
 -
 
-../include/base_local_planner/map_grid.h
+../modules/planner/base_local_planner/include/base_local_planner/map_grid.h
 vector
 -
 iostream
@@ -108,7 +196,7 @@ costmap_2d/costmap_2d.h
 geometry_msgs/PoseStamped.h
 -
 
-../include/base_local_planner/map_grid_cost_function.h
+../modules/planner/base_local_planner/include/base_local_planner/map_grid_cost_function.h
 base_local_planner/trajectory_cost_function.h
 -
 costmap_2d/costmap_2d.h
@@ -116,11 +204,11 @@ costmap_2d/costmap_2d.h
 base_local_planner/map_grid.h
 -
 
-../include/base_local_planner/map_grid_cost_point.h
+../modules/planner/base_local_planner/include/base_local_planner/map_grid_cost_point.h
 pcl/register_point_struct.h
 -
 
-../include/base_local_planner/map_grid_visualizer.h
+../modules/planner/base_local_planner/include/base_local_planner/map_grid_visualizer.h
 ros/ros.h
 -
 base_local_planner/map_grid.h
@@ -132,7 +220,7 @@ base_local_planner/map_grid_cost_point.h
 pcl_ros/publisher.h
 -
 
-../include/base_local_planner/obstacle_cost_function.h
+../modules/planner/base_local_planner/include/base_local_planner/obstacle_cost_function.h
 base_local_planner/trajectory_cost_function.h
 -
 base_local_planner/costmap_model.h
@@ -140,7 +228,7 @@ base_local_planner/costmap_model.h
 costmap_2d/costmap_2d.h
 -
 
-../include/base_local_planner/odometry_helper_ros.h
+../modules/planner/base_local_planner/include/base_local_planner/odometry_helper_ros.h
 tf/transform_datatypes.h
 -
 nav_msgs/Odometry.h
@@ -150,19 +238,19 @@ ros/ros.h
 boost/thread.hpp
 -
 
-../include/base_local_planner/oscillation_cost_function.h
+../modules/planner/base_local_planner/include/base_local_planner/oscillation_cost_function.h
 base_local_planner/trajectory_cost_function.h
 -
 Eigen/Core
 -
 
-../include/base_local_planner/planar_laser_scan.h
+../modules/planner/base_local_planner/include/base_local_planner/planar_laser_scan.h
 geometry_msgs/Point32.h
 -
 sensor_msgs/PointCloud.h
 -
 
-../include/base_local_planner/point_grid.h
+../modules/planner/base_local_planner/include/base_local_planner/point_grid.h
 vector
 -
 list
@@ -180,11 +268,11 @@ pcl/point_types.h
 pcl/point_cloud.h
 -
 
-../include/base_local_planner/prefer_forward_cost_function.h
+../modules/planner/base_local_planner/include/base_local_planner/prefer_forward_cost_function.h
 base_local_planner/trajectory_cost_function.h
 -
 
-../include/base_local_planner/simple_scored_sampling_planner.h
+../modules/planner/base_local_planner/include/base_local_planner/simple_scored_sampling_planner.h
 vector
 -
 base_local_planner/trajectory.h
@@ -196,7 +284,7 @@ base_local_planner/trajectory_sample_generator.h
 base_local_planner/trajectory_search.h
 -
 
-../include/base_local_planner/simple_trajectory_generator.h
+../modules/planner/base_local_planner/include/base_local_planner/simple_trajectory_generator.h
 base_local_planner/trajectory_sample_generator.h
 -
 base_local_planner/local_planner_limits.h
@@ -204,37 +292,37 @@ base_local_planner/local_planner_limits.h
 Eigen/Core
 -
 
-../include/base_local_planner/trajectory.h
+../modules/planner/base_local_planner/include/base_local_planner/trajectory.h
 vector
 -
 
-../include/base_local_planner/trajectory_cost_function.h
+../modules/planner/base_local_planner/include/base_local_planner/trajectory_cost_function.h
 base_local_planner/trajectory.h
 -
 
-../include/base_local_planner/trajectory_inc.h
+../modules/planner/base_local_planner/include/base_local_planner/trajectory_inc.h
 limits
 -
 
-../include/base_local_planner/trajectory_sample_generator.h
+../modules/planner/base_local_planner/include/base_local_planner/trajectory_sample_generator.h
 base_local_planner/trajectory.h
 -
 
-../include/base_local_planner/trajectory_search.h
+../modules/planner/base_local_planner/include/base_local_planner/trajectory_search.h
 base_local_planner/trajectory.h
 -
 
-../include/base_local_planner/twirling_cost_function.h
+../modules/planner/base_local_planner/include/base_local_planner/twirling_cost_function.h
 base_local_planner/trajectory_cost_function.h
 -
 
-../include/base_local_planner/velocity_iterator.h
+../modules/planner/base_local_planner/include/base_local_planner/velocity_iterator.h
 algorithm
 -
 cmath
 -
 
-../include/base_local_planner/voxel_grid_model.h
+../modules/planner/base_local_planner/include/base_local_planner/voxel_grid_model.h
 vector
 -
 list
@@ -254,7 +342,7 @@ pcl/point_cloud.h
 voxel_grid/voxel_grid.h
 -
 
-../include/base_local_planner/world_model.h
+../modules/planner/base_local_planner/include/base_local_planner/world_model.h
 vector
 -
 costmap_2d/observation.h
@@ -264,124 +352,6 @@ costmap_2d/footprint.h
 geometry_msgs/Point.h
 -
 base_local_planner/planar_laser_scan.h
--
-
-../include/costmap_2d/cost_values.h
-
-../include/costmap_2d/costmap_2d.h
-vector
--
-queue
--
-geometry_msgs/Point.h
--
-boost/thread.hpp
--
-
-../include/costmap_2d/costmap_2d_publisher.h
-ros/ros.h
--
-costmap_2d/costmap_2d.h
--
-nav_msgs/OccupancyGrid.h
--
-map_msgs/OccupancyGridUpdate.h
--
-tf/transform_datatypes.h
--
-
-../include/costmap_2d/costmap_2d_ros.h
-costmap_2d/layered_costmap.h
--
-costmap_2d/layer.h
--
-costmap_2d/costmap_2d_publisher.h
--
-costmap_2d/Costmap2DConfig.h
--
-costmap_2d/footprint.h
--
-geometry_msgs/Polygon.h
--
-geometry_msgs/PolygonStamped.h
--
-dynamic_reconfigure/server.h
--
-pluginlib/class_loader.h
--
-
-../include/costmap_2d/footprint.h
-ros/ros.h
--
-geometry_msgs/Polygon.h
--
-geometry_msgs/PolygonStamped.h
--
-geometry_msgs/Point.h
--
-geometry_msgs/Point32.h
--
-
-../include/costmap_2d/layer.h
-costmap_2d/costmap_2d.h
--
-costmap_2d/layered_costmap.h
--
-string
--
-tf/tf.h
--
-tf/transform_listener.h
--
-
-../include/costmap_2d/layered_costmap.h
-costmap_2d/cost_values.h
--
-costmap_2d/layer.h
--
-costmap_2d/costmap_2d.h
--
-vector
--
-string
--
-
-../include/costmap_2d/observation.h
-geometry_msgs/Point.h
--
-pcl/point_types.h
--
-pcl/point_cloud.h
--
-
-../include/nav_core/base_local_planner.h
-geometry_msgs/PoseStamped.h
--
-geometry_msgs/Twist.h
--
-costmap_2d/costmap_2d_ros.h
--
-tf/transform_listener.h
--
-
-../include/voxel_grid/voxel_grid.h
-stdio.h
--
-string.h
--
-stdlib.h
--
-stdint.h
--
-math.h
--
-limits.h
--
-algorithm
--
-ros/console.h
--
-ros/assert.h
 -
 
 /home/bailiqun/NaviX/modules/planner/base_local_planner/src/costmap_model.cpp
@@ -1150,22 +1120,14 @@ std_msgs/Header.h
 geometry_msgs/Vector3.h
 -
 
-/opt/ros/indigo/include/map_msgs/OccupancyGridUpdate.h
-string
+/opt/ros/indigo/include/nav_core/base_local_planner.h
+geometry_msgs/PoseStamped.h
 -
-vector
+geometry_msgs/Twist.h
 -
-map
+costmap_2d/costmap_2d_ros.h
 -
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
+tf/transform_listener.h
 -
 
 /opt/ros/indigo/include/nav_msgs/MapMetaData.h
@@ -2583,6 +2545,26 @@ tf2_ros/buffer.h
 /opt/ros/indigo/include/tf2_ros/tf2_ros/buffer.h
 boost/thread.hpp
 /opt/ros/indigo/include/tf2_ros/boost/thread.hpp
+
+/opt/ros/indigo/include/voxel_grid/voxel_grid.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+stdint.h
+-
+math.h
+-
+limits.h
+-
+algorithm
+-
+ros/console.h
+-
+ros/assert.h
+-
 
 /usr/include/eigen3/Eigen/Cholesky
 Core
@@ -4034,5 +4016,23 @@ dynamic_reconfigure/Group.h
 dynamic_reconfigure/config_init_mutex.h
 -
 boost/any.hpp
+-
+
+devel/include/map_msgs/OccupancyGridUpdate.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
 -
 

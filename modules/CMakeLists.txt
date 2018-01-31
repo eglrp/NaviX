@@ -1,6 +1,4 @@
-include_directories(${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)
-
+add_subdirectory(msgs)
 add_subdirectory(public)
 add_subdirectory(log)
 add_subdirectory(driver)

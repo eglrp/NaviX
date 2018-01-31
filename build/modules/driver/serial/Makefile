@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/bailiqun/NaviX/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,17 +122,6 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /home/bailiqun/NaviX/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/bailiqun/NaviX/build/CMakeFiles /home/bailiqun/NaviX/build/modules/driver/serial/CMakeFiles/progress.marks
@@ -169,51 +169,6 @@ serial/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/serial/CMakeFiles/serial.dir/build.make modules/driver/serial/CMakeFiles/serial.dir/build
 .PHONY : serial/fast
 
-# Convenience name for target.
-modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_py: modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make modules/driver/serial/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
 serial.o: serial.cpp.o
 
 .PHONY : serial.o
@@ -247,16 +202,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... serial"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... edit_cache"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... serial.o"
 	@echo "... serial.i"
 	@echo "... serial.s"

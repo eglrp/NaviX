@@ -7,8 +7,9 @@ add_subdirectory(laser_proc)
 find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure laser_proc message_generation roscpp sensor_msgs std_srvs tf)
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11")
 
-include_directories(../../../include)
-include_directories(${catkin_INCLUDE_DIRS})
+include_directories(
+    ${NaviX_SOURCE_DIR}/include
+    ${catkin_INCLUDE_DIRS})
 
 # Dynamic reconfigure support
 generate_dynamic_reconfigure_options(cfg/URG.cfg)

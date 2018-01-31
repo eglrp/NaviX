@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../include/gmapping/grid/accessstate.h
+../modules/slam/include/gmapping/grid/accessstate.h
 
-../include/gmapping/grid/array2d.h
+../modules/slam/include/gmapping/grid/array2d.h
 assert.h
 -
 gmapping/utils/point.h
 -
 accessstate.h
-../include/gmapping/grid/accessstate.h
+../modules/slam/include/gmapping/grid/accessstate.h
 iostream
 -
 
-../include/gmapping/grid/harray2d.h
+../modules/slam/include/gmapping/grid/harray2d.h
 set
 -
 gmapping/utils/point.h
@@ -26,19 +26,19 @@ gmapping/utils/point.h
 gmapping/utils/autoptr.h
 -
 array2d.h
-../include/gmapping/grid/array2d.h
+../modules/slam/include/gmapping/grid/array2d.h
 
-../include/gmapping/grid/map.h
+../modules/slam/include/gmapping/grid/map.h
 gmapping/utils/point.h
 -
 assert.h
 -
 accessstate.h
-../include/gmapping/grid/accessstate.h
+../modules/slam/include/gmapping/grid/accessstate.h
 array2d.h
-../include/gmapping/grid/array2d.h
+../modules/slam/include/gmapping/grid/array2d.h
 
-../include/gmapping/gridfastslam/gridslamprocessor.h
+../modules/slam/include/gmapping/gridfastslam/gridslamprocessor.h
 climits
 -
 limits
@@ -64,13 +64,13 @@ gmapping/sensor/sensor_range/rangereading.h
 gmapping/scanmatcher/scanmatcher.h
 -
 motionmodel.h
-../include/gmapping/gridfastslam/motionmodel.h
+../modules/slam/include/gmapping/gridfastslam/motionmodel.h
 gridslamprocessor.hxx
-../include/gmapping/gridfastslam/gridslamprocessor.hxx
+../modules/slam/include/gmapping/gridfastslam/gridslamprocessor.hxx
 
-../include/gmapping/gridfastslam/gridslamprocessor.hxx
+../modules/slam/include/gmapping/gridfastslam/gridslamprocessor.hxx
 
-../include/gmapping/gridfastslam/motionmodel.h
+../modules/slam/include/gmapping/gridfastslam/motionmodel.h
 gmapping/utils/point.h
 -
 gmapping/utils/stat.h
@@ -78,13 +78,13 @@ gmapping/utils/stat.h
 gmapping/utils/macro_params.h
 -
 
-../include/gmapping/log/configuration.h
+../modules/slam/include/gmapping/log/configuration.h
 istream
 -
 gmapping/sensor/sensor_base/sensor.h
 -
 
-../include/gmapping/log/sensorlog.h
+../modules/slam/include/gmapping/log/sensorlog.h
 list
 -
 istream
@@ -100,33 +100,33 @@ gmapping/sensor/sensor_odometry/odometryreading.h
 gmapping/sensor/sensor_range/rangereading.h
 -
 configuration.h
-../include/gmapping/log/configuration.h
+../modules/slam/include/gmapping/log/configuration.h
 
-../include/gmapping/openslam/slam_gmapping.h
+../modules/slam/include/gmapping/openslam/slam_gmapping.h
 ros/ros.h
-../include/gmapping/openslam/ros/ros.h
+../modules/slam/include/gmapping/openslam/ros/ros.h
 sensor_msgs/LaserScan.h
-../include/gmapping/openslam/sensor_msgs/LaserScan.h
+../modules/slam/include/gmapping/openslam/sensor_msgs/LaserScan.h
 std_msgs/Float64.h
-../include/gmapping/openslam/std_msgs/Float64.h
+../modules/slam/include/gmapping/openslam/std_msgs/Float64.h
 nav_msgs/GetMap.h
-../include/gmapping/openslam/nav_msgs/GetMap.h
+../modules/slam/include/gmapping/openslam/nav_msgs/GetMap.h
 tf/transform_listener.h
-../include/gmapping/openslam/tf/transform_listener.h
+../modules/slam/include/gmapping/openslam/tf/transform_listener.h
 tf/transform_broadcaster.h
-../include/gmapping/openslam/tf/transform_broadcaster.h
+../modules/slam/include/gmapping/openslam/tf/transform_broadcaster.h
 message_filters/subscriber.h
-../include/gmapping/openslam/message_filters/subscriber.h
+../modules/slam/include/gmapping/openslam/message_filters/subscriber.h
 tf/message_filter.h
-../include/gmapping/openslam/tf/message_filter.h
+../modules/slam/include/gmapping/openslam/tf/message_filter.h
 gmapping/gridfastslam/gridslamprocessor.h
-../include/gmapping/openslam/gmapping/gridfastslam/gridslamprocessor.h
+../modules/slam/include/gmapping/openslam/gmapping/gridfastslam/gridslamprocessor.h
 gmapping/sensor/sensor_base/sensor.h
-../include/gmapping/openslam/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/openslam/gmapping/sensor/sensor_base/sensor.h
 boost/thread.hpp
 -
 
-../include/gmapping/particlefilter/particlefilter.h
+../modules/slam/include/gmapping/particlefilter/particlefilter.h
 stdlib.h
 -
 sys/types.h
@@ -142,7 +142,7 @@ limits
 gmapping/utils/gvalues.h
 -
 
-../include/gmapping/scanmatcher/icp.h
+../modules/slam/include/gmapping/scanmatcher/icp.h
 gmapping/utils/point.h
 -
 utility
@@ -152,11 +152,11 @@ list
 vector
 -
 
-../include/gmapping/scanmatcher/scanmatcher.h
+../modules/slam/include/gmapping/scanmatcher/scanmatcher.h
 icp.h
-../include/gmapping/scanmatcher/icp.h
+../modules/slam/include/gmapping/scanmatcher/icp.h
 smmap.h
-../include/gmapping/scanmatcher/smmap.h
+../modules/slam/include/gmapping/scanmatcher/smmap.h
 gmapping/utils/macro_params.h
 -
 gmapping/utils/stat.h
@@ -166,7 +166,7 @@ iostream
 gmapping/utils/gvalues.h
 -
 
-../include/gmapping/scanmatcher/smmap.h
+../modules/slam/include/gmapping/scanmatcher/smmap.h
 gmapping/grid/map.h
 -
 gmapping/grid/harray2d.h
@@ -174,17 +174,17 @@ gmapping/grid/harray2d.h
 gmapping/utils/point.h
 -
 
-../include/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
 string
 -
 map
 -
 
-../include/gmapping/sensor/sensor_base/sensorreading.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensorreading.h
 sensor.h
-../include/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
 
-../include/gmapping/sensor/sensor_odometry/odometryreading.h
+../modules/slam/include/gmapping/sensor/sensor_odometry/odometryreading.h
 string.h
 -
 gmapping/sensor/sensor_base/sensorreading.h
@@ -192,15 +192,15 @@ gmapping/sensor/sensor_base/sensorreading.h
 gmapping/utils/point.h
 -
 odometrysensor.h
-../include/gmapping/sensor/sensor_odometry/odometrysensor.h
+../modules/slam/include/gmapping/sensor/sensor_odometry/odometrysensor.h
 
-../include/gmapping/sensor/sensor_odometry/odometrysensor.h
+../modules/slam/include/gmapping/sensor/sensor_odometry/odometrysensor.h
 string
 -
 gmapping/sensor/sensor_base/sensor.h
 -
 
-../include/gmapping/sensor/sensor_range/rangereading.h
+../modules/slam/include/gmapping/sensor/sensor_range/rangereading.h
 vector
 -
 gmapping/sensor/sensor_base/sensorreading.h
@@ -208,7 +208,7 @@ gmapping/sensor/sensor_base/sensorreading.h
 gmapping/sensor/sensor_range/rangesensor.h
 -
 
-../include/gmapping/sensor/sensor_range/rangesensor.h
+../modules/slam/include/gmapping/sensor/sensor_range/rangesensor.h
 vector
 -
 gmapping/sensor/sensor_base/sensor.h
@@ -216,11 +216,11 @@ gmapping/sensor/sensor_base/sensor.h
 gmapping/utils/point.h
 -
 
-../include/gmapping/utils/autoptr.h
+../modules/slam/include/gmapping/utils/autoptr.h
 assert.h
 -
 
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 values.h
 -
 limits.h
@@ -230,9 +230,9 @@ math.h
 limits
 -
 
-../include/gmapping/utils/macro_params.h
+../modules/slam/include/gmapping/utils/macro_params.h
 
-../include/gmapping/utils/point.h
+../modules/slam/include/gmapping/utils/point.h
 assert.h
 -
 math.h
@@ -240,15 +240,15 @@ math.h
 iostream
 -
 gvalues.h
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 
-../include/gmapping/utils/stat.h
+../modules/slam/include/gmapping/utils/stat.h
 point.h
-../include/gmapping/utils/point.h
+../modules/slam/include/gmapping/utils/point.h
 vector
 -
 gvalues.h
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 
 /home/bailiqun/NaviX/modules/slam/gmapping/openslam/slam_gmapping.cpp
 gmapping/openslam/slam_gmapping.h

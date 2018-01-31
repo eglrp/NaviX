@@ -1,16 +1,14 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(serial)
 
-set(SERIAL_INCLUDE ../../../include/serial/)
-
 find_package(catkin REQUIRED COMPONENTS  roscpp sensor_msgs nav_msgs geometry_msgs tf)
 find_package(Boost REQUIRED COMPONENTS system thread)
 
 include_directories(
     ${catkin_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIR}
-    ${SERIAL_INCLUDE}
-    )
+    ${NaviX_SOURCE_DIR}/include
+)
 
 catkin_package(
   INCLUDE_DIRS ${SERIAL_INCLUDE}

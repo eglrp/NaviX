@@ -5,7 +5,7 @@ find_package(catkin REQUIRED roscpp diagnostic_updater sensor_msgs)
 catkin_package(DEPENDS roscpp diagnostic_updater sensor_msgs)
 
 include_directories(
-    include
+    ${NaviX_SOURCE_DIR}/include
 )
 
 add_library(joystick STATIC src/joy.cpp)

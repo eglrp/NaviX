@@ -42,5 +42,5 @@ public:
   {}
   
   ///\brief Opens joystick port, reads from port and publishes while node is active
-  int main(int argc, char **argv);
+  int run(void);
 };

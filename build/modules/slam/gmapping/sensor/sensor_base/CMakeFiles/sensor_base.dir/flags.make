@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -Dsensor_base_EXPORTS
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping -I/home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/. 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/modules/slam/gmapping/include/gmapping -I/home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_base/. 
 

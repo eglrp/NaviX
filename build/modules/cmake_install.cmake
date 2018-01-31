@@ -34,6 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/bailiqun/NaviX/build/modules/msgs/cmake_install.cmake")
   include("/home/bailiqun/NaviX/build/modules/public/cmake_install.cmake")
   include("/home/bailiqun/NaviX/build/modules/log/cmake_install.cmake")
   include("/home/bailiqun/NaviX/build/modules/driver/cmake_install.cmake")

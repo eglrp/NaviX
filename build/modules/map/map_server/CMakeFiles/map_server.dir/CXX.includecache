@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../include/map_server/image_loader.h
+../modules/map/map_server/include/map_server/image_loader.h
 nav_msgs/GetMap.h
-../include/map_server/nav_msgs/GetMap.h
+../modules/map/map_server/include/map_server/nav_msgs/GetMap.h
 
 /home/bailiqun/NaviX/modules/map/map_server/src/main.cpp
 stdio.h

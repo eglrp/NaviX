@@ -20,7 +20,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../modules/slam/include"
   "../modules/driver/urg_node/include"
   "../modules/driver/urg_node/laser_proc/include"
-  "../modules/driver/serial/../../../include/serial"
   "/opt/ros/indigo/include"
   "../startup/../include"
   )

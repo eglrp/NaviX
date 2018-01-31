@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wno-deprecated -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"navfn\" -Dnavfn_EXPORTS
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/usr/include/vtk-5.8 -I/home/bailiqun/NaviX/modules/planner/navfn/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni 
+CXX_INCLUDES = -I/usr/include/vtk-5.8 -I/home/bailiqun/NaviX/modules/planner/navfn/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include/ni 
 

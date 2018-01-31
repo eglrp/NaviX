@@ -70,14 +70,6 @@ modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/map_msgs/OccupancyGridUpdate.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseAction.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseActionFeedback.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseActionGoal.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseActionResult.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseFeedback.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseGoal.h
-modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/move_base_msgs/MoveBaseResult.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlan.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanRequest.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/nav_msgs/GetPlanResponse.h
@@ -186,5 +178,13 @@ modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/tf2_ros/buffer_interface.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: /opt/ros/indigo/include/tf2_ros/transform_listener.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/costmap_2d/Costmap2DConfig.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/map_msgs/OccupancyGridUpdate.h
 modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base/MoveBaseConfig.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseAction.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseActionFeedback.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseActionGoal.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseActionResult.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseFeedback.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseGoal.h
+modules/move_base/move_base/CMakeFiles/move_base_node.dir/src/move_base_node.cpp.o: devel/include/move_base_msgs/MoveBaseResult.h
 

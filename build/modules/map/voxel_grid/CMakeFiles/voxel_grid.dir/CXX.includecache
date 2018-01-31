@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/voxel_grid/voxel_grid.h
+../modules/map/voxel_grid/include/voxel_grid/voxel_grid.h
 stdio.h
 -
 string.h

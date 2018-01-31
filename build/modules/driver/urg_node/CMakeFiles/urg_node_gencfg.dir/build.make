@@ -61,7 +61,7 @@ devel/include/urg_node/URGConfig.h: ../modules/driver/urg_node/cfg/URG.cfg
 devel/include/urg_node/URGConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/templates/ConfigType.py.template
 devel/include/urg_node/URGConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/templates/ConfigType.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bailiqun/NaviX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/URG.cfg: /home/bailiqun/NaviX/build/devel/include/urg_node/URGConfig.h /home/bailiqun/NaviX/build/devel/lib/python2.7/dist-packages/urg_node/cfg/URGConfig.py"
-	cd /home/bailiqun/NaviX/build/modules/driver/urg_node && ../../../catkin_generated/env_cached.sh /home/bailiqun/NaviX/modules/driver/urg_node/cfg/URG.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/bailiqun/NaviX/build/devel/share/urg_node /home/bailiqun/NaviX/build/devel/include/urg_node /home/bailiqun/NaviX/build/devel/lib/python2.7/dist-packages/urg_node
+	cd /home/bailiqun/NaviX/build/modules/driver/urg_node && ../../../catkin_generated/env_cached.sh /home/bailiqun/NaviX/build/modules/driver/urg_node/setup_custom_pythonpath.sh /home/bailiqun/NaviX/modules/driver/urg_node/cfg/URG.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/bailiqun/NaviX/build/devel/share/urg_node /home/bailiqun/NaviX/build/devel/include/urg_node /home/bailiqun/NaviX/build/devel/lib/python2.7/dist-packages/urg_node
 
 devel/share/urg_node/docs/URGConfig.dox: devel/include/urg_node/URGConfig.h
 	@$(CMAKE_COMMAND) -E touch_nocreate devel/share/urg_node/docs/URGConfig.dox

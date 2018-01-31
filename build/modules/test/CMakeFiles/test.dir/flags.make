@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"test\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/home/bailiqun/NaviX/modules/test/include -I/opt/ros/indigo/include 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/test/include -I/opt/ros/indigo/include 
 

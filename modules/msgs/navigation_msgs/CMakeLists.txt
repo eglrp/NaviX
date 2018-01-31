@@ -1,0 +1,2 @@
+add_subdirectory(map_msgs)
+add_subdirectory(move_base_msgs)

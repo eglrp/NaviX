@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -Dopen_urg_sensor_EXPORTS
 
-C_INCLUDES = -I/home/bailiqun/NaviX/include -I/home/bailiqun/NaviX/modules/driver/urg_node/urg_c/current/include 
+C_INCLUDES = -I/home/bailiqun/NaviX/modules/driver/urg_node/urg_c/current/include 
 

@@ -6,26 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/voxel_grid/voxel_grid.h
-stdio.h
--
-string.h
--
-stdlib.h
--
-stdint.h
--
-math.h
--
-limits.h
--
-algorithm
--
-ros/console.h
--
-ros/assert.h
--
-
 /home/bailiqun/NaviX/modules/map/costmap_2d/src/costmap_2d_markers.cpp
 ros/ros.h
 -
@@ -840,6 +820,26 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 visualization_msgs/Marker.h
+-
+
+/opt/ros/indigo/include/voxel_grid/voxel_grid.h
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+stdint.h
+-
+math.h
+-
+limits.h
+-
+algorithm
+-
+ros/console.h
+-
+ros/assert.h
 -
 
 devel/include/costmap_2d/VoxelGrid.h

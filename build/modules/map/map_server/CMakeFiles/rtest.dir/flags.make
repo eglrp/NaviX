@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DHAVE_YAMLCPP_GT_0_5_0 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"map_server\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/home/bailiqun/NaviX/modules/map/map_server/include -I/usr/include/bullet -I/opt/ros/indigo/include -I/usr/include/SDL 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/map/map_server/include -I/usr/include/bullet -I/opt/ros/indigo/include -I/usr/include/SDL 
 

@@ -16,9 +16,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../include"
   "/opt/ros/indigo/include"
-  "../modules/driver/serial/../../../include/serial"
+  "../include"
   )
 
 # Targets to which this target links.

@@ -169,9 +169,3 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/urg_c" TYPE DIRECTORY FILES "/home/bailiqun/NaviX/modules/driver/urg_node/urg_c/current/include/urg_c/")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/bailiqun/NaviX/build/gtest/cmake_install.cmake")
-
-endif()
-

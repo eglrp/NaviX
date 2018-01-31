@@ -802,8 +802,14 @@ log_BINARY_DIR:STATIC=/home/bailiqun/NaviX/build/modules/log
 //Value Computed by CMake
 log_SOURCE_DIR:STATIC=/home/bailiqun/NaviX/modules/log
 
+//Value Computed by CMake
+map_msgs_BINARY_DIR:STATIC=/home/bailiqun/NaviX/build/modules/msgs/navigation_msgs/map_msgs
+
 //The directory containing a CMake configuration file for map_msgs.
-map_msgs_DIR:PATH=/opt/ros/indigo/share/map_msgs/cmake
+map_msgs_DIR:PATH=/home/bailiqun/NaviX/build/devel/share/map_msgs/cmake
+
+//Value Computed by CMake
+map_msgs_SOURCE_DIR:STATIC=/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs
 
 //Value Computed by CMake
 map_server_BINARY_DIR:STATIC=/home/bailiqun/NaviX/build/modules/map/map_server
@@ -831,6 +837,12 @@ move_base_LIB_DEPENDS:STATIC=general;costmap_2d;general;layers;general;/usr/lib/
 
 //Value Computed by CMake
 move_base_SOURCE_DIR:STATIC=/home/bailiqun/NaviX/modules/move_base/move_base
+
+//Value Computed by CMake
+move_base_msgs_BINARY_DIR:STATIC=/home/bailiqun/NaviX/build/modules/msgs/navigation_msgs/move_base_msgs
+
+//Value Computed by CMake
+move_base_msgs_SOURCE_DIR:STATIC=/home/bailiqun/NaviX/modules/msgs/navigation_msgs/move_base_msgs
 
 //Value Computed by CMake
 move_slow_and_clear_BINARY_DIR:STATIC=/home/bailiqun/NaviX/build/modules/recovery/move_slow_and_clear
@@ -1278,7 +1290,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=53
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=57
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

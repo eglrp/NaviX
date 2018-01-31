@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DLaserProcNodelet_EXPORTS -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"laser_proc\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/home/bailiqun/NaviX/modules/driver/urg_node/laser_proc/include -I/opt/ros/indigo/include 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/modules/driver/urg_node/laser_proc/include -I/opt/ros/indigo/include 
 

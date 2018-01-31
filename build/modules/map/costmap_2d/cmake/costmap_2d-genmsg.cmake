@@ -2,7 +2,7 @@
 
 message(STATUS "costmap_2d: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Icostmap_2d:/home/bailiqun/NaviX/modules/map/costmap_2d/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Imap_msgs:/opt/ros/indigo/share/map_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg;-Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Icostmap_2d:/home/bailiqun/NaviX/modules/map/costmap_2d/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Imap_msgs:/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg;-Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg;-Inav_msgs:/opt/ros/indigo/share/nav_msgs/cmake/../msg;-Iactionlib_msgs:/opt/ros/indigo/share/actionlib_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)

@@ -18,7 +18,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
   "../include"
-  "../modules/move_base/move_base/include"
   "../modules/map/costmap_2d/include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"

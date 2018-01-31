@@ -21,7 +21,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
-  "../include"
   "/usr/include/vtk-5.8"
   "../modules/map/costmap_2d/include"
   "/opt/ros/indigo/include"

@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"serial\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/opt/ros/indigo/include -I/home/bailiqun/NaviX/modules/driver/serial/../../../include/serial 
+CXX_INCLUDES = -I/opt/ros/indigo/include -I/home/bailiqun/NaviX/include 
 

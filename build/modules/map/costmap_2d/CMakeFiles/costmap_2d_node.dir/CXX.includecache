@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-../include/costmap_2d/cost_values.h
+../modules/map/costmap_2d/include/costmap_2d/cost_values.h
 
-../include/costmap_2d/costmap_2d.h
+../modules/map/costmap_2d/include/costmap_2d/costmap_2d.h
 vector
 -
 queue
@@ -18,7 +18,7 @@ geometry_msgs/Point.h
 boost/thread.hpp
 -
 
-../include/costmap_2d/costmap_2d_publisher.h
+../modules/map/costmap_2d/include/costmap_2d/costmap_2d_publisher.h
 ros/ros.h
 -
 costmap_2d/costmap_2d.h
@@ -30,7 +30,7 @@ map_msgs/OccupancyGridUpdate.h
 tf/transform_datatypes.h
 -
 
-../include/costmap_2d/costmap_2d_ros.h
+../modules/map/costmap_2d/include/costmap_2d/costmap_2d_ros.h
 costmap_2d/layered_costmap.h
 -
 costmap_2d/layer.h
@@ -50,7 +50,7 @@ dynamic_reconfigure/server.h
 pluginlib/class_loader.h
 -
 
-../include/costmap_2d/footprint.h
+../modules/map/costmap_2d/include/costmap_2d/footprint.h
 ros/ros.h
 -
 geometry_msgs/Polygon.h
@@ -62,7 +62,7 @@ geometry_msgs/Point.h
 geometry_msgs/Point32.h
 -
 
-../include/costmap_2d/layer.h
+../modules/map/costmap_2d/include/costmap_2d/layer.h
 costmap_2d/costmap_2d.h
 -
 costmap_2d/layered_costmap.h
@@ -74,7 +74,7 @@ tf/tf.h
 tf/transform_listener.h
 -
 
-../include/costmap_2d/layered_costmap.h
+../modules/map/costmap_2d/include/costmap_2d/layered_costmap.h
 costmap_2d/cost_values.h
 -
 costmap_2d/layer.h
@@ -686,24 +686,6 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 geometry_msgs/Vector3.h
--
-
-/opt/ros/indigo/include/map_msgs/OccupancyGridUpdate.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
 -
 
 /opt/ros/indigo/include/nav_msgs/MapMetaData.h
@@ -1912,5 +1894,23 @@ dynamic_reconfigure/Group.h
 dynamic_reconfigure/config_init_mutex.h
 -
 boost/any.hpp
+-
+
+devel/include/map_msgs/OccupancyGridUpdate.h
+string
+-
+vector
+-
+map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
 -
 

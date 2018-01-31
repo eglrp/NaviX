@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"joystick\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/include -I/home/bailiqun/NaviX/modules/driver/joystick/include 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/include 
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 values.h
 -
 limits.h
@@ -16,7 +16,7 @@ math.h
 limits
 -
 
-../include/gmapping/utils/point.h
+../modules/slam/include/gmapping/utils/point.h
 assert.h
 -
 math.h
@@ -24,15 +24,15 @@ math.h
 iostream
 -
 gvalues.h
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 
-../include/gmapping/utils/stat.h
+../modules/slam/include/gmapping/utils/stat.h
 point.h
-../include/gmapping/utils/point.h
+../modules/slam/include/gmapping/utils/point.h
 vector
 -
 gvalues.h
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 
 /home/bailiqun/NaviX/modules/slam/gmapping/utils/movement.cpp
 movement.h

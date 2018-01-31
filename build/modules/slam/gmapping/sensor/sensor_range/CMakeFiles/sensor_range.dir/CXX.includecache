@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-../include/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
 string
 -
 map
 -
 
-../include/gmapping/sensor/sensor_base/sensorreading.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensorreading.h
 sensor.h
-../include/gmapping/sensor/sensor_base/sensor.h
+../modules/slam/include/gmapping/sensor/sensor_base/sensor.h
 
-../include/gmapping/sensor/sensor_range/rangereading.h
+../modules/slam/include/gmapping/sensor/sensor_range/rangereading.h
 vector
 -
 gmapping/sensor/sensor_base/sensorreading.h
@@ -24,7 +24,7 @@ gmapping/sensor/sensor_base/sensorreading.h
 gmapping/sensor/sensor_range/rangesensor.h
 -
 
-../include/gmapping/sensor/sensor_range/rangesensor.h
+../modules/slam/include/gmapping/sensor/sensor_range/rangesensor.h
 vector
 -
 gmapping/sensor/sensor_base/sensor.h
@@ -32,7 +32,7 @@ gmapping/sensor/sensor_base/sensor.h
 gmapping/utils/point.h
 -
 
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 values.h
 -
 limits.h
@@ -42,7 +42,7 @@ math.h
 limits
 -
 
-../include/gmapping/utils/point.h
+../modules/slam/include/gmapping/utils/point.h
 assert.h
 -
 math.h
@@ -50,7 +50,7 @@ math.h
 iostream
 -
 gvalues.h
-../include/gmapping/utils/gvalues.h
+../modules/slam/include/gmapping/utils/gvalues.h
 
 /home/bailiqun/NaviX/modules/slam/gmapping/sensor/sensor_range/rangereading.cpp
 limits
