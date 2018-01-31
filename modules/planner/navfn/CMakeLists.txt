@@ -22,7 +22,7 @@ find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 remove_definitions(-DDISABLE_LIBUSB-1.0)
 include_directories(
-    include
+    ${NaviX_SOURCE_DIR}/include
     ${catkin_INCLUDE_DIRS}
     ${EIGEN3_INCLUDE_DIRS}
     ${PCL_INCLUDE_DIRS}
@@ -38,10 +38,10 @@ add_service_files(
     SetCostmap.srv
 )
 
-generate_messages(
-    DEPENDENCIES
-        geometry_msgs
-)
+#generate_messages(
+#    DEPENDENCIES
+#        geometry_msgs
+#)
 
 catkin_package(
     INCLUDE_DIRS
@@ -82,28 +82,4 @@ install(DIRECTORY include/navfn/
 install(FILES bgp_plugin.xml
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
-
-### The problem with FindFLTK is that it only reports success if *all*
-### fltk components are installed, but we only need the core library.
-# include (FindFLTK)
-include (CheckIncludeFileCXX)
-check_include_file_cxx (FL/Fl.H NAVFN_HAVE_FLTK)
-check_include_file_cxx (pgm.h NAVFN_HAVE_NETPBM)
-message (STATUS "NAVFN_HAVE_FLTK: ${NAVFN_HAVE_FLTK}, NETPBM: ${NAVFN_HAVE_NETPBM}")
-# Just linking -lfltk is not sufficient on OS X
-if (NAVFN_HAVE_FLTK AND NAVFN_HAVE_NETPBM AND NOT APPLE)
-  message (STATUS "FLTK found: adding navtest to build")
-  add_executable (navtest src/navtest.cpp src/navwin.cpp)
-  set (FLTK_SKIP_FLUID 1)
-  set (FLTK_SKIP_FORMS 1)
-  set (FLTK_SKIP_IMAGES 1)
-  find_package(FLTK)
-  if(FLTK_FOUND)
-    target_link_libraries (navtest navfn netpbm ${FLTK_LIBRARIES})
-  else (FLTK_FOUND)
-    target_link_libraries (navtest navfn netpbm fltk)
-  endif (FLTK_FOUND)
-else (NAVFN_HAVE_FLTK)
-  message (STATUS "FLTK orf NETPBM not found: cannot build navtest")
-endif (NAVFN_HAVE_FLTK AND NAVFN_HAVE_NETPBM AND NOT APPLE)
 

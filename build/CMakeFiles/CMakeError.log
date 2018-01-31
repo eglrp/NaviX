@@ -49,3 +49,20 @@ make[1]: Leaving directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
 make: *** [cmTC_08523/fast] Error 2
 
 
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_95591/fast"
+/usr/bin/make -f CMakeFiles/cmTC_95591.dir/build.make CMakeFiles/cmTC_95591.dir/build
+make[1]: Entering directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_95591.dir/CheckIncludeFile.cxx.o
+/usr/bin/g++     -Wno-deprecated    -o CMakeFiles/cmTC_95591.dir/CheckIncludeFile.cxx.o -c /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:17: fatal error: pgm.h: No such file or directory
+ #include <pgm.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_95591.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
+make: *** [cmTC_95591/fast] Error 2
+
+

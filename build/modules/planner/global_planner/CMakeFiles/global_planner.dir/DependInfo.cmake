@@ -27,6 +27,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../modules/map/costmap_2d/include"
   "../modules/map/voxel_grid/include"
   "../modules/move_base/nav_core/include"
+  "../modules/planner/navfn/include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"
   "/usr/include/eigen3"

@@ -155,6 +155,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_node.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
+
+# Convenience name for target.
+navfn_node: modules/planner/navfn/CMakeFiles/navfn_node.dir/rule
+
+.PHONY : navfn_node
+
+# fast build rule for target.
+navfn_node/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/build
+.PHONY : navfn_node/fast
+
+# Convenience name for target.
 modules/planner/navfn/CMakeFiles/navfn.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn.dir/rule
 .PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/rule
@@ -196,6 +211,33 @@ src/navfn.cpp.s:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/src/navfn.cpp.s
 .PHONY : src/navfn.cpp.s
 
+src/navfn_node.o: src/navfn_node.cpp.o
+
+.PHONY : src/navfn_node.o
+
+# target to build an object file
+src/navfn_node.cpp.o:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o
+.PHONY : src/navfn_node.cpp.o
+
+src/navfn_node.i: src/navfn_node.cpp.i
+
+.PHONY : src/navfn_node.i
+
+# target to preprocess a source file
+src/navfn_node.cpp.i:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.i
+.PHONY : src/navfn_node.cpp.i
+
+src/navfn_node.s: src/navfn_node.cpp.s
+
+.PHONY : src/navfn_node.s
+
+# target to generate assembly for a file
+src/navfn_node.cpp.s:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_node.dir/build.make modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.s
+.PHONY : src/navfn_node.cpp.s
+
 src/navfn_ros.o: src/navfn_ros.cpp.o
 
 .PHONY : src/navfn_ros.o
@@ -234,11 +276,15 @@ help:
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
+	@echo "... navfn_node"
 	@echo "... edit_cache"
 	@echo "... navfn"
 	@echo "... src/navfn.o"
 	@echo "... src/navfn.i"
 	@echo "... src/navfn.s"
+	@echo "... src/navfn_node.o"
+	@echo "... src/navfn_node.i"
+	@echo "... src/navfn_node.s"
 	@echo "... src/navfn_ros.o"
 	@echo "... src/navfn_ros.i"
 	@echo "... src/navfn_ros.s"

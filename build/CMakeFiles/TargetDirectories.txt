@@ -345,6 +345,7 @@
 /home/bailiqun/NaviX/build/modules/planner/navfn/CMakeFiles/install.dir
 /home/bailiqun/NaviX/build/modules/planner/navfn/CMakeFiles/install/local.dir
 /home/bailiqun/NaviX/build/modules/planner/navfn/CMakeFiles/install/strip.dir
+/home/bailiqun/NaviX/build/modules/planner/navfn/CMakeFiles/navfn_node.dir
 /home/bailiqun/NaviX/build/modules/planner/navfn/CMakeFiles/edit_cache.dir
 /home/bailiqun/NaviX/build/modules/planner/navfn/CMakeFiles/navfn.dir
 /home/bailiqun/NaviX/build/modules/planner/dwa_local_planner/CMakeFiles/rebuild_cache.dir

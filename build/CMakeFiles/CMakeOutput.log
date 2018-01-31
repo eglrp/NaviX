@@ -562,3 +562,17 @@ Linking C executable cmTC_66666
 make[1]: Leaving directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
 
 
+Determining if the include file FL/Fl.H exists passed with the following output:
+Change Dir: /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f26c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f26c9.dir/build.make CMakeFiles/cmTC_f26c9.dir/build
+make[1]: Entering directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f26c9.dir/CheckIncludeFile.cxx.o
+/usr/bin/g++     -Wno-deprecated    -o CMakeFiles/cmTC_f26c9.dir/CheckIncludeFile.cxx.o -c /home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_f26c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f26c9.dir/link.txt --verbose=1
+/usr/bin/g++     -Wno-deprecated     CMakeFiles/cmTC_f26c9.dir/CheckIncludeFile.cxx.o  -o cmTC_f26c9 -rdynamic 
+make[1]: Leaving directory `/home/bailiqun/NaviX/build/CMakeFiles/CMakeTmp'
+
+
