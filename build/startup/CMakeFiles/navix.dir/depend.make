@@ -13,6 +13,9 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/serial/serial/node_ha
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/serial/serial/publisher.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/serial/serial/subscriber.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/thread_assist/thread_assist.hpp
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/3rd/laser_proc/include/laser_proc/LaserProc.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/3rd/laser_proc/include/laser_proc/LaserPublisher.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/3rd/laser_proc/include/laser_proc/LaserTransport.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/include/urg_c/urg_connection.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/include/urg_c/urg_detect_os.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/include/urg_c/urg_ring_buffer.h
@@ -23,9 +26,6 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/inclu
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/include/urg_c/urg_utils.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/include/urg_node/urg_c_wrapper.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/include/urg_node/urg_node_driver.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/laser_proc/include/laser_proc/LaserProc.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/laser_proc/include/laser_proc/LaserPublisher.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/driver/urg_node/laser_proc/include/laser_proc/LaserTransport.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/slam/include/gmapping/grid/accessstate.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/slam/include/gmapping/grid/array2d.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/slam/include/gmapping/grid/harray2d.h
