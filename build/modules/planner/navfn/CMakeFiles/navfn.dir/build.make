@@ -188,6 +188,7 @@ devel/lib/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 devel/lib/libnavfn.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/libnavfn.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 devel/lib/libnavfn.so: devel/lib/libcostmap_2d.so
+devel/lib/libnavfn.so: devel/lib/liblaser_geometry.so
 devel/lib/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libnavfn.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libnavfn.so: /opt/ros/indigo/lib/libpcl_ros_filters.so

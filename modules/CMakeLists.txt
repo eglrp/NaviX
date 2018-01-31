@@ -1,5 +1,6 @@
-add_subdirectory(msgs)
+add_subdirectory(3rd)
 add_subdirectory(public)
+add_subdirectory(msgs)
 add_subdirectory(log)
 add_subdirectory(visualize)
 add_subdirectory(driver)

@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 2.8.3)
 project(urg_node)
 
 add_subdirectory(urg_c)
-add_subdirectory(laser_proc)
 
 find_package(catkin REQUIRED COMPONENTS dynamic_reconfigure laser_proc message_generation roscpp sensor_msgs std_srvs tf)
 set_directory_properties(PROPERTIES COMPILE_OPTIONS "-std=c++11")

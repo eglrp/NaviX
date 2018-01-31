@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"startup\"
 
-CXX_INCLUDES = -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/modules/driver/urg_node/include -I/home/bailiqun/NaviX/modules/driver/urg_node/laser_proc/include -I/opt/ros/indigo/include -I/home/bailiqun/NaviX/include 
+CXX_INCLUDES = -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/modules/driver/urg_node/include -I/home/bailiqun/NaviX/modules/3rd/laser_proc/include -I/opt/ros/indigo/include -I/home/bailiqun/NaviX/include 
 

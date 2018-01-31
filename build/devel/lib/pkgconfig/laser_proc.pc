@@ -3,6 +3,6 @@ prefix=/home/bailiqun/NaviX/build/devel
 Name: laser_proc
 Description: Description of laser_proc
 Version: 0.1.4
-Cflags: -I/home/bailiqun/NaviX/modules/driver/urg_node/laser_proc/include
+Cflags: -I/home/bailiqun/NaviX/modules/3rd/laser_proc/include
 Libs: -L/home/bailiqun/NaviX/build/devel/lib -llaser_proc_library -llaser_publisher -llaser_transport -llaser_proc_ROS -lLaserProcNodelet
 Requires: roscpp sensor_msgs rosconsole nodelet

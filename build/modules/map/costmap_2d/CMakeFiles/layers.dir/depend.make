@@ -150,6 +150,7 @@ modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: ../in
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: ../include/costmap_2d/observation.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: ../include/costmap_2d/observation_buffer.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: ../include/costmap_2d/obstacle_layer.h
+modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: ../include/laser_geometry/laser_geometry.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: ../modules/map/costmap_2d/plugins/obstacle_layer.cpp
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/XmlRpcValue.h
@@ -188,7 +189,6 @@ modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/laser_geometry/laser_geometry.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/message_filters/connection.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/message_filters/macros.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o: /opt/ros/indigo/include/message_filters/signal1.h
@@ -665,6 +665,7 @@ modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../inclu
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../include/costmap_2d/observation_buffer.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../include/costmap_2d/obstacle_layer.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../include/costmap_2d/voxel_layer.h
+modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../include/laser_geometry/laser_geometry.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../include/voxel_grid/voxel_grid.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: ../modules/map/costmap_2d/plugins/voxel_layer.cpp
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
@@ -704,7 +705,6 @@ modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/geometry_msgs/TwistStamped.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/geometry_msgs/Vector3Stamped.h
-modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/laser_geometry/laser_geometry.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/message_filters/connection.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/message_filters/macros.h
 modules/map/costmap_2d/CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o: /opt/ros/indigo/include/message_filters/signal1.h

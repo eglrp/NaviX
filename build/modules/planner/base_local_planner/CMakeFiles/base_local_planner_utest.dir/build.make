@@ -225,8 +225,7 @@ devel/lib/base_local_planner/base_local_planner_utest: devel/lib/libtrajectory_p
 devel/lib/base_local_planner/base_local_planner_utest: devel/lib/libbase_local_planner.so
 devel/lib/base_local_planner/base_local_planner_utest: devel/lib/liblayers.so
 devel/lib/base_local_planner/base_local_planner_utest: devel/lib/libcostmap_2d.so
-devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+devel/lib/base_local_planner/base_local_planner_utest: devel/lib/liblaser_geometry.so
 devel/lib/base_local_planner/base_local_planner_utest: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/base_local_planner/base_local_planner_utest: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/base_local_planner/base_local_planner_utest: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -253,11 +252,6 @@ devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libqhull.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libOpenNI.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
-devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/base_local_planner/base_local_planner_utest: /opt/ros/indigo/lib/libpcl_ros_filters.so
-devel/lib/base_local_planner/base_local_planner_utest: /opt/ros/indigo/lib/libpcl_ros_io.so
-devel/lib/base_local_planner/base_local_planner_utest: /opt/ros/indigo/lib/libpcl_ros_tf.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libpcl_common.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libpcl_octree.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libpcl_io.so
@@ -281,6 +275,8 @@ devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libqhull.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libOpenNI.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libvtkCommon.so.5.8.0
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libvtkRendering.so.5.8.0
 devel/lib/base_local_planner/base_local_planner_utest: /usr/lib/libvtkHybrid.so.5.8.0

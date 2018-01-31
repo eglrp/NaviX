@@ -19,6 +19,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
   "/usr/include/vtk-5.8"
   "../include"
+  "../modules/3rd/laser_geometry/include"
   "/opt/ros/indigo/include"
   "/usr/include/eigen3"
   "/usr/include/pcl-1.7"
@@ -28,6 +29,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bailiqun/NaviX/build/modules/map/costmap_2d/CMakeFiles/costmap_2d.dir/DependInfo.cmake"
+  "/home/bailiqun/NaviX/build/modules/3rd/laser_geometry/CMakeFiles/laser_geometry.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

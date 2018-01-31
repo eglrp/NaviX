@@ -684,8 +684,7 @@ devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/libbase_local_planner.so: devel/lib/libcostmap_2d.so
-devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+devel/lib/libbase_local_planner.so: devel/lib/liblaser_geometry.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
 devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
@@ -712,11 +711,6 @@ devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_serializa
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libqhull.so
 devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
-devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so
-devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_io.so
-devel/lib/libbase_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_tf.so
 devel/lib/libbase_local_planner.so: /usr/lib/libpcl_common.so
 devel/lib/libbase_local_planner.so: /usr/lib/libpcl_octree.so
 devel/lib/libbase_local_planner.so: /usr/lib/libpcl_io.so
@@ -740,6 +734,8 @@ devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_serializa
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libqhull.so
 devel/lib/libbase_local_planner.so: /usr/lib/libOpenNI.so
 devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+devel/lib/libbase_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libbase_local_planner.so: /usr/lib/libvtkCommon.so.5.8.0
 devel/lib/libbase_local_planner.so: /usr/lib/libvtkRendering.so.5.8.0
 devel/lib/libbase_local_planner.so: /usr/lib/libvtkHybrid.so.5.8.0

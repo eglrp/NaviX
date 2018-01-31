@@ -20,6 +20,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/base_local_planner/trajectory_inc.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/base_local_planner/trajectory_sample_generator.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/base_local_planner/trajectory_search.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/base_local_planner/twirling_cost_function.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/base_local_planner/world_model.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/costmap_2d/cost_values.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/costmap_2d/costmap_2d.h
@@ -29,6 +30,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/costmap_2d/layer.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/costmap_2d/layered_costmap.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/costmap_2d/observation.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/dwa_local_planner/dwa_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../include/nav_core/base_local_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: ../modules/planner/dwa_local_planner/src/dwa_planner.cpp
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
@@ -40,7 +42,6 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/class_loader/class_loader_register_macro.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/class_loader/meta_object.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/class_loader/multi_library_class_loader.h
-modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/dwa_local_planner/dwa_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/dynamic_reconfigure/BoolParameter.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/dynamic_reconfigure/Config.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner.cpp.o: /opt/ros/indigo/include/dynamic_reconfigure/ConfigDescription.h
@@ -442,6 +443,7 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/base_local_planner/trajectory_inc.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/base_local_planner/trajectory_sample_generator.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/base_local_planner/trajectory_search.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/base_local_planner/twirling_cost_function.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/base_local_planner/world_model.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/costmap_2d/cost_values.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/costmap_2d/costmap_2d.h
@@ -451,6 +453,8 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/costmap_2d/layer.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/costmap_2d/layered_costmap.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/costmap_2d/observation.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/dwa_local_planner/dwa_planner.h
+modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/dwa_local_planner/dwa_planner_ros.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../include/nav_core/base_local_planner.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: ../modules/planner/dwa_local_planner/src/dwa_planner_ros.cpp
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
@@ -462,8 +466,6 @@ modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_plann
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/class_loader/class_loader_register_macro.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/class_loader/meta_object.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/class_loader/multi_library_class_loader.h
-modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/dwa_local_planner/dwa_planner.h
-modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/dwa_local_planner/dwa_planner_ros.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/dynamic_reconfigure/BoolParameter.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/dynamic_reconfigure/Config.h
 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner.dir/src/dwa_planner_ros.cpp.o: /opt/ros/indigo/include/dynamic_reconfigure/ConfigDescription.h

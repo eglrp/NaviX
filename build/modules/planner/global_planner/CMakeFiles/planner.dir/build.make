@@ -178,6 +178,7 @@ devel/lib/global_planner/planner: /usr/lib/libvtkIO.so.5.8.0
 devel/lib/global_planner/planner: /usr/lib/libvtkFiltering.so.5.8.0
 devel/lib/global_planner/planner: /usr/lib/libvtkCommon.so.5.8.0
 devel/lib/global_planner/planner: /usr/lib/libvtksys.so.5.8.0
+devel/lib/global_planner/planner: devel/lib/liblaser_geometry.so
 devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/global_planner/planner: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/global_planner/planner: /opt/ros/indigo/lib/libpcl_ros_filters.so

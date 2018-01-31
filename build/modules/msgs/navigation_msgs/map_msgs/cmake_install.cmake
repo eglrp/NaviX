@@ -173,9 +173,3 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/map_msgs" TYPE FILE FILES "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/package.xml")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/bailiqun/NaviX/build/gtest/cmake_install.cmake")
-
-endif()
-

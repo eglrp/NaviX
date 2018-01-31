@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(costmap_2d_EXPORTED_TARGETS "costmap_2d_generate_messages_cpp;costmap_2d_generate_messages_lisp;costmap_2d_generate_messages_py")
+set(costmap_2d_EXPORTED_TARGETS "costmap_2d_generate_messages_cpp;costmap_2d_generate_messages_lisp;costmap_2d_generate_messages_py;costmap_2d_gencfg")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${costmap_2d_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${costmap_2d_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "dynamic_reconfigure;geometry_msgs;map_msgs;message_filters;message_runtime;nav_msgs;pcl_ros;pluginlib;roscpp;sensor_msgs;std_msgs;tf;visualization_msgs;voxel_grid")
+set(depends "dynamic_reconfigure;geometry_msgs;map_msgs;laser_geometry;message_filters;message_runtime;nav_msgs;pcl_ros;pluginlib;roscpp;sensor_msgs;std_msgs;tf;visualization_msgs;voxel_grid")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

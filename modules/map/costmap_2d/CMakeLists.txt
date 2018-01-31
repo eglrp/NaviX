@@ -7,6 +7,7 @@ find_package(catkin REQUIRED
             dynamic_reconfigure
             geometry_msgs
             map_msgs
+            laser_geometry
             message_filters
             message_generation
             nav_msgs
@@ -64,6 +65,7 @@ catkin_package(
         dynamic_reconfigure
         geometry_msgs
         map_msgs
+        laser_geometry
         message_filters
         message_runtime
         nav_msgs

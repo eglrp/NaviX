@@ -78,17 +78,26 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -101,26 +110,17 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -155,6 +155,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule
+
+# Convenience name for target.
+LaserProcNodelet: modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule
+
+.PHONY : LaserProcNodelet
+
+# fast build rule for target.
+LaserProcNodelet/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/build
+.PHONY : LaserProcNodelet/fast
+
+# Convenience name for target.
 modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
 .PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
@@ -168,21 +183,6 @@ nodelet_generate_messages_cpp: modules/driver/urg_node/laser_proc/CMakeFiles/nod
 nodelet_generate_messages_cpp/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_cpp.dir/build
 .PHONY : nodelet_generate_messages_cpp/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_cpp: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule
-
-.PHONY : bond_generate_messages_cpp
-
-# fast build rule for target.
-bond_generate_messages_cpp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/build
-.PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
 modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_py.dir/rule:
@@ -200,64 +200,109 @@ nodelet_generate_messages_py/fast:
 .PHONY : nodelet_generate_messages_py/fast
 
 # Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+bond_generate_messages_cpp: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_py
+.PHONY : bond_generate_messages_cpp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+bond_generate_messages_cpp/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
 
 # Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+laser_publisher: modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : laser_publisher
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+laser_publisher/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/build
+.PHONY : laser_publisher/fast
 
 # Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+laser_proc: modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_cpp
+.PHONY : laser_proc
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+laser_proc/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/build
+.PHONY : laser_proc/fast
 
 # Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/rule
+modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/rule
+laser_transport: modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
 
-.PHONY : roscpp_generate_messages_py
+.PHONY : laser_transport
 
 # fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+laser_transport/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/build
+.PHONY : laser_transport/fast
+
+# Convenience name for target.
+modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule
+
+# Convenience name for target.
+laser_proc_ROS: modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule
+
+.PHONY : laser_proc_ROS
+
+# fast build rule for target.
+laser_proc_ROS/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build
+.PHONY : laser_proc_ROS/fast
+
+# Convenience name for target.
+modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
 
 # Convenience name for target.
 modules/driver/urg_node/laser_proc/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
@@ -288,141 +333,6 @@ laser_proc_library: modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_lib
 laser_proc_library/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_library.dir/build
 .PHONY : laser_proc_library/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_py: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/rule
-
-.PHONY : bond_generate_messages_py
-
-# fast build rule for target.
-bond_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_py.dir/build
-.PHONY : bond_generate_messages_py/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule
-
-# Convenience name for target.
-laser_proc_ROS: modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/rule
-
-.PHONY : laser_proc_ROS
-
-# fast build rule for target.
-laser_proc_ROS/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc_ROS.dir/build
-.PHONY : laser_proc_ROS/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
-
-# Convenience name for target.
-laser_publisher: modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/rule
-
-.PHONY : laser_publisher
-
-# fast build rule for target.
-laser_publisher/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_publisher.dir/build
-.PHONY : laser_publisher/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-bond_generate_messages_lisp: modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/rule
-
-.PHONY : bond_generate_messages_lisp
-
-# fast build rule for target.
-bond_generate_messages_lisp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/bond_generate_messages_lisp.dir/build
-.PHONY : bond_generate_messages_lisp/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
-
-# Convenience name for target.
-laser_transport: modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/rule
-
-.PHONY : laser_transport
-
-# fast build rule for target.
-laser_transport/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_transport.dir/build
-.PHONY : laser_transport/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule
-
-# Convenience name for target.
-laser_proc: modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/rule
-
-.PHONY : laser_proc
-
-# fast build rule for target.
-laser_proc/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/laser_proc.dir/build
-.PHONY : laser_proc/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule
-.PHONY : modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule
-
-# Convenience name for target.
-LaserProcNodelet: modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/rule
-
-.PHONY : LaserProcNodelet
-
-# fast build rule for target.
-LaserProcNodelet/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/build.make modules/driver/urg_node/laser_proc/CMakeFiles/LaserProcNodelet.dir/build
-.PHONY : LaserProcNodelet/fast
 
 src/LaserProc.o: src/LaserProc.cpp.o
 
@@ -594,28 +504,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... install/local"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... LaserProcNodelet"
 	@echo "... nodelet_generate_messages_cpp"
-	@echo "... bond_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_py"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... laser_publisher"
+	@echo "... install"
+	@echo "... laser_proc"
+	@echo "... laser_transport"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... laser_proc_ROS"
+	@echo "... bond_generate_messages_py"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... laser_proc_library"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... bond_generate_messages_py"
-	@echo "... laser_proc_ROS"
-	@echo "... laser_publisher"
-	@echo "... bond_generate_messages_lisp"
-	@echo "... laser_transport"
-	@echo "... laser_proc"
-	@echo "... install"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... LaserProcNodelet"
-	@echo "... install/strip"
-	@echo "... list_install_components"
-	@echo "... install/local"
 	@echo "... src/LaserProc.o"
 	@echo "... src/LaserProc.i"
 	@echo "... src/LaserProc.s"

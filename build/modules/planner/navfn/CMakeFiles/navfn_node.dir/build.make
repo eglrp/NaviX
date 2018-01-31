@@ -107,6 +107,7 @@ devel/lib/navfn/navfn_node: /usr/lib/libvtkIO.so.5.8.0
 devel/lib/navfn/navfn_node: /usr/lib/libvtkFiltering.so.5.8.0
 devel/lib/navfn/navfn_node: /usr/lib/libvtkCommon.so.5.8.0
 devel/lib/navfn/navfn_node: /usr/lib/libvtksys.so.5.8.0
+devel/lib/navfn/navfn_node: devel/lib/liblaser_geometry.so
 devel/lib/navfn/navfn_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/navfn/navfn_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/navfn/navfn_node: devel/lib/libvoxel_grid.so

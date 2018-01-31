@@ -20,6 +20,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/vtk-5.8"
   "../modules/planner/base_local_planner/include"
   "../include"
+  "../modules/3rd/laser_geometry/include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"
   "/usr/include/eigen3"

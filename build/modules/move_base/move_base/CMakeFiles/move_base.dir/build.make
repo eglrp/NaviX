@@ -162,6 +162,7 @@ devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so
 devel/lib/libmove_base.so: devel/lib/libcostmap_2d.so
+devel/lib/libmove_base.so: devel/lib/liblaser_geometry.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libmove_base.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libmove_base.so: /opt/ros/indigo/lib/libpcl_ros_filters.so

@@ -189,6 +189,7 @@ devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.s
 devel/lib/libdwa_local_planner.so: devel/lib/libbase_local_planner.so
 devel/lib/libdwa_local_planner.so: devel/lib/liblayers.so
 devel/lib/libdwa_local_planner.so: devel/lib/libcostmap_2d.so
+devel/lib/libdwa_local_planner.so: devel/lib/liblaser_geometry.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
 devel/lib/libdwa_local_planner.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 devel/lib/libdwa_local_planner.so: /opt/ros/indigo/lib/libpcl_ros_filters.so

@@ -240,7 +240,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bailiqun/NaviX/build/modules/driver/urg_node/urg_c/cmake_install.cmake")
-  include("/home/bailiqun/NaviX/build/modules/driver/urg_node/laser_proc/cmake_install.cmake")
 
 endif()
 
