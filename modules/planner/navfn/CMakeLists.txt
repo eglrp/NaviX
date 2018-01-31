@@ -29,7 +29,6 @@ include_directories(
 )
 add_definitions(${EIGEN3_DEFINITIONS})
 
-
 # services
 add_service_files(
     DIRECTORY srv
@@ -38,14 +37,14 @@ add_service_files(
     SetCostmap.srv
 )
 
-#generate_messages(
-#    DEPENDENCIES
-#        geometry_msgs
-#)
+generate_messages(
+    DEPENDENCIES
+        geometry_msgs
+)
 
 catkin_package(
     INCLUDE_DIRS
-        include
+        ${NaviX_SOURCE_DIR}/include
     LIBRARIES
         navfn
     CATKIN_DEPENDS

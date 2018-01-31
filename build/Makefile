@@ -2521,6 +2521,45 @@ navfn_node/fast:
 .PHONY : navfn_node/fast
 
 #=============================================================================
+# Target rules for targets named navfn_generate_messages
+
+# Build rule for target.
+navfn_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages
+.PHONY : navfn_generate_messages
+
+# fast build rule for target.
+navfn_generate_messages/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/build
+.PHONY : navfn_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _navfn_generate_messages_check_deps_SetCostmap
+
+# Build rule for target.
+_navfn_generate_messages_check_deps_SetCostmap: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _navfn_generate_messages_check_deps_SetCostmap
+.PHONY : _navfn_generate_messages_check_deps_SetCostmap
+
+# fast build rule for target.
+_navfn_generate_messages_check_deps_SetCostmap/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/build.make modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/build
+.PHONY : _navfn_generate_messages_check_deps_SetCostmap/fast
+
+#=============================================================================
+# Target rules for targets named _navfn_generate_messages_check_deps_MakeNavPlan
+
+# Build rule for target.
+_navfn_generate_messages_check_deps_MakeNavPlan: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _navfn_generate_messages_check_deps_MakeNavPlan
+.PHONY : _navfn_generate_messages_check_deps_MakeNavPlan
+
+# fast build rule for target.
+_navfn_generate_messages_check_deps_MakeNavPlan/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/build.make modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/build
+.PHONY : _navfn_generate_messages_check_deps_MakeNavPlan/fast
+
+#=============================================================================
 # Target rules for targets named navfn
 
 # Build rule for target.
@@ -2532,6 +2571,84 @@ navfn: cmake_check_build_system
 navfn/fast:
 	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
 .PHONY : navfn/fast
+
+#=============================================================================
+# Target rules for targets named navfn_generate_messages_cpp
+
+# Build rule for target.
+navfn_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages_cpp
+.PHONY : navfn_generate_messages_cpp
+
+# fast build rule for target.
+navfn_generate_messages_cpp/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build
+.PHONY : navfn_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named navfn_gencpp
+
+# Build rule for target.
+navfn_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_gencpp
+.PHONY : navfn_gencpp
+
+# fast build rule for target.
+navfn_gencpp/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/build
+.PHONY : navfn_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named navfn_generate_messages_lisp
+
+# Build rule for target.
+navfn_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages_lisp
+.PHONY : navfn_generate_messages_lisp
+
+# fast build rule for target.
+navfn_generate_messages_lisp/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build
+.PHONY : navfn_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named navfn_genlisp
+
+# Build rule for target.
+navfn_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_genlisp
+.PHONY : navfn_genlisp
+
+# fast build rule for target.
+navfn_genlisp/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/build
+.PHONY : navfn_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named navfn_generate_messages_py
+
+# Build rule for target.
+navfn_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_generate_messages_py
+.PHONY : navfn_generate_messages_py
+
+# fast build rule for target.
+navfn_generate_messages_py/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/build
+.PHONY : navfn_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named navfn_genpy
+
+# Build rule for target.
+navfn_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 navfn_genpy
+.PHONY : navfn_genpy
+
+# fast build rule for target.
+navfn_genpy/fast:
+	$(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_genpy.dir/build.make modules/planner/navfn/CMakeFiles/navfn_genpy.dir/build
+.PHONY : navfn_genpy/fast
 
 #=============================================================================
 # Target rules for targets named base_local_planner_genpy
@@ -3312,7 +3429,16 @@ help:
 	@echo "... move_slow_and_clear"
 	@echo "... rotate_recovery"
 	@echo "... navfn_node"
+	@echo "... navfn_generate_messages"
+	@echo "... _navfn_generate_messages_check_deps_SetCostmap"
+	@echo "... _navfn_generate_messages_check_deps_MakeNavPlan"
 	@echo "... navfn"
+	@echo "... navfn_generate_messages_cpp"
+	@echo "... navfn_gencpp"
+	@echo "... navfn_generate_messages_lisp"
+	@echo "... navfn_genlisp"
+	@echo "... navfn_generate_messages_py"
+	@echo "... navfn_genpy"
 	@echo "... base_local_planner_genpy"
 	@echo "... base_local_planner_generate_messages_py"
 	@echo "... base_local_planner_genlisp"

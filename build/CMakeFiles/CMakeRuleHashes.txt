@@ -28,6 +28,8 @@ d3fe9cea877a3a6aa2b96a2a0175600f devel/include/move_base_msgs/MoveBaseActionFeed
 aaee803b37d2d33a7b0b0de71267bff6 devel/include/move_base_msgs/MoveBaseFeedback.h
 c6841ac439c9fc45596424c5e96db7bd devel/include/move_base_msgs/MoveBaseGoal.h
 334cbffaebd161a1805e2aeaf3894324 devel/include/move_base_msgs/MoveBaseResult.h
+802beab484fe5d7890efd0099fc7f091 devel/include/navfn/MakeNavPlan.h
+f66bf695fb8e284f6c1e698a8471ad32 devel/include/navfn/SetCostmap.h
 66b464dc30c3f28da9efb248acc8c3d1 devel/include/urg_node/Status.h
 f6dbfec022171cab8c562ae32bf99881 devel/include/urg_node/URGConfig.h
 71e4a771d1831112413755a4d342c328 devel/lib/python2.7/dist-packages/base_local_planner/msg/_Position2DInt.py
@@ -54,6 +56,9 @@ e4a5ac0346aabdfb8a53869ca68acd6b devel/lib/python2.7/dist-packages/move_base_msg
 c26e5ff692dff292819289a5aa0c355f devel/lib/python2.7/dist-packages/move_base_msgs/msg/_MoveBaseGoal.py
 b73682e50f336a5eb642d03ccfd9cfe1 devel/lib/python2.7/dist-packages/move_base_msgs/msg/_MoveBaseResult.py
 c384150e7b1d2a9cb406857e0e538d74 devel/lib/python2.7/dist-packages/move_base_msgs/msg/__init__.py
+d54dc87a9bee0be8c52779000a752190 devel/lib/python2.7/dist-packages/navfn/srv/_MakeNavPlan.py
+42e4292e1a02529e2671a058b487dafb devel/lib/python2.7/dist-packages/navfn/srv/_SetCostmap.py
+7971779d135f2aabc16fb35730fe744c devel/lib/python2.7/dist-packages/navfn/srv/__init__.py
 dd8d7244667e778415a25811f8c4d06d devel/lib/python2.7/dist-packages/urg_node/msg/_Status.py
 75d50b8f9e1f64050f3b392b64534ed7 devel/lib/python2.7/dist-packages/urg_node/msg/__init__.py
 055d7410cb19294ab4c936eb4c9df9a3 devel/share/common-lisp/ros/base_local_planner/msg/Position2DInt.lisp
@@ -75,6 +80,8 @@ a1f107802f1a70b88b6a7d696a69ca65 devel/share/common-lisp/ros/move_base_msgs/msg/
 08abfe7d994b5d6bcc538ee893b75898 devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseFeedback.lisp
 9a3da9a5f5284ca46c01294241ebebfe devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseGoal.lisp
 87c9dc41bec72b780b78a4fc8722fab7 devel/share/common-lisp/ros/move_base_msgs/msg/MoveBaseResult.lisp
+56ee195a5ada67f7facab5a64e2353ad devel/share/common-lisp/ros/navfn/srv/MakeNavPlan.lisp
+aa9dd638f3a545013dcbfff25c57c9d6 devel/share/common-lisp/ros/navfn/srv/SetCostmap.lisp
 07a8b7527a35c8cfa8f0808921a64a53 devel/share/common-lisp/ros/urg_node/msg/Status.lisp
 3fb522dc8eb6e1bfa8eb645395df66e2 modules/3rd/laser_geometry/CMakeFiles/_run_tests_laser_geometry_gtest_projection_test
 47030cdaa326d9e91b63bfde56249170 modules/3rd/laser_geometry/CMakeFiles/_run_tests_laser_geometry_nosetests_test.projection_test.py
@@ -136,6 +143,11 @@ f0a02ec9ae6e2ca94cc51467070aa204 modules/planner/base_local_planner/CMakeFiles/b
 53cf46c6dd8ccdf3d4cff6c97c2c9d62 modules/planner/base_local_planner/CMakeFiles/run_tests_base_local_planner_gtest_line_iterator
 b3ed0471d8d238c7da4cab45e38e7d15 modules/planner/dwa_local_planner/CMakeFiles/dwa_local_planner_gencfg
 44f6e3d48385e6657c0088dd0bc00a9a modules/planner/global_planner/CMakeFiles/global_planner_gencfg
+cd2e0f8fd64a754959fe62026b50f234 modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan
+cdc9c7860ab124037eb78421b447dfdf modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap
+c50fc8331a5e8ccd347e6bc17f6d8461 modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp
+c50fc8331a5e8ccd347e6bc17f6d8461 modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp
+c50fc8331a5e8ccd347e6bc17f6d8461 modules/planner/navfn/CMakeFiles/navfn_generate_messages_py
 ce19123c6611c9c114a797b62511a1a4 modules/recovery/clear_costmap_recovery/CMakeFiles/_run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch
 907b9f2e6a24c76785491a87707fc25e modules/recovery/clear_costmap_recovery/CMakeFiles/clean_test_results_clear_costmap_recovery
 ce19123c6611c9c114a797b62511a1a4 modules/recovery/clear_costmap_recovery/CMakeFiles/run_tests_clear_costmap_recovery_rostest_test_clear_tests.launch

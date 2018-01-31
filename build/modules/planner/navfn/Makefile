@@ -67,16 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -100,17 +90,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -121,6 +100,27 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -170,6 +170,51 @@ navfn_node/fast:
 .PHONY : navfn_node/fast
 
 # Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/rule
+
+# Convenience name for target.
+navfn_generate_messages: modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/rule
+
+.PHONY : navfn_generate_messages
+
+# fast build rule for target.
+navfn_generate_messages/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages.dir/build
+.PHONY : navfn_generate_messages/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/rule
+
+# Convenience name for target.
+_navfn_generate_messages_check_deps_SetCostmap: modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/rule
+
+.PHONY : _navfn_generate_messages_check_deps_SetCostmap
+
+# fast build rule for target.
+_navfn_generate_messages_check_deps_SetCostmap/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/build.make modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_SetCostmap.dir/build
+.PHONY : _navfn_generate_messages_check_deps_SetCostmap/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/rule
+
+# Convenience name for target.
+_navfn_generate_messages_check_deps_MakeNavPlan: modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/rule
+
+.PHONY : _navfn_generate_messages_check_deps_MakeNavPlan
+
+# fast build rule for target.
+_navfn_generate_messages_check_deps_MakeNavPlan/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/build.make modules/planner/navfn/CMakeFiles/_navfn_generate_messages_check_deps_MakeNavPlan.dir/build
+.PHONY : _navfn_generate_messages_check_deps_MakeNavPlan/fast
+
+# Convenience name for target.
 modules/planner/navfn/CMakeFiles/navfn.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn.dir/rule
 .PHONY : modules/planner/navfn/CMakeFiles/navfn.dir/rule
@@ -183,6 +228,96 @@ navfn: modules/planner/navfn/CMakeFiles/navfn.dir/rule
 navfn/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn.dir/build.make modules/planner/navfn/CMakeFiles/navfn.dir/build
 .PHONY : navfn/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+navfn_generate_messages_cpp: modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/rule
+
+.PHONY : navfn_generate_messages_cpp
+
+# fast build rule for target.
+navfn_generate_messages_cpp/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages_cpp.dir/build
+.PHONY : navfn_generate_messages_cpp/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/rule
+
+# Convenience name for target.
+navfn_gencpp: modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/rule
+
+.PHONY : navfn_gencpp
+
+# fast build rule for target.
+navfn_gencpp/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_gencpp.dir/build
+.PHONY : navfn_gencpp/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+navfn_generate_messages_lisp: modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/rule
+
+.PHONY : navfn_generate_messages_lisp
+
+# fast build rule for target.
+navfn_generate_messages_lisp/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages_lisp.dir/build
+.PHONY : navfn_generate_messages_lisp/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/rule
+
+# Convenience name for target.
+navfn_genlisp: modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/rule
+
+.PHONY : navfn_genlisp
+
+# fast build rule for target.
+navfn_genlisp/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/build.make modules/planner/navfn/CMakeFiles/navfn_genlisp.dir/build
+.PHONY : navfn_genlisp/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/rule
+
+# Convenience name for target.
+navfn_generate_messages_py: modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/rule
+
+.PHONY : navfn_generate_messages_py
+
+# fast build rule for target.
+navfn_generate_messages_py/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/build.make modules/planner/navfn/CMakeFiles/navfn_generate_messages_py.dir/build
+.PHONY : navfn_generate_messages_py/fast
+
+# Convenience name for target.
+modules/planner/navfn/CMakeFiles/navfn_genpy.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/planner/navfn/CMakeFiles/navfn_genpy.dir/rule
+.PHONY : modules/planner/navfn/CMakeFiles/navfn_genpy.dir/rule
+
+# Convenience name for target.
+navfn_genpy: modules/planner/navfn/CMakeFiles/navfn_genpy.dir/rule
+
+.PHONY : navfn_genpy
+
+# fast build rule for target.
+navfn_genpy/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/planner/navfn/CMakeFiles/navfn_genpy.dir/build.make modules/planner/navfn/CMakeFiles/navfn_genpy.dir/build
+.PHONY : navfn_genpy/fast
 
 src/navfn.o: src/navfn.cpp.o
 
@@ -272,13 +407,22 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... install/local"
-	@echo "... install/strip"
 	@echo "... navfn_node"
+	@echo "... navfn_generate_messages"
 	@echo "... edit_cache"
+	@echo "... _navfn_generate_messages_check_deps_SetCostmap"
+	@echo "... list_install_components"
+	@echo "... install/strip"
+	@echo "... _navfn_generate_messages_check_deps_MakeNavPlan"
 	@echo "... navfn"
+	@echo "... navfn_generate_messages_cpp"
+	@echo "... navfn_gencpp"
+	@echo "... navfn_generate_messages_lisp"
+	@echo "... navfn_genlisp"
+	@echo "... navfn_generate_messages_py"
+	@echo "... navfn_genpy"
 	@echo "... src/navfn.o"
 	@echo "... src/navfn.i"
 	@echo "... src/navfn.s"

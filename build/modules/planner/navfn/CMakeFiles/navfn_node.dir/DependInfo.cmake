@@ -16,9 +16,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "devel/include"
   "/usr/include/vtk-5.8"
   "../include"
-  "devel/include"
   "../modules/3rd/laser_geometry/include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"
