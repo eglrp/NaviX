@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: rotate_recovery
+Description: Description of rotate_recovery
+Version: 1.14.2
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lrotate_recovery
+Requires: roscpp pluginlib

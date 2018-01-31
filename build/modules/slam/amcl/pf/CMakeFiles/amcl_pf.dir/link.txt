@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../devel/lib/libamcl_pf.a  CMakeFiles/amcl_pf.dir/pf.c.o CMakeFiles/amcl_pf.dir/pf_kdtree.c.o CMakeFiles/amcl_pf.dir/pf_pdf.c.o CMakeFiles/amcl_pf.dir/pf_vector.c.o CMakeFiles/amcl_pf.dir/eig3.c.o CMakeFiles/amcl_pf.dir/pf_draw.c.o
+/usr/bin/ranlib ../../../../devel/lib/libamcl_pf.a

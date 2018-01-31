@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/urg_node/build/devel
+
+Name: urg_c
+Description: Description of urg_c
+Version: 1.0.404
+Cflags: -I/home/bailiqun/urg_node/urg_c/current/include
+Libs: -L/home/bailiqun/urg_node/build/devel/lib -lliburg_c
+Requires: 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../devel/lib/libamcl.a  CMakeFiles/amcl.dir/amcl.cpp.o
+/usr/bin/ranlib ../../../devel/lib/libamcl.a

@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: openslam
+Description: Description of openslam
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/bailiqun/NaviX/build/devel/lib 
+Requires: rosbag_storage

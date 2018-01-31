@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../devel/lib/libamcl_sensors.a  CMakeFiles/amcl_sensors.dir/amcl_sensor.cpp.o CMakeFiles/amcl_sensors.dir/amcl_odom.cpp.o CMakeFiles/amcl_sensors.dir/amcl_laser.cpp.o
+/usr/bin/ranlib ../../../../devel/lib/libamcl_sensors.a

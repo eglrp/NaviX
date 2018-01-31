@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: dwa_local_planner
+Description: Description of dwa_local_planner
+Version: 1.14.2
+Cflags: -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/planner/dwa_local_planner/include
+Libs: -L/home/bailiqun/NaviX/build/devel/lib -ldwa_local_planner
+Requires: dynamic_reconfigure nav_msgs pluginlib roscpp

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: amcl
+Description: Description of amcl
+Version: 0.0.1
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

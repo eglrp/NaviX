@@ -1,0 +1,13 @@
+include_directories(${Boost_INCLUDE_DIRS} ${catkin_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)
+
+add_subdirectory(public)
+add_subdirectory(log)
+add_subdirectory(driver)
+add_subdirectory(map)
+add_subdirectory(planner)
+add_subdirectory(recovery)
+add_subdirectory(slam)
+add_subdirectory(visualize)
+add_subdirectory(move_base)
+add_subdirectory(test)

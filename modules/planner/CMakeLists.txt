@@ -1,0 +1,5 @@
+add_subdirectory(base_local_planner)
+add_subdirectory(global_planner)
+add_subdirectory(navfn)
+#add_subdirectory(simple_local_planner)
+add_subdirectory(dwa_local_planner)

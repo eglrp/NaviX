@@ -1,0 +1,32 @@
+# Obstacle Cost Shaping (http://wiki.ros.org/costmap_2d/hydro/inflation)
+robot_radius: 0.20  # distance a circular robot should be clear of the obstacle (kobuki: 0.18)
+transform_tolerance: 0.5
+# footprint: [[x0, y0], [x1, y1], ... [xn, yn]]  # if the robot is not circular
+
+map_type: costmap
+
+obstacle_layer:
+  enabled: true
+  combination_method:  1
+  track_unknown_space: true    #true needed for disabling global path planning through unknown space
+  obstacle_range: 10
+  raytrace_range: 12
+  observation_sources: scan
+  scan:
+    sensor_frame: laser
+    data_type: LaserScan
+    topic: scan
+    marking: true
+    clearing: true
+    obstacle_range: 8.0
+    inf_is_valid: true
+  # for debugging only, let's you see the entire voxel grid
+
+#cost_scaling_factor and inflation_radius were now moved to the inflation_layer ns
+inflation_layer:
+  enabled:              true
+  cost_scaling_factor:  8.0  # exponential rate at which the obstacle cost drops off (default: 10)
+  inflation_radius:     0.27  # max. distance from an obstacle at which costs are incurred for planning paths.
+
+static_layer:
+  enabled:              true

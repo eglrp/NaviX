@@ -1,0 +1,4 @@
+<path_config>
+	<usart_port>/dev/ttyUSB0</usart_port>
+	<joy_port>/dev/input/js0</joy_port>
+</path_config>

@@ -1,0 +1,11 @@
+<launch>
+  <node pkg="tf" type="static_transform_publisher" name="base_frame_laser" args="0.63 0 0 0 0 0 /base_link /laser 50"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_footprint_link" args="0 0 0 0 0 0 /base_footprint /base_link  10"/>  
+  <node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo_node">
+    <param name="port" value="/dev/ttyACM0"/>
+  </node>
+
+  <include file="$(find my_navigation)/launch/includes/gmapping.launch.xml"/>
+  <include file="$(find my_navigation)/launch/includes/move_base.launch.xml"/>
+
+</launch>

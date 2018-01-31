@@ -1,0 +1,35 @@
+<lcm>
+	<name>lcm</name>
+	<ip>udpm://239.1.1.255:7667?ttl=1</ip>
+	<topic>
+		<tarmode>tarmode</tarmode>
+		<tarmap>tarmap</tarmap>
+		<tarpose>tarpose</tarpose>
+		<tarpath>tarpath</tarpath>
+		<tarmove>tarmove</tarmove>
+		<tarnumpath>tarnumpath</tarnumpath>
+		<tarmultipath>tarmultipath</tarmultipath>
+
+		<nowmode>nowmode</nowmode>
+		<nowmap>nowmap</nowmap>
+		<nowpose>nowpose</nowpose>
+		<nowpath>nowpath</nowpath>
+		<nowmove>nowmove</nowmove>
+		<nownumpath>nownumber</nownumpath>
+		<nowmultipath>nowstorage</nowmultipath>
+			
+		<laser>laser</laser>	
+		<joystick>joystick</joystick>	
+		<costmap>costmap</costmap>	
+		<imu>imu</imu>		
+		<odometry>odometry</odometry>	
+
+		<tick>tick</tick>		
+		<asccmd>asccmd</asccmd>	
+		<bincmd>bincmd</bincmd>	
+
+		<debug>debug</debug>
+		<state>state</state>	
+
+	</topic>
+</lcm>

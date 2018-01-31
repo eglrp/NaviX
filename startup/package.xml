@@ -1,0 +1,35 @@
+<package format="2">
+  <name>startup</name>
+  <version>1.11.0</version>
+  <license>BSD</license>
+
+  <description>
+    ROS driver for a generic Linux joystick.
+  </description>
+
+  <maintainer email="jbo@jhu.edu">Jonathan Bohren</maintainer>
+  <author>Morgan Quigley</author>
+  <author>Brian Gerkey</author>
+  <author>Kevin Watts</author>
+  <author>Blaise Gassend</author>
+
+  <url type="website">http://www.ros.org/wiki/joy</url>
+  <url type="development">https://github.com/ros-drivers/joystick_drivers</url>
+  <url type="bugtracker">https://github.com/ros-drivers/joystick_drivers/issues</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>diagnostic_updater</depend>
+  <depend>sensor_msgs</depend>
+  <depend>tf</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rosbag_storage</depend>
+  <depend>move_base_msgs</depend>
+  <depend>nav_msgs</depend>
+
+
+  <export>
+    <rosbag migration_rule_file="migration_rules/Joy.bmr"/>
+  </export>
+</package>

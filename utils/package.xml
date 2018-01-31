@@ -1,0 +1,23 @@
+<package>
+  <name>navix</name>
+  <version>0.0.1</version>
+  <description>navi pack for company</description>
+  <maintainer email="xxx@xxx.xxx">OSRF</maintainer>
+  <license>BSD</license>
+  <url type="website">http://www.wellcasa.cn</url>
+  <url type="repository">http://www.wellcasa.cns</url>
+  <url type="bugtracker">http://www.wellcasa.cn</url>
+  <author>wellcasa</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>tf</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <run_depend>tf</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <export>
+  </export>
+</package>

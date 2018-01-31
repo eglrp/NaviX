@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: nav_core
+Description: Description of nav_core
+Version: 1.14.2
+Cflags: -I/home/bailiqun/NaviX/modules/move_base/nav_core/include
+Libs: -L/home/bailiqun/NaviX/build/devel/lib 
+Requires: std_msgs geometry_msgs tf costmap_2d

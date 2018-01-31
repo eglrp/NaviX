@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: move_base
+Description: Description of move_base
+Version: 1.14.2
+Cflags: -I/home/bailiqun/NaviX/build/devel/include
+Libs: -L/home/bailiqun/NaviX/build/devel/lib 
+Requires: dynamic_reconfigure geometry_msgs move_base_msgs nav_msgs roscpp

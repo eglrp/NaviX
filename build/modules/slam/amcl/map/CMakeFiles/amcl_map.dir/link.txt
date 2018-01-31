@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../devel/lib/libamcl_map.a  CMakeFiles/amcl_map.dir/map.c.o CMakeFiles/amcl_map.dir/map_cspace.cpp.o CMakeFiles/amcl_map.dir/map_range.c.o CMakeFiles/amcl_map.dir/map_store.c.o CMakeFiles/amcl_map.dir/map_draw.c.o
+/usr/bin/ranlib ../../../../devel/lib/libamcl_map.a

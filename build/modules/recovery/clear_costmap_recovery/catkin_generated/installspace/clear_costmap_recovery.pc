@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: clear_costmap_recovery
+Description: Description of clear_costmap_recovery
+Version: 1.14.2
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lclear_costmap_recovery
+Requires: pluginlib roscpp tf

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/joy/joy.h
+unistd.h
+-
+math.h
+-
+linux/joystick.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+dirent.h
+-
+diagnostic_updater/diagnostic_updater.h
+-
+ros/ros.h
+../include/joy/ros/ros.h
+sensor_msgs/Joy.h
+-
+
+/home/bailiqun/NaviX/modules/driver/joystick/src/joy.cpp
+joy/joy.h
+/home/bailiqun/NaviX/modules/driver/joystick/src/joy/joy.h
+

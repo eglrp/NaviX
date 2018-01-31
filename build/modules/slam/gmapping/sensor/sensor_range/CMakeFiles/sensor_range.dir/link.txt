@@ -1,0 +1,1 @@
+/usr/bin/g++  -fPIC    -shared -Wl,-soname,libsensor_range.so -o libsensor_range.so CMakeFiles/sensor_range.dir/rangereading.cpp.o CMakeFiles/sensor_range.dir/rangesensor.cpp.o ../sensor_base/libsensor_base.so -Wl,-rpath,/home/bailiqun/NaviX/build/modules/slam/gmapping/sensor/sensor_base 

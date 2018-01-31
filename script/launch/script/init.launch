@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="move_control" type="move_control" name="move_control"></node>
+  <node pkg="msg_upload" type="msg_upload" name="msg_upload"></node>
+</launch>
+

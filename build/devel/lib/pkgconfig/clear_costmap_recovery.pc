@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: clear_costmap_recovery
+Description: Description of clear_costmap_recovery
+Version: 1.14.2
+Cflags: -I/home/bailiqun/NaviX/modules/recovery/clear_costmap_recovery/include
+Libs: -L/home/bailiqun/NaviX/build/devel/lib -lclear_costmap_recovery
+Requires: pluginlib roscpp tf

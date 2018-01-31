@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: startup
+Description: Description of startup
+Version: 1.11.0
+Cflags: 
+Libs: -L/home/bailiqun/NaviX/build/devel/lib 
+Requires: rosbag_storage geometry_msgs move_base_msgs nav_msgs roscpp

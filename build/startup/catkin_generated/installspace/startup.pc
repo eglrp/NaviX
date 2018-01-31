@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: startup
+Description: Description of startup
+Version: 1.11.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: rosbag_storage geometry_msgs move_base_msgs nav_msgs roscpp

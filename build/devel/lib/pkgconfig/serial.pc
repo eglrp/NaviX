@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/NaviX/build/devel
+
+Name: serial
+Description: Description of serial
+Version: 1.11.0
+Cflags: -I/home/bailiqun/NaviX/modules/driver/serial/../../../include/serial/
+Libs: -L/home/bailiqun/NaviX/build/devel/lib -lserial
+Requires: roscpp sensor_msgs nav_msgs geometry_msgs tf

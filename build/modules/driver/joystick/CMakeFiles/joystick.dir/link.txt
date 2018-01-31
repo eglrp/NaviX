@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../devel/lib/libjoystick.a  CMakeFiles/joystick.dir/src/joy.cpp.o
+/usr/bin/ranlib ../../../devel/lib/libjoystick.a

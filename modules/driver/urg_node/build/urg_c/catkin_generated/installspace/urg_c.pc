@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: urg_c
+Description: Description of urg_c
+Version: 1.0.404
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lliburg_c
+Requires: 

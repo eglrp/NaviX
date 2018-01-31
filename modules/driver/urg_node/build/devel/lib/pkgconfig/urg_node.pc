@@ -1,0 +1,8 @@
+prefix=/home/bailiqun/urg_node/build/devel
+
+Name: urg_node
+Description: Description of urg_node
+Version: 0.1.11
+Cflags: -I/home/bailiqun/urg_node/build/devel/include -I/home/bailiqun/urg_node/include
+Libs: -L/home/bailiqun/urg_node/build/devel/lib -lurg_c_wrapper -lurg_node_driver
+Requires: dynamic_reconfigure laser_proc message_runtime roscpp sensor_msgs std_msgs std_srvs
