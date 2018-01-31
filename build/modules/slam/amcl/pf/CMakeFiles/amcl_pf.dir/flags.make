@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_FLAGS =  
 
-C_DEFINES = 
+C_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"amcl\"
 
-C_INCLUDES = -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/include 
+C_INCLUDES = -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/slam/include -I/home/bailiqun/NaviX/include -I/opt/ros/indigo/include 
 

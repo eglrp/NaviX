@@ -3,6 +3,9 @@
 
 startup/CMakeFiles/navix.dir/src/startup.cpp.o
  ../include/joy/joy.h
+ ../include/laser_proc/LaserProc.h
+ ../include/laser_proc/LaserPublisher.h
+ ../include/laser_proc/LaserTransport.h
  ../include/serial/hardwareSerial.h
  ../include/serial/msgs/OdometryMsg.hpp
  ../include/serial/msgs/VelocityMsg3.hpp
@@ -14,19 +17,16 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o
  ../include/serial/serial/publisher.h
  ../include/serial/serial/subscriber.h
  ../include/thread_assist/thread_assist.hpp
- ../modules/3rd/laser_proc/include/laser_proc/LaserProc.h
- ../modules/3rd/laser_proc/include/laser_proc/LaserPublisher.h
- ../modules/3rd/laser_proc/include/laser_proc/LaserTransport.h
- ../modules/driver/urg_node/include/urg_c/urg_connection.h
- ../modules/driver/urg_node/include/urg_c/urg_detect_os.h
- ../modules/driver/urg_node/include/urg_c/urg_ring_buffer.h
- ../modules/driver/urg_node/include/urg_c/urg_sensor.h
- ../modules/driver/urg_node/include/urg_c/urg_serial.h
- ../modules/driver/urg_node/include/urg_c/urg_tcpclient.h
- ../modules/driver/urg_node/include/urg_c/urg_time.h
- ../modules/driver/urg_node/include/urg_c/urg_utils.h
- ../modules/driver/urg_node/include/urg_node/urg_c_wrapper.h
- ../modules/driver/urg_node/include/urg_node/urg_node_driver.h
+ ../include/urg_c/urg_connection.h
+ ../include/urg_c/urg_detect_os.h
+ ../include/urg_c/urg_ring_buffer.h
+ ../include/urg_c/urg_sensor.h
+ ../include/urg_c/urg_serial.h
+ ../include/urg_c/urg_tcpclient.h
+ ../include/urg_c/urg_time.h
+ ../include/urg_c/urg_utils.h
+ ../include/urg_node/urg_c_wrapper.h
+ ../include/urg_node/urg_node_driver.h
  ../modules/slam/include/gmapping/grid/accessstate.h
  ../modules/slam/include/gmapping/grid/array2d.h
  ../modules/slam/include/gmapping/grid/harray2d.h

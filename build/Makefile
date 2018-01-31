@@ -2950,6 +2950,19 @@ amcl/fast:
 .PHONY : amcl/fast
 
 #=============================================================================
+# Target rules for targets named amcl_gencfg
+
+# Build rule for target.
+amcl_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 amcl_gencfg
+.PHONY : amcl_gencfg
+
+# fast build rule for target.
+amcl_gencfg/fast:
+	$(MAKE) -f modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/build.make modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/build
+.PHONY : amcl_gencfg/fast
+
+#=============================================================================
 # Target rules for targets named amcl_map
 
 # Build rule for target.
@@ -3332,6 +3345,7 @@ help:
 	@echo "... move_base"
 	@echo "... move_base_gencfg"
 	@echo "... amcl"
+	@echo "... amcl_gencfg"
 	@echo "... amcl_map"
 	@echo "... amcl_pf"
 	@echo "... amcl_sensors"

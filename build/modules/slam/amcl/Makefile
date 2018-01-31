@@ -169,6 +169,21 @@ amcl/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/slam/amcl/CMakeFiles/amcl.dir/build.make modules/slam/amcl/CMakeFiles/amcl.dir/build
 .PHONY : amcl/fast
 
+# Convenience name for target.
+modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/rule
+.PHONY : modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/rule
+
+# Convenience name for target.
+amcl_gencfg: modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/rule
+
+.PHONY : amcl_gencfg
+
+# fast build rule for target.
+amcl_gencfg/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/build.make modules/slam/amcl/CMakeFiles/amcl_gencfg.dir/build
+.PHONY : amcl_gencfg/fast
+
 amcl.o: amcl.cpp.o
 
 .PHONY : amcl.o
@@ -209,6 +224,7 @@ help:
 	@echo "... install/strip"
 	@echo "... edit_cache"
 	@echo "... amcl"
+	@echo "... amcl_gencfg"
 	@echo "... amcl.o"
 	@echo "... amcl.i"
 	@echo "... amcl.s"

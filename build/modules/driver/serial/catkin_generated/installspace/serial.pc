@@ -3,6 +3,6 @@ prefix=/usr/local
 Name: serial
 Description: Description of serial
 Version: 1.11.0
-Cflags: 
+Cflags: -I/home/bailiqun/NaviX/include
 Libs: -L/usr/local/lib -lserial
 Requires: roscpp sensor_msgs nav_msgs geometry_msgs tf

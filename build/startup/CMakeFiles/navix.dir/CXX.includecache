@@ -26,6 +26,52 @@ ros/ros.h
 sensor_msgs/Joy.h
 -
 
+../include/laser_proc/LaserProc.h
+sensor_msgs/LaserScan.h
+-
+sensor_msgs/MultiEchoLaserScan.h
+-
+sensor_msgs/LaserEcho.h
+-
+vector
+-
+algorithm
+-
+limits.h
+-
+stdexcept
+-
+sstream
+-
+
+../include/laser_proc/LaserPublisher.h
+ros/ros.h
+-
+sensor_msgs/LaserScan.h
+-
+sensor_msgs/MultiEchoLaserScan.h
+-
+sensor_msgs/LaserEcho.h
+-
+laser_proc/LaserProc.h
+-
+vector
+-
+algorithm
+-
+limits.h
+-
+stdexcept
+-
+sstream
+-
+
+../include/laser_proc/LaserTransport.h
+ros/ros.h
+-
+laser_proc/LaserPublisher.h
+-
+
 ../include/serial/hardwareSerial.h
 ros/ros.h
 -
@@ -152,71 +198,25 @@ boost/thread.hpp
 boost/shared_ptr.hpp
 -
 
-../modules/3rd/laser_proc/include/laser_proc/LaserProc.h
-sensor_msgs/LaserScan.h
--
-sensor_msgs/MultiEchoLaserScan.h
--
-sensor_msgs/LaserEcho.h
--
-vector
--
-algorithm
--
-limits.h
--
-stdexcept
--
-sstream
--
-
-../modules/3rd/laser_proc/include/laser_proc/LaserPublisher.h
-ros/ros.h
--
-sensor_msgs/LaserScan.h
--
-sensor_msgs/MultiEchoLaserScan.h
--
-sensor_msgs/LaserEcho.h
--
-laser_proc/LaserProc.h
--
-vector
--
-algorithm
--
-limits.h
--
-stdexcept
--
-sstream
--
-
-../modules/3rd/laser_proc/include/laser_proc/LaserTransport.h
-ros/ros.h
--
-laser_proc/LaserPublisher.h
--
-
-../modules/driver/urg_node/include/urg_c/urg_connection.h
+../include/urg_c/urg_connection.h
 urg_c/urg_serial.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_serial.h
+../include/urg_c/urg_c/urg_serial.h
 urg_c/urg_tcpclient.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_tcpclient.h
+../include/urg_c/urg_c/urg_tcpclient.h
 
-../modules/driver/urg_node/include/urg_c/urg_detect_os.h
+../include/urg_c/urg_detect_os.h
 
-../modules/driver/urg_node/include/urg_c/urg_ring_buffer.h
+../include/urg_c/urg_ring_buffer.h
 
-../modules/driver/urg_node/include/urg_c/urg_sensor.h
+../include/urg_c/urg_sensor.h
 urg_c/urg_connection.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_connection.h
+../include/urg_c/urg_c/urg_connection.h
 urg_c/urg_time.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_time.h
+../include/urg_c/urg_c/urg_time.h
 
-../modules/driver/urg_node/include/urg_c/urg_serial.h
+../include/urg_c/urg_serial.h
 urg_c/urg_detect_os.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_detect_os.h
+../include/urg_c/urg_c/urg_detect_os.h
 windows.h
 -
 termios.h
@@ -226,13 +226,13 @@ termios.h
 sys/select.h
 -
 urg_ring_buffer.h
-../modules/driver/urg_node/include/urg_c/urg_ring_buffer.h
+../include/urg_c/urg_ring_buffer.h
 
-../modules/driver/urg_node/include/urg_c/urg_tcpclient.h
+../include/urg_c/urg_tcpclient.h
 urg_c/urg_ring_buffer.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_ring_buffer.h
+../include/urg_c/urg_c/urg_ring_buffer.h
 urg_c/urg_detect_os.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_detect_os.h
+../include/urg_c/urg_c/urg_detect_os.h
 sys/types.h
 -
 windows.h
@@ -244,7 +244,7 @@ netinet/in.h
 arpa/inet.h
 -
 
-../modules/driver/urg_node/include/urg_c/urg_time.h
+../include/urg_c/urg_time.h
 time.h
 -
 sys/time.h
@@ -254,11 +254,11 @@ sys/timeb.h
 sys/time.h
 -
 
-../modules/driver/urg_node/include/urg_c/urg_utils.h
+../include/urg_c/urg_utils.h
 urg_c/urg_sensor.h
-../modules/driver/urg_node/include/urg_c/urg_c/urg_sensor.h
+../include/urg_c/urg_c/urg_sensor.h
 
-../modules/driver/urg_node/include/urg_node/urg_c_wrapper.h
+../include/urg_node/urg_c_wrapper.h
 stdexcept
 -
 sstream
@@ -276,7 +276,7 @@ urg_c/urg_sensor.h
 urg_c/urg_utils.h
 -
 
-../modules/driver/urg_node/include/urg_node/urg_node_driver.h
+../include/urg_node/urg_node_driver.h
 string
 -
 ros/ros.h
@@ -294,7 +294,7 @@ urg_node/URGConfig.h
 std_srvs/Trigger.h
 -
 urg_node/urg_c_wrapper.h
-../modules/driver/urg_node/include/urg_node/urg_node/urg_c_wrapper.h
+../include/urg_node/urg_node/urg_c_wrapper.h
 
 ../modules/slam/include/gmapping/grid/accessstate.h
 

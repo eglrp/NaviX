@@ -3,6 +3,6 @@ prefix=/usr/local
 Name: urg_node
 Description: Description of urg_node
 Version: 0.1.11
-Cflags: -I/usr/local/include
+Cflags: -I/usr/local/include -I/home/bailiqun/NaviX/include
 Libs: -L/usr/local/lib -lurg_c_wrapper -lurg_node_driver
 Requires: dynamic_reconfigure laser_proc message_runtime roscpp sensor_msgs std_msgs std_srvs

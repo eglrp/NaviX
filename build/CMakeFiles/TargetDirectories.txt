@@ -459,6 +459,7 @@
 /home/bailiqun/NaviX/build/modules/slam/amcl/CMakeFiles/install/strip.dir
 /home/bailiqun/NaviX/build/modules/slam/amcl/CMakeFiles/edit_cache.dir
 /home/bailiqun/NaviX/build/modules/slam/amcl/CMakeFiles/amcl.dir
+/home/bailiqun/NaviX/build/modules/slam/amcl/CMakeFiles/amcl_gencfg.dir
 /home/bailiqun/NaviX/build/modules/slam/amcl/map/CMakeFiles/edit_cache.dir
 /home/bailiqun/NaviX/build/modules/slam/amcl/map/CMakeFiles/rebuild_cache.dir
 /home/bailiqun/NaviX/build/modules/slam/amcl/map/CMakeFiles/list_install_components.dir

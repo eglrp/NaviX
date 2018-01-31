@@ -11,7 +11,7 @@ include_directories(
 )
 
 catkin_package(
-  INCLUDE_DIRS ${SERIAL_INCLUDE}
+  INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
   LIBRARIES serial
   CATKIN_DEPENDS roscpp sensor_msgs nav_msgs geometry_msgs tf
   DEPENDS

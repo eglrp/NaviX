@@ -22,7 +22,7 @@ generate_messages(
 )
 
 catkin_package(
-  INCLUDE_DIRS include
+  INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
   LIBRARIES urg_c_wrapper urg_node_driver
   CATKIN_DEPENDS dynamic_reconfigure laser_proc message_runtime roscpp sensor_msgs std_msgs std_srvs
   DEPENDS

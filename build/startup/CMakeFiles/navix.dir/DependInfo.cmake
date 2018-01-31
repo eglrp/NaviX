@@ -18,10 +18,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
   "../modules/slam/include"
-  "../modules/driver/urg_node/include"
+  "../include"
   "../modules/3rd/laser_proc/include"
   "/opt/ros/indigo/include"
-  "../include"
   )
 
 # Targets to which this target links.
