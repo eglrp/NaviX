@@ -9,6 +9,7 @@
 #include <geometry_msgs/Twist.h>
 #include <sensor_msgs/Joy.h>
 
+#include "joy/joy.h"
 #include "serial/node_handle.h"
 #include "hardwareSerial.h"
 
@@ -32,29 +33,6 @@ private:
     bool is_romote_;
     double rate_;
     double gx_, gy_, gth_;
-
-    enum JOY_BUTTON
-    {
-        A = 0,
-        B = 1,
-        X = 3,
-        Y = 4,
-        LEFT_BUTTON = 6,
-        RIGHT_BUTTON = 7,
-        BACK = 10,
-        START = 11,
-    };
-    enum JOY_AXES
-    {
-        LEFT_STICK_LR = 0,
-        LEFT_STICK_UD = 1,
-        RIGHT_STICK_LR = 2,
-        RIGHT_STICK_UD = 3,
-        LEFT_TRIGGER = 5,  /* start with 1.0 */
-        RIGHT_TRIGGER = 4, /* start with 1.0 */
-        DIRECTIONAL_PAD_LR = 6, /* only +1 and -1 */
-        DIRECTIONAL_PAD_UP = 7,    /* only +1 and -1 */
-    };
 
 public:
     SerialHelper(ros::NodeHandle& n):rate_(50),is_romote_(false), node(n)

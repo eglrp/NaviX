@@ -24,7 +24,7 @@ void SerialHelper::joy_callback(const sensor_msgs::Joy::ConstPtr& msg)
     romote_vel_msg.vx = msg->axes[1] * alpha;
     romote_vel_msg.vy = msg->axes[0] * alpha;
     romote_vel_msg.wth = msg->axes[3] * alpha * 2;
-    if(msg->buttons[Y] == 1)
+    if(msg->buttons[JOY::Y] == 1)
         is_romote_ = true;
     else
         is_romote_ = false;

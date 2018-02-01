@@ -117,6 +117,8 @@ geometry_msgs/Twist.h
 -
 sensor_msgs/Joy.h
 -
+joy/joy.h
+../include/serial/joy/joy.h
 serial/node_handle.h
 ../include/serial/serial/node_handle.h
 hardwareSerial.h
@@ -561,6 +563,8 @@ thread_group.hpp
 /home/bailiqun/NaviX/startup/src/thread_group.hpp
 initializer_list
 -
+boost/shared_ptr.hpp
+-
 ros/ros.h
 -
 tf/tf.h
@@ -568,8 +572,6 @@ tf/tf.h
 tf/transform_broadcaster.h
 -
 sensor_msgs/Joy.h
--
-boost/shared_ptr.hpp
 -
 joy/joy.h
 /home/bailiqun/NaviX/startup/src/joy/joy.h

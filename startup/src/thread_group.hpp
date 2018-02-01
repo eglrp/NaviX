@@ -1,13 +1,13 @@
-#ifndef __THREAD_GROUP__
-#define __THREAD_GROUP__
+#ifndef __MODULE_GROUP__
+#define __MODULE_GROUP__
 
 #include <initializer_list>
+#include <boost/shared_ptr.hpp>
 
 #include <ros/ros.h>
 #include <tf/tf.h>
 #include <tf/transform_broadcaster.h>
 #include <sensor_msgs/Joy.h>
-#include <boost/shared_ptr.hpp>
 
 #include "joy/joy.h"
 #include "gmapping/openslam/slam_gmapping.h"
@@ -17,7 +17,7 @@
 
 #include "thread_assist/thread_assist.hpp"
 
-class TaskGroup
+class ModuleGroup
 {
 private:
     boost::shared_ptr<ThreadAssist> thread_assist;
@@ -25,7 +25,7 @@ private:
     typedef struct
     {
         uint32_t id;
-        int (TaskGroup::*ptr)(void);
+        int (ModuleGroup::*ptr)(void);
         const char* info;
     }Groups;
     vector<Groups> groups_;
@@ -42,16 +42,16 @@ public:
         GMAPPING
     };
 
-    TaskGroup()
+    ModuleGroup()
     {
         thread_assist.reset(new ThreadAssist());
-        groups_.push_back({(int)SECOND,    &TaskGroup::second_thread,        "SECOND"});
-        groups_.push_back({(int)TRANSFORM, &TaskGroup::ros_transform_thread, "TRANSFORM"});
-        groups_.push_back({(int)JOYSTICK,  &TaskGroup::driver_joy_thread,    "JOYSTICK"});
-        groups_.push_back({(int)SERIAL,    &TaskGroup::driver_serial_thread, "SERIAL"});
-        groups_.push_back({(int)MAPSAVER,  &TaskGroup::map_saver_thread,     "MAPSAVER"});
-        groups_.push_back({(int)HOKUYO,    &TaskGroup::driver_laser_thread,  "HOKUYO"});
-        groups_.push_back({(int)GMAPPING,  &TaskGroup::slam_gmapping,        "GMAPPING"});
+        groups_.push_back({(int)SECOND,    &ModuleGroup::second_thread,        "SECOND"});
+        groups_.push_back({(int)TRANSFORM, &ModuleGroup::ros_transform_thread, "TRANSFORM"});
+        groups_.push_back({(int)JOYSTICK,  &ModuleGroup::driver_joy_thread,    "JOYSTICK"});
+        groups_.push_back({(int)SERIAL,    &ModuleGroup::driver_serial_thread, "SERIAL"});
+        groups_.push_back({(int)MAPSAVER,  &ModuleGroup::map_saver_thread,     "MAPSAVER"});
+        groups_.push_back({(int)HOKUYO,    &ModuleGroup::driver_laser_thread,  "HOKUYO"});
+        groups_.push_back({(int)GMAPPING,  &ModuleGroup::slam_gmapping,        "GMAPPING"});
     }
 
     void run(initializer_list<MODULES> param)
@@ -146,7 +146,7 @@ private:
         while(ros::ok())
         {
             INTERRUPT_LOOP();
-            sleep(1);
+            ros::spin();
         }
         thread_assist->setStatus(boost::lexical_cast<std::string>(boost::this_thread::get_id()), ThreadAssist::Stop);
         return 0;
