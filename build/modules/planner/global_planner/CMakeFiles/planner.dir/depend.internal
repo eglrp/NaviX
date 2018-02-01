@@ -60,9 +60,6 @@ modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o
  /opt/ros/indigo/include/nav_msgs/MapMetaData.h
  /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
  /opt/ros/indigo/include/nav_msgs/Path.h
- /opt/ros/indigo/include/navfn/MakeNavPlan.h
- /opt/ros/indigo/include/navfn/MakeNavPlanRequest.h
- /opt/ros/indigo/include/navfn/MakeNavPlanResponse.h
  /opt/ros/indigo/include/pluginlib/class_desc.h
  /opt/ros/indigo/include/pluginlib/class_loader.h
  /opt/ros/indigo/include/pluginlib/class_loader_base.h
@@ -163,3 +160,6 @@ modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o
  devel/include/costmap_2d/Costmap2DConfig.h
  devel/include/global_planner/GlobalPlannerConfig.h
  devel/include/map_msgs/OccupancyGridUpdate.h
+ devel/include/navfn/MakeNavPlan.h
+ devel/include/navfn/MakeNavPlanRequest.h
+ devel/include/navfn/MakeNavPlanResponse.h

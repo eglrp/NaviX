@@ -59,9 +59,6 @@ modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/nav_msgs/Path.h
-modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/navfn/MakeNavPlan.h
-modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/navfn/MakeNavPlanRequest.h
-modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/navfn/MakeNavPlanResponse.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/pluginlib/class_desc.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/pluginlib/class_loader.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/ros/indigo/include/pluginlib/class_loader_base.h
@@ -162,4 +159,7 @@ modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: /opt/
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: devel/include/costmap_2d/Costmap2DConfig.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: devel/include/global_planner/GlobalPlannerConfig.h
 modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: devel/include/map_msgs/OccupancyGridUpdate.h
+modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: devel/include/navfn/MakeNavPlan.h
+modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: devel/include/navfn/MakeNavPlanRequest.h
+modules/planner/global_planner/CMakeFiles/planner.dir/src/plan_node.cpp.o: devel/include/navfn/MakeNavPlanResponse.h
 

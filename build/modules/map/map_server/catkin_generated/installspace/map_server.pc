@@ -3,6 +3,6 @@ prefix=/usr/local
 Name: map_server
 Description: Description of map_server
 Version: 1.14.2
-Cflags: -I/usr/local/include
-Libs: -L/usr/local/lib -lmap_server_image_loader
+Cflags: -I/home/bailiqun/NaviX/include/
+Libs: -L/usr/local/lib -lmap_saver
 Requires: roscpp nav_msgs tf2

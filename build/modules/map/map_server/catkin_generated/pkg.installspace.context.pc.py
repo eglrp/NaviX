@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/usr/local/include".split(';') if "/usr/local/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/bailiqun/NaviX/include/".split(';') if "/home/bailiqun/NaviX/include/" != "" else []
 PROJECT_CATKIN_DEPENDS = "roscpp;nav_msgs;tf2".replace(';', ' ')
-PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmap_server_image_loader".split(';') if "-lmap_server_image_loader" != "" else []
+PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lmap_saver".split(';') if "-lmap_saver" != "" else []
 PROJECT_NAME = "map_server"
 PROJECT_SPACE_DIR = "/usr/local"
 PROJECT_VERSION = "1.14.2"

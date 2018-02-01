@@ -5,6 +5,7 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/joy/joy.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/laser_proc/LaserProc.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/laser_proc/LaserPublisher.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/laser_proc/LaserTransport.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/map_server/map_saver.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/serial/hardwareSerial.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/serial/msgs/OdometryMsg.hpp
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../include/serial/msgs/VelocityMsg3.hpp
@@ -52,6 +53,7 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/slam/include/gmapping
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/slam/include/gmapping/utils/point.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../modules/slam/include/gmapping/utils/stat.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../startup/src/startup.cpp
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: ../startup/src/thread_group.hpp
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/XmlRpc.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/XmlRpcClient.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/XmlRpcDecl.h
@@ -189,12 +191,7 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/Frame
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/FrameGraphRequest.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/FrameGraphResponse.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/Matrix3x3.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/MinMax.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/QuadWord.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/Quaternion.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/Scalar.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/Transform.h
-startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/LinearMath/Vector3.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/exceptions.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/message_filter.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/tf.h
@@ -203,7 +200,11 @@ startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/time_
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/transform_broadcaster.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/transform_datatypes.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf/transform_listener.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/LinearMath/Matrix3x3.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/LinearMath/MinMax.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/LinearMath/QuadWord.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/LinearMath/Quaternion.h
+startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/LinearMath/Scalar.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/LinearMath/Vector3.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/buffer_core.h
 startup/CMakeFiles/navix.dir/src/startup.cpp.o: /opt/ros/indigo/include/tf2/convert.h

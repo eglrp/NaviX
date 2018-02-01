@@ -57,9 +57,6 @@ modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/i
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/nav_msgs/MapMetaData.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/nav_msgs/OccupancyGrid.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/nav_msgs/Path.h
-modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/navfn/MakeNavPlan.h
-modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/navfn/MakeNavPlanRequest.h
-modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/navfn/MakeNavPlanResponse.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/pcl_conversions/pcl_conversions.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/pcl_msgs/ModelCoefficients.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /opt/ros/indigo/include/pcl_msgs/PointIndices.h
@@ -402,4 +399,7 @@ modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /usr/inclu
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: /usr/include/pcl-1.7/pcl/register_point_struct.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: devel/include/costmap_2d/Costmap2DConfig.h
 modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: devel/include/map_msgs/OccupancyGridUpdate.h
+modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: devel/include/navfn/MakeNavPlan.h
+modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: devel/include/navfn/MakeNavPlanRequest.h
+modules/planner/navfn/CMakeFiles/navfn_node.dir/src/navfn_node.cpp.o: devel/include/navfn/MakeNavPlanResponse.h
 

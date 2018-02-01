@@ -71,7 +71,8 @@ class MapServer
       ros::NodeHandle private_nh("~");
       private_nh.param("frame_id", frame_id, std::string("map"));
       deprecated = (res != 0);
-      if (!deprecated) {
+      if (!deprecated)
+      {
         //mapfname = fname + ".pgm";
         //std::ifstream fin((fname + ".yaml").c_str());
         std::ifstream fin(fname.c_str());

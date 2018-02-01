@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../devel/lib/libmap_saver.a  CMakeFiles/map_saver.dir/src/map_saver.cpp.o
+/usr/bin/ranlib ../../../devel/lib/libmap_saver.a

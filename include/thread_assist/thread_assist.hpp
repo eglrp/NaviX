@@ -14,17 +14,6 @@
 using namespace boost;
 using namespace std;
 
-//     Thread Example
-//    int mThread(void)
-//    {
-//        while(xxxx)
-//        {
-//            INTERRUPT_LOOP();
-//            xxxxx();
-//            xxxxx;
-//        }
-//    }
-
 class ThreadContainer
 {
 private:
@@ -34,32 +23,23 @@ private:
 public:
     enum Status
     {
-        New,
         Run,
         Stop
     }status;
 
     ThreadContainer():
-        status(New),
+        status(Stop),
         id(""),
         info("")
     {}
 
     int regist(int (*task)(void), const char* description)
     {
-        if (!task || pthread)
-        {
-           return 1;
-        }
+        if (!task) return 1;
+
         info = description;
-        pthread = boost::shared_ptr<boost::thread>(new boost::thread(task));
+        pthread.reset(new boost::thread(task));
         status = Run;
-        if (!pthread)
-        {
-            status = New;
-            cerr << info << " thread create fail"<<endl;
-            return 1;
-        }
         id = boost::lexical_cast<std::string>(pthread->get_id());
         return 0;
     }
@@ -67,22 +47,16 @@ public:
     template<typename ObjT>
     int regist(int (ObjT::*task)(void), ObjT& obj, const char* description)
     {
-        if (!task || pthread) return 1;
+        if (!task) return 1;
 
         info = description;
-        pthread = boost::shared_ptr<boost::thread>(new boost::thread(boost::bind(task, obj)));
+        pthread.reset(new boost::thread(boost::bind(task, obj)));
         status = Run;
-        if (!pthread)
-        {
-            status = New;
-            cerr << info << " thread create fail"<<endl;
-            return 1;
-        }
         id = boost::lexical_cast<std::string>(pthread->get_id());
         return 0;
     }
 
-    bool join_able()
+    bool joinable()
     {
         if (!pthread)
         {
@@ -95,7 +69,7 @@ public:
     {
         // boost::this_thread::interruption_point();
         // every while(true) need add below line.
-        if (join_able())
+        if (joinable())
         {
             clock_t start, end;
             start = time(NULL);
@@ -107,6 +81,7 @@ public:
             {
                 // if 5 seconds pass, thread still can't close
                 pthread->interrupt();
+                pthread->join();
                 printf("[%s] can't closed normally.\r\n",info.c_str());
                 status = Stop;
             }
@@ -115,20 +90,20 @@ public:
                 status = Stop;
                 printf("[%s] has been closed normally, use %3.1f second\r\n",info.c_str(), duration);
             }
+            fflush(stdout);
         }
     }
 
-    inline string id_get(){return id;}
-    inline string info_get(){return info;}
-    inline void status_set(Status st){status = st;}
-    string status_get()
+    inline string getID(){return id;}
+    inline string getInfo(){return info;}
+    inline void setStatus(int st){status =(Status)st;}
+    inline string getStatus()
     {
         std::string str;
         switch(status)
         {
-        case New: str = "New"; break;
-        case Run: str = "Run"; break;
-        case Stop:str = "Stop"; break;
+        case Run:  str = "Run"; break;
+        case Stop: str = "Stop"; break;
         default: str = "Err";
         }
         return str;
@@ -138,6 +113,12 @@ public:
 class ThreadAssist
 {
 public:
+    enum Status
+    {
+        Run,
+        Stop
+    }status;
+
     ThreadAssist()
     {}
 
@@ -166,21 +147,16 @@ public:
         return 0;
     }
 
-    void fresh_tables(void)
+    int setStatus(string id, Status status)
     {
-        for(int i=0; i<thread_tables.size(); i++)
+        for(int i=0; i < thread_tables.size(); i++)
         {
-            // thread started
-            if (thread_tables[i]->join_able())
+            if (thread_tables[i]->getID() == id)
             {
-                thread_tables[i]->status_set(ThreadContainer::Run);
-            }
-            // thread has benn stopped
-            else
-            {
-                thread_tables[i]->status_set(ThreadContainer::Stop);
+                thread_tables[i]->setStatus(status);
             }
         }
+        return 0;
     }
 
     void show_tables()
@@ -190,9 +166,9 @@ public:
         {
             printf("idx:%d, id: %s is %s, info: %s\r\n",
                    i,
-                   thread_tables[i]->id_get().c_str(),
-                   thread_tables[i]->status_get().c_str(),
-                   thread_tables[i]->info_get().c_str()
+                   thread_tables[i]->getID().c_str(),
+                   thread_tables[i]->getStatus().c_str(),
+                   thread_tables[i]->getInfo().c_str()
                    );
         }
         printf("**************************************************\n");
@@ -203,10 +179,30 @@ public:
     {
         for(int i=0; i<thread_tables.size(); i++)
         {
-            thread_tables[i]->interrupt();
-            delete thread_tables[i];
+            if (thread_tables[i]->joinable())
+            {
+                thread_tables[i]->interrupt();
+                delete thread_tables[i];
+            }
         }
         thread_tables.clear();
+    }
+
+    void fresh_tables()
+    {
+        std::cout<<"---------------REFRESH--------------"<<std::endl;
+        for (auto p = thread_tables.begin(); p!= thread_tables.end(); p++)
+        {
+            std::string state((*p)->getStatus());
+            if(state == string("Stop"))
+            {
+                (*p)->interrupt();
+                std::cout<<(*p)->getID()<<" "<<(*p)->getStatus()<<std::endl;
+                //delete *p;
+                thread_tables.erase(p);
+            }
+        }
+        std::cout<<"-----------------------------------"<<std::endl;
     }
 
     int size()

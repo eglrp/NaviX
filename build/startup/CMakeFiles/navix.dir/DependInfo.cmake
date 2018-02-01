@@ -27,6 +27,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/bailiqun/NaviX/build/modules/slam/amcl/CMakeFiles/amcl.dir/DependInfo.cmake"
   "/home/bailiqun/NaviX/build/modules/driver/serial/CMakeFiles/serial.dir/DependInfo.cmake"
+  "/home/bailiqun/NaviX/build/modules/map/map_server/CMakeFiles/map_saver.dir/DependInfo.cmake"
   "/home/bailiqun/NaviX/build/modules/driver/joystick/CMakeFiles/joystick.dir/DependInfo.cmake"
   "/home/bailiqun/NaviX/build/modules/driver/urg_node/CMakeFiles/urg_node_driver.dir/DependInfo.cmake"
   "/home/bailiqun/NaviX/build/modules/slam/gmapping/openslam/CMakeFiles/openslam.dir/DependInfo.cmake"

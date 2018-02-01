@@ -19,7 +19,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "devel/include"
   "../include"
   "../modules/3rd/laser_geometry/include"
-  "../modules/planner/navfn/include"
   "/opt/ros/indigo/include"
   "/usr/include/pcl-1.7"
   "/usr/include/eigen3"

@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/map_server/map_saver.h
+cstdio
+-
+ros/ros.h
+../include/map_server/ros/ros.h
+nav_msgs/GetMap.h
+../include/map_server/nav_msgs/GetMap.h
+tf2/LinearMath/Matrix3x3.h
+../include/map_server/tf2/LinearMath/Matrix3x3.h
+geometry_msgs/Quaternion.h
+../include/map_server/geometry_msgs/Quaternion.h
+
+/home/bailiqun/NaviX/modules/map/map_server/src/map_saver.cpp
+map_server/map_saver.h
+/home/bailiqun/NaviX/modules/map/map_server/src/map_server/map_saver.h
+

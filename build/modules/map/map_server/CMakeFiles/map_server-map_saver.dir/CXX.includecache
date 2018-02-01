@@ -11,8 +11,6 @@ cstdio
 -
 ros/ros.h
 /home/bailiqun/NaviX/modules/map/map_server/src/ros/ros.h
-ros/console.h
-/home/bailiqun/NaviX/modules/map/map_server/src/ros/console.h
 nav_msgs/GetMap.h
 /home/bailiqun/NaviX/modules/map/map_server/src/nav_msgs/GetMap.h
 tf2/LinearMath/Matrix3x3.h

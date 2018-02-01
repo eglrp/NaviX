@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(map_server_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/bailiqun/NaviX/modules/map/map_server/include " STREQUAL " ")
+if(NOT "/home/bailiqun/NaviX/include/ " STREQUAL " ")
   set(map_server_INCLUDE_DIRS "")
-  set(_include_dirs "/home/bailiqun/NaviX/modules/map/map_server/include")
+  set(_include_dirs "/home/bailiqun/NaviX/include/")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -109,7 +109,7 @@ if(NOT "/home/bailiqun/NaviX/modules/map/map_server/include " STREQUAL " ")
   endforeach()
 endif()
 
-set(libraries "map_server_image_loader")
+set(libraries "map_saver")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")

@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(startup)
+add_compile_options(-std=c++11)
 
 find_package(Boost REQUIRED COMPONENTS system thread signals)
 find_package(catkin REQUIRED
@@ -13,6 +14,7 @@ find_package(catkin REQUIRED
     urg_node
     openslam
     serial
+    map_server
 )
 
 catkin_package(
@@ -28,9 +30,11 @@ include_directories(
     ${catkin_INCLUDE_DIRS}
     ${Boost_INCLUDE_DIRS}
     ${NaviX_SOURCE_DIR}/include/
-    )
+)
 
-add_executable(navix src/startup.cpp)
+add_executable(navix
+    src/startup.cpp
+    src/thread_group.hpp)
 target_link_libraries(navix
   ${Boost_LIBRARIES}
   ${catkin_LIBRARIES}
