@@ -557,26 +557,6 @@ iostream
 -
 thread_group.hpp
 /home/bailiqun/NaviX/startup/src/thread_group.hpp
-iostream
--
-ros/ros.h
--
-tf/tf.h
--
-tf/transform_broadcaster.h
--
-sensor_msgs/Joy.h
--
-joy/joy.h
-/home/bailiqun/NaviX/startup/src/joy/joy.h
-gmapping/openslam/slam_gmapping.h
-/home/bailiqun/NaviX/startup/src/gmapping/openslam/slam_gmapping.h
-urg_node/urg_node_driver.h
-/home/bailiqun/NaviX/startup/src/urg_node/urg_node_driver.h
-serial/serial.h
-/home/bailiqun/NaviX/startup/src/serial/serial.h
-thread_assist/thread_assist.hpp
-/home/bailiqun/NaviX/startup/src/thread_assist/thread_assist.hpp
 
 /home/bailiqun/NaviX/startup/src/thread_group.hpp
 initializer_list

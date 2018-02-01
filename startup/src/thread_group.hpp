@@ -56,7 +56,6 @@ public:
 
     void run(initializer_list<MODULES> param)
     {
-
         for(auto p = param.begin(); p != param.end(); p++)
         {
             for(auto g = groups_.begin(); g!=groups_.end();g++)
