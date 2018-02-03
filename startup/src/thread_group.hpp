@@ -39,7 +39,8 @@ public:
         SERIAL,
         MAPSAVER,
         HOKUYO,
-        GMAPPING
+        GMAPPING,
+        TASK
     };
 
     ModuleGroup()
@@ -52,6 +53,7 @@ public:
         groups_.push_back({(int)MAPSAVER,  &ModuleGroup::map_saver_thread,     "MAPSAVER"});
         groups_.push_back({(int)HOKUYO,    &ModuleGroup::driver_laser_thread,  "HOKUYO"});
         groups_.push_back({(int)GMAPPING,  &ModuleGroup::slam_gmapping,        "GMAPPING"});
+        groups_.push_back({(int)GMAPPING,  &ModuleGroup::task,                 "TASK"});
     }
 
     void run(initializer_list<MODULES> param)
@@ -133,7 +135,7 @@ private:
         while(ros::ok())
         {
             INTERRUPT_LOOP();
-            sleep(1);
+            ros::spinOnce();
         }
         thread_assist->setStatus(boost::lexical_cast<std::string>(boost::this_thread::get_id()), ThreadAssist::Stop);
         return 0;
@@ -146,7 +148,7 @@ private:
         while(ros::ok())
         {
             INTERRUPT_LOOP();
-            ros::spin();
+            ros::spinOnce();
         }
         thread_assist->setStatus(boost::lexical_cast<std::string>(boost::this_thread::get_id()), ThreadAssist::Stop);
         return 0;
@@ -172,11 +174,43 @@ private:
         while(ros::ok())
         {
             INTERRUPT_LOOP();
-            sleep(1);
+            ros::spinOnce();
         }
 
         return 0;
     }
+
+    int task()
+    {
+        ros::NodeHandle n;
+        ros::Subscriber joy_sub_ = n.subscribe("joy", 30, &ModuleGroup::joyCallback, this);
+        while(ros::ok())
+        {
+            INTERRUPT_LOOP();
+            ros::spinOnce();
+        }
+    }
+
+    void joyCallback(const sensor_msgs::JoyConstPtr& msg)
+    {
+        ros::NodeHandle n;
+        geometry_msgs::Twist vel;
+        if(msg->buttons[JOY::Y] == JOY::PRESSED)
+        {
+            vel.linear.x  = msg->axes[JOY::LEFT_STICK_UD]*0.2;
+            vel.angular.z = msg->axes[JOY::LEFT_STICK_LR]*0.3;
+        }
+        if(msg->buttons[JOY::X] == JOY::PRESSED)
+        {
+            this->run({ModuleGroup::MAPSAVER});
+        }
+        pub_vel = n.advertise<geometry_msgs::Twist>("cmd_vel", 10);
+        pub_vel.publish(vel);
+        ros::spinOnce();
+    }
+private:
+    // publish vel form joy on topic /cmd_vel
+    ros::Publisher pub_vel;
 };
 
 #endif

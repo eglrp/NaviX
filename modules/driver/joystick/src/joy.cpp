@@ -161,6 +161,7 @@ int Joystick::run()
 
       open_ = true;
       printf("[JOYSTICK] Joy open normally.\r\n");
+      fflush(stdout);
 
       bool tv_set = false;
       bool publication_pending = false;
@@ -193,7 +194,6 @@ int Joystick::run()
           if (read(joy_fd, &event, sizeof(js_event)) == -1 && errno != EAGAIN)
             break; // Joystick is probably closed. Definitely occurs.
 
-          //ROS_INFO("Read data...");
           joy_msg.header.stamp = ros::Time().now();
           event_count_++;
           switch(event.type)
@@ -206,7 +206,8 @@ int Joystick::run()
               joy_msg.buttons.resize(event.number+1);
               last_published_joy_msg.buttons.resize(event.number+1);
               sticky_buttons_joy_msg.buttons.resize(event.number+1);
-              for(unsigned int i=old_size;i<joy_msg.buttons.size();i++){
+              for(unsigned int i=old_size;i<joy_msg.buttons.size();i++)
+              {
                 joy_msg.buttons[i] = 0.0;
                 last_published_joy_msg.buttons[i] = 0.0;
                 sticky_buttons_joy_msg.buttons[i] = 0.0;
