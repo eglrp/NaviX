@@ -19,7 +19,7 @@ generate_dynamic_reconfigure_options(
 )
 
 catkin_package(
-    INCLUDE_DIRS include
+    INCLUDE_DIRS ${NaviX_SOURCE_DIR}/include
     CATKIN_DEPENDS
         rosbag
         roscpp
@@ -52,7 +52,8 @@ install(
     LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+## Mark cpp header files for installation
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-  PATTERN ".svn" EXCLUDE
+  FILES_MATCHING PATTERN "*.h"
 )

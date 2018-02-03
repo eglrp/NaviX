@@ -3,6 +3,6 @@ prefix=/home/bailiqun/NaviX/build/devel
 Name: amcl
 Description: Description of amcl
 Version: 1.14.2
-Cflags: -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/modules/slam/amcl/include
+Cflags: -I/home/bailiqun/NaviX/build/devel/include -I/home/bailiqun/NaviX/include
 Libs: -L/home/bailiqun/NaviX/build/devel/lib -lamcl_sensors -lamcl_map -lamcl_pf
 Requires: rosbag roscpp dynamic_reconfigure tf nav_msgs std_srvs
