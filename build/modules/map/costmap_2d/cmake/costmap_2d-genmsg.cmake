@@ -6,6 +6,7 @@ set(MSG_I_FLAGS "-Icostmap_2d:/home/bailiqun/NaviX/modules/map/costmap_2d/msg;-I
 
 # Find all generators
 find_package(gencpp REQUIRED)
+find_package(geneus REQUIRED)
 find_package(genlisp REQUIRED)
 find_package(genpy REQUIRED)
 
@@ -21,7 +22,7 @@ add_custom_target(_costmap_2d_generate_messages_check_deps_${_filename}
 )
 
 #
-#  langs = gencpp;genlisp;genpy
+#  langs = gencpp;geneus;genlisp;genpy
 #
 
 ### Section generating for lang: gencpp
@@ -56,6 +57,39 @@ add_dependencies(costmap_2d_gencpp costmap_2d_generate_messages_cpp)
 
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS costmap_2d_generate_messages_cpp)
+
+### Section generating for lang: geneus
+### Generating Messages
+_generate_msg_eus(costmap_2d
+  "/home/bailiqun/NaviX/modules/map/costmap_2d/msg/VoxelGrid.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point32.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_2d
+)
+
+### Generating Services
+
+### Generating Module File
+_generate_module_eus(costmap_2d
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_2d
+  "${ALL_GEN_OUTPUT_FILES_eus}"
+)
+
+add_custom_target(costmap_2d_generate_messages_eus
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_eus}
+)
+add_dependencies(costmap_2d_generate_messages costmap_2d_generate_messages_eus)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/map/costmap_2d/msg/VoxelGrid.msg" NAME_WE)
+add_dependencies(costmap_2d_generate_messages_eus _costmap_2d_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(costmap_2d_geneus)
+add_dependencies(costmap_2d_geneus costmap_2d_generate_messages_eus)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS costmap_2d_generate_messages_eus)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
@@ -135,6 +169,17 @@ endif()
 add_dependencies(costmap_2d_generate_messages_cpp std_msgs_generate_messages_cpp)
 add_dependencies(costmap_2d_generate_messages_cpp geometry_msgs_generate_messages_cpp)
 add_dependencies(costmap_2d_generate_messages_cpp map_msgs_generate_messages_cpp)
+
+if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_2d)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/costmap_2d
+    DESTINATION ${geneus_INSTALL_DIR}
+  )
+endif()
+add_dependencies(costmap_2d_generate_messages_eus std_msgs_generate_messages_eus)
+add_dependencies(costmap_2d_generate_messages_eus geometry_msgs_generate_messages_eus)
+add_dependencies(costmap_2d_generate_messages_eus map_msgs_generate_messages_eus)
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/costmap_2d)
   # install generated code

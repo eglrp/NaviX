@@ -699,6 +699,9 @@ dynamic_reconfigure_DIR:PATH=/opt/ros/indigo/share/dynamic_reconfigure/cmake
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
 
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/indigo/share/geneus/cmake
+
 //The directory containing a CMake configuration file for genlisp.
 genlisp_DIR:PATH=/opt/ros/indigo/share/genlisp/cmake
 
@@ -880,7 +883,8 @@ move_slow_and_clear_SOURCE_DIR:STATIC=/home/bailiqun/NaviX/modules/recovery/move
 //Value Computed by CMake
 nav_core_BINARY_DIR:STATIC=/home/bailiqun/NaviX/build/modules/move_base/nav_core
 
-nav_core_DIR:PATH=
+//The directory containing a CMake configuration file for nav_core.
+nav_core_DIR:PATH=/home/bailiqun/NaviX/build/devel/share/nav_core/cmake
 
 //Value Computed by CMake
 nav_core_SOURCE_DIR:STATIC=/home/bailiqun/NaviX/modules/move_base/nav_core

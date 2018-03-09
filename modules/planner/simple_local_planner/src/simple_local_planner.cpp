@@ -8,17 +8,16 @@
 #include <simple_local_planner/SimpleLocalPlannerConfig.h>
 #include <base_local_planner/trajectory_planner_ros.h>
 #include <sensor_msgs/LaserScan.h>
+#include <visualization_msgs/Marker.h>
+#include <cmath>
+#include "pure_pursuit.h"
+#include "pid.h"
 
 namespace simple_local_planner {
 
 class SimpleLocalPlanner : public nav_core::BaseLocalPlanner
 {
 public:
-    void laser_callback(const sensor_msgs::LaserScan::ConstPtr& laser)
-    {
-        ROS_INFO("LASER");
-    }
-
     void initialize(
             std::string name,
             tf::TransformListener* tf,
@@ -31,27 +30,28 @@ public:
         goal_reached_time_ = ros::Time::now();
 
         ros::NodeHandle node_private("~/SimpleLocalPlanner");
+        marker_pub1 = node_private.advertise<visualization_msgs::Marker>("visualization_marker1", 10);
+        marker_pub2 = node_private.advertise<visualization_msgs::Marker>("visualization_marker2", 10);
+        marker_pub3 = node_private.advertise<visualization_msgs::Marker>("visualization_marker3", 10);
+        marker_pub4 = node_private.advertise<visualization_msgs::Marker>("visualization_marker4", 10);
 
-        node_private.param("k_trans", K_trans_, 1.5);
-        node_private.param("k_rot", K_rot_, 2.0);
-
-        node_private.param("tolerance_trans", tolerance_trans_, 0.1);
-        node_private.param("tolerance_rot", tolerance_rot_, 0.1);
+        node_private.param("tolerance_trans", tolerance_trans_, 0.01);
+        node_private.param("tolerance_rot", tolerance_rot_, 0.01);
         node_private.param("tolerance_timeout", tolerance_timeout_, 0.5);
 
         node_private.param("holonomic", holonomic_, true);
 
         node_private.param("samples", samples_, 1);
-        node_private.param("steps", steps_, 3);
+        node_private.param("steps", steps_, 1);
 
-        node_private.param("max_vel_lin", max_vel_lin_, 0.7);
-        node_private.param("min_vel_lin", min_vel_lin_, 0.05);
+        node_private.param("max_vel_lin", max_vel_lin_, 0.4);
+        node_private.param("min_vel_lin", min_vel_lin_, 0.1);
 
-        node_private.param("max_vel_th", max_vel_th_, 1.0);
-        node_private.param("min_vel_th", min_vel_th_, 0.2);
+        node_private.param("max_vel_th", max_vel_th_, 2.0);
+        node_private.param("min_vel_th", min_vel_th_, 0.1);
 
         node_private.param("min_in_place_vel_th", min_in_place_vel_th_, 0.1);
-        node_private.param("in_place_trans_vel", in_place_trans_vel_, 0.1);
+        node_private.param("in_place_trans_vel", in_place_trans_vel_, 0.3);
 
         node_private.param("trans_stopped_velocity", trans_stopped_velocity_, 1e-4);
         node_private.param("rot_stopped_velocity", rot_stopped_velocity_, 1e-4);
@@ -62,13 +62,23 @@ public:
         dsrv_ = new dynamic_reconfigure::Server<SimpleLocalPlannerConfig>(node_private);
         dynamic_reconfigure::Server<SimpleLocalPlannerConfig>::CallbackType cb = boost::bind(&SimpleLocalPlanner::reconfigure, this, _1, _2);
         dsrv_->setCallback(cb);
+
+        pid_vx_.init(2, 0.0, 0, 1);
+        pid_vx_.set_max_min_output(max_vel_lin_, -max_vel_lin_);
+
+        pid_vy_.init(3, 0.1, 0, 1);
+        pid_vy_.set_max_min_output(max_vel_lin_, -max_vel_lin_);
+
+        pid_wz_.init(2, 0.1, 0, 1);
+        pid_wz_.set_max_min_output(max_vel_th_, -max_vel_th_);
     }
 
     void reconfigure(SimpleLocalPlannerConfig &config, uint32_t level)
      {
         boost::mutex::scoped_lock l(configuration_mutex_);
 
-        K_trans_ = config.k_trans;
+        K_x_ = config.k_liner_x;
+        K_y_ = config.k_liner_y;
         K_rot_ = config.k_rot;
 
         tolerance_trans_ = config.tolerance_trans;
@@ -96,7 +106,7 @@ public:
         is_goal_reach_ = false;
         current_waypoint_ = 0;
         goal_reached_time_ = ros::Time::now();
-        if(!transformGlobalPlan(*tf_, global_plan, p_global_frame_, global_plan_))
+        if(!transform_global_plan(*tf_, global_plan, p_global_frame_, global_plan_))
         {
           ROS_ERROR("Could not transform the global plan to the frame of the controller");
           return false;
@@ -119,96 +129,66 @@ public:
         if (global_plan_.size() == 0)
           return false;
 
+        geometry_msgs::Twist empty_twist;
         //get the current pose of the robot in the fixed frame
-        tf::Stamped<tf::Pose> robot_pose;
-        if(!this->getRobotPose(robot_pose))
+        tf::Stamped<tf::Pose> tf_robot_pose;
+        if(!this->get_robot_pose(tf_robot_pose))
         {
           ROS_ERROR("Can't get robot pose");
-          geometry_msgs::Twist empty_twist;
           cmd_vel = empty_twist;
           return false;
+        }
+
+        double vx = last_vel.linear.x;
+        ld_A = 0.01;
+        ld_B = 0.01;
+        ld_C = 0.05;
+        ld = ld_A * vx * vx + ld_B * vx + ld_C;
+
+        tf::Stamped<tf::Pose> tf_future_point;
+        if(!this->get_future_point(tf_future_point, ld))
+        {
+          ROS_ERROR("Can't get future pose");
+          cmd_vel = empty_twist;
+          return false;
+        }
+        drawMarker(tf_future_point, marker_pub1);// red
+
+        PurePursuit pure_pursuit(global_plan_);
+        int closestWayPoint = pure_pursuit.getClosestWaypoint(tf_future_point);
+        if(closestWayPoint >= 0 && closestWayPoint >= current_waypoint_)
+        {
+            current_waypoint_ = closestWayPoint;
         }
 
         //we want to compute a velocity command based on our current waypoint
-        tf::Stamped<tf::Pose> target_pose;
-        tf::poseStampedMsgToTF(global_plan_[current_waypoint_], target_pose);
+        tf::Stamped<tf::Pose> tf_target_pose;
+        tf::poseStampedMsgToTF(global_plan_[current_waypoint_], tf_target_pose);
+        drawMarker(tf_target_pose, marker_pub2);//blue
 
-        //get the difference between the two poses
-        geometry_msgs::Twist diff = diff2D(target_pose, robot_pose);
-        //ROS_INFO("HectorPathFollower: diff %f %f ==> %f", diff.linear.x, diff.linear.y, diff.angular.z);
+        // get the difference between the two poses
+        geometry_msgs::Twist diff = diff2D(tf_target_pose, tf_robot_pose);
         geometry_msgs::Twist limit_vel = limitTwist(diff);
+        geometry_msgs::Twist scale_vel = scalc_forward_speed(limit_vel);
+        cmd_vel = scale_vel;
+        last_vel = cmd_vel;
 
-        geometry_msgs::Twist test_vel = limit_vel;
-        bool legal_traj = true;//collision_planner_.checkTrajectory(test_vel.linear.x, test_vel.linear.y, test_vel.angular.z, true);
-
-        double scaling_factor = 1.0;
-        double ds = scaling_factor / samples_;
-
-        //let's make sure that the velocity command is legal... and if not, scale down
-        if(!legal_traj)
+        while(fabs(diff.linear.x) <= tolerance_trans_ &&
+              fabs(diff.linear.y) <= tolerance_trans_ &&
+              fabs(diff.angular.z) <= tolerance_rot_)
         {
-          for(int i = 0; i < samples_; ++i)
-          {
-            test_vel.linear.x = limit_vel.linear.x * scaling_factor;
-            test_vel.linear.y = limit_vel.linear.y * scaling_factor;
-            test_vel.angular.z = limit_vel.angular.z * scaling_factor;
-            test_vel = limitTwist(test_vel);
-            //test time
-            scaling_factor -= ds;
-          }
-        }
-
-        if(!legal_traj)
-        {
-          ROS_ERROR("Not legal (%.2f, %.2f, %.2f)",
-                    limit_vel.linear.x,
-                    limit_vel.linear.y,
-                    limit_vel.angular.z);
-          geometry_msgs::Twist empty_twist;
-          cmd_vel = empty_twist;
-          return false;
-        }
-
-        //if it is legal... we'll pass it on
-        cmd_vel = test_vel;
-
-        is_goal_reach_ = false;
-        while(fabs(diff.linear.x)  <=  tolerance_trans_ &&
-              fabs(diff.linear.y)  <=  tolerance_trans_ &&
-              fabs(diff.angular.z) <=  tolerance_rot_)
-        {
-          if(current_waypoint_ < global_plan_.size()-1)
-          {
-            is_goal_reach_ = false;
-            current_waypoint_ += steps_;
-            if((current_waypoint_+ steps_) > global_plan_.size())
+            if(current_waypoint_ < global_plan_.size() - 1)
             {
-                current_waypoint_ = global_plan_.size()-1;
+                current_waypoint_++;
+                tf::poseStampedMsgToTF(global_plan_[current_waypoint_], tf_target_pose);
+                diff = diff2D(tf_target_pose, tf_robot_pose);
             }
-
-            ROS_INFO(" Path has run %3.1f%%. size=%d current=%d",
-                     current_waypoint_ * 100.0 / (global_plan_.size()-1),
-                     global_plan_.size()-1,
-                     current_waypoint_);
-            try
+            else
             {
-                tf::poseStampedMsgToTF(global_plan_[current_waypoint_], target_pose);
-                diff = diff2D(target_pose, robot_pose);
+                ROS_INFO("Reached goal: %d", current_waypoint_);
+                is_goal_reach_ = true;
+                break;
             }
-            catch(std::exception& e)
-            {
-                std::cout<<e.what()<<std::endl;
-            }
-            ROS_INFO("#################################");
-          }
-          else
-          {
-            ROS_INFO("Reached goal: %d", current_waypoint_);
-            geometry_msgs::Twist empty_twist;
-            cmd_vel = empty_twist;
-            is_goal_reach_ = true;
-            break;
-          }
         }
 
         //if we're not in the goal position, we need to update time
@@ -223,15 +203,18 @@ public:
         }
         return true;
     }
+
 private:
     inline double rad2ang(double rad)
     {
         return rad*180.0/3.1415926;
     }
+
     inline double ang2rad(double ang)
     {
         return ang*3.1415926/180.0;
     }
+
     inline double sign(double n)
     {
         return n < 0.0 ? -1.0 : 1.0;
@@ -253,60 +236,60 @@ private:
         return -1.0 * vector_angle;
     }
 
-    geometry_msgs::Twist diff2D(const tf::Pose& pose1, const tf::Pose& pose2)
+    geometry_msgs::Twist diff2D(const tf::Pose& target_pose, const tf::Pose& robot_pose)
     {
-      geometry_msgs::Twist res;
-      tf::Pose diff = pose2.inverse() * pose1;
-      res.linear.x = diff.getOrigin().x();
-      res.linear.y = diff.getOrigin().y();
-      res.angular.z = tf::getYaw(diff.getRotation());
+        geometry_msgs::Twist res;
+        tf::Pose diff = robot_pose.inverse() * target_pose;
+        res.linear.x = diff.getOrigin().x();
+        res.linear.y = diff.getOrigin().y();
+        res.angular.z = tf::getYaw(diff.getRotation());
 
-      if(holonomic_ || (fabs(res.linear.x) <= tolerance_trans_ && fabs(res.linear.y) <= tolerance_trans_))
+        if(holonomic_ || (fabs(res.linear.x) <= tolerance_trans_ && fabs(res.linear.y) <= tolerance_trans_))
           return res;
 
-      //in the case that we're not rotating to our goal position and we have a non-holonomic robot
-      //we'll need to command a rotational velocity that will help us reach our desired heading
+        //in the case that we're not rotating to our goal position and we have a non-holonomic robot
+        //we'll need to command a rotational velocity that will help us reach our desired heading
 
-      //we want to compute a goal based on the heading difference between our pose and the target
-      double yaw_diff = headingDiff(pose1.getOrigin().x(), pose1.getOrigin().y(),
-          pose2.getOrigin().x(), pose2.getOrigin().y(), tf::getYaw(pose2.getRotation()));
+        //we want to compute a goal based on the heading difference between our pose and the target
+        double yaw_diff = headingDiff(target_pose.getOrigin().x(), target_pose.getOrigin().y(),
+                                      robot_pose.getOrigin().x(), robot_pose.getOrigin().y(),
+                                      tf::getYaw(robot_pose.getRotation()));
 
-      //we'll also check if we can move more effectively backwards
-      double neg_yaw_diff = headingDiff(pose1.getOrigin().x(), pose1.getOrigin().y(),
-          pose2.getOrigin().x(), pose2.getOrigin().y(), M_PI + tf::getYaw(pose2.getRotation()));
+        //we'll also check if we can move more effectively backwards
+        double neg_yaw_diff = headingDiff(target_pose.getOrigin().x(), target_pose.getOrigin().y(),
+                                          robot_pose.getOrigin().x(), robot_pose.getOrigin().y(),
+                                          M_PI + tf::getYaw(robot_pose.getRotation()));
 
-      //check if its faster to just back up
-      if(fabs(neg_yaw_diff) < fabs(yaw_diff)){
-        ROS_DEBUG("Negative is better: %.2f", neg_yaw_diff);
-        yaw_diff = neg_yaw_diff;
-      }
+        //check if its faster to just back up
+        if(fabs(neg_yaw_diff) < fabs(yaw_diff))
+        {
+          ROS_DEBUG("Negative is better: %.2f", neg_yaw_diff);
+          yaw_diff = neg_yaw_diff;
+        }
 
-      //compute the desired quaterion
-      tf::Quaternion rot_diff = tf::createQuaternionFromYaw(yaw_diff);
-      tf::Quaternion rot = pose2.getRotation() * rot_diff;
-      tf::Pose new_pose = pose1;
-      new_pose.setRotation(rot);
+        //compute the desired quaterion
+        tf::Quaternion rot_diff = tf::createQuaternionFromYaw(yaw_diff);
+        tf::Quaternion rot = robot_pose.getRotation() * rot_diff;
+        tf::Pose new_pose = target_pose;
+        new_pose.setRotation(rot);
 
-      diff = pose2.inverse() * new_pose;
-      res.linear.x = diff.getOrigin().x();
-      res.linear.y = diff.getOrigin().y();
-      res.angular.z = tf::getYaw(diff.getRotation());
-      return res;
+        diff = robot_pose.inverse() * new_pose;
+        res.linear.x = diff.getOrigin().x();
+        res.linear.y = diff.getOrigin().y();
+        res.angular.z = tf::getYaw(diff.getRotation());
+    return res;
     }
 
-    geometry_msgs::Twist limitTwist(const geometry_msgs::Twist& twist)
+    geometry_msgs::Twist limitTwist(const geometry_msgs::Twist& diff)
     {
-      geometry_msgs::Twist res = twist;
-      res.linear.x *= K_trans_;
-      if(!holonomic_)
-        res.linear.y = 0.0;
-      else
-        res.linear.y *= K_trans_;
-      res.angular.z *= K_rot_;
+      geometry_msgs::Twist res = diff;
+      res.linear.x = pid_vy_.calc(0, -diff.linear.x);
+      res.linear.y = pid_vy_.calc(0, -diff.linear.y);
 
       //make sure to bound things by our velocity limits
-      double lin_overshoot = sqrt(res.linear.x * res.linear.x + res.linear.y * res.linear.y) / max_vel_lin_;
-      double lin_undershoot = min_vel_lin_ / sqrt(res.linear.x * res.linear.x + res.linear.y * res.linear.y);
+      double lin_overshoot = sqrt(res.linear.x * res.linear.x + res.linear.y * res.linear.y) / this->max_vel_lin_;
+      double lin_undershoot = this->min_vel_lin_ / sqrt(res.linear.x * res.linear.x + res.linear.y * res.linear.y);
+      ROS_INFO("vx:%4.2f vy:%4.2f vz:%4.2f",res.linear.x, res.linear.y, res.angular.z);
       if (lin_overshoot > 1.0)
       {
         res.linear.x /= lin_overshoot;
@@ -324,18 +307,40 @@ private:
       if (fabs(res.angular.z) < min_vel_th_) res.angular.z = min_vel_th_ * sign(res.angular.z);
 
       //we want to check for whether or not we're desired to rotate in place
-      if(sqrt(twist.linear.x * twist.linear.x + twist.linear.y * twist.linear.y) < in_place_trans_vel_)
+      if(sqrt(diff.linear.x * diff.linear.x + diff.linear.y * diff.linear.y) < in_place_trans_vel_)
       {
-        if (fabs(res.angular.z) < min_in_place_vel_th_) res.angular.z = min_in_place_vel_th_ * sign(res.angular.z);
-        res.linear.x = 0.0;
-        res.linear.y = 0.0;
+        if (fabs(res.angular.z) < min_in_place_vel_th_)
+            res.angular.z = min_in_place_vel_th_ * sign(res.angular.z);
+        res.linear.x = res.linear.x * 0.2;
+        res.linear.y = res.linear.y * 0.2;
         ROS_INFO("Angular command %f", res.angular.z);
       }
 
       return res;
     }
 
-    bool transformGlobalPlan(const tf::TransformListener& tf,
+    double distance(const tf::Stamped<tf::Pose>& pt1, const tf::Stamped<tf::Pose>& pt2)
+    {
+        double a = pt1.getOrigin().getX()-pt2.getOrigin().getX();
+        double b = pt1.getOrigin().getY()-pt2.getOrigin().getY();
+        return sqrt(a*a + b*b);
+    }
+
+    geometry_msgs::Twist scalc_forward_speed(const geometry_msgs::Twist& twist)
+
+    {
+        geometry_msgs::Twist scale_speed = twist;
+        double angle = rad2ang(twist.angular.z);
+        // if larger than 10 degree, scale down liner x speed
+        if(fabs(angle) >= 10)
+        {
+            scale_speed.linear.x *= 0.5;
+        }
+        ROS_ERROR("twist=%5.3f", angle);
+        return scale_speed;
+    }
+
+    bool transform_global_plan(const tf::TransformListener& tf,
                              const std::vector<geometry_msgs::PoseStamped>& global_plan,
                              const std::string& global_frame,
                              std::vector<geometry_msgs::PoseStamped>& transformed_plan)
@@ -387,7 +392,7 @@ private:
       return true;
     }
 
-    bool getRobotPose(tf::Stamped<tf::Pose>& global_pose) const
+    bool get_robot_pose(tf::Stamped<tf::Pose>& global_pose) const
     {
       global_pose.setIdentity();
       tf::Stamped<tf::Pose> robot_pose;
@@ -397,7 +402,8 @@ private:
       ros::Time current_time = ros::Time::now(); // save time for checking tf delay later
 
       //get the global pose of the robot
-      try{
+      try
+      {
         tf_->transformPose(p_global_frame_, robot_pose, global_pose);
       }
       catch(tf::LookupException& ex) {
@@ -413,12 +419,37 @@ private:
         return false;
       }
       // check global_pose timeout
-//      if (current_time.toSec() - global_pose.stamp_.toSec() > transform_tolerance_) {
-//        ROS_WARN_THROTTLE(1.0, "Costmap2DROS transform timeout. Current time: %.4f, global_pose stamp: %.4f, tolerance: %.4f",
-//            current_time.toSec() ,global_pose.stamp_.toSec() ,transform_tolerance_);
-//        return false;
-//      }
+      if (current_time.toSec() - global_pose.stamp_.toSec() > 1.0) {
+        ROS_WARN_THROTTLE(1.0, "Costmap2DROS transform timeout. Current time: %.4f, global_pose stamp: %.4f, tolerance: %.4f",
+            current_time.toSec() ,global_pose.stamp_.toSec() ,1.0);
+      }
       return true;
+    }
+
+    bool get_future_point(tf::Stamped<tf::Pose>& future_pose, double look_ahead_distance) const
+    {
+        if (look_ahead_distance < 0)
+        {
+            ROS_ERROR("Look ahead distance must larger than 0.0 m, set as default 0.2.");
+            look_ahead_distance = 0.2;
+            return false;
+        }
+
+        future_pose.setIdentity();
+        tf::Stamped<tf::Pose> robot_pose_;
+        robot_pose_.setIdentity();
+        robot_pose_.frame_id_ = "base_link";
+        robot_pose_.stamp_ = ros::Time(0);
+        robot_pose_.setOrigin(tf::Vector3(look_ahead_distance, 0, 0));
+        try
+        {
+          tf_->transformPose("map", robot_pose_, future_pose);
+        }
+        catch(...)
+        {
+            return false;
+        }
+        return true;
     }
 
     static double normalize(double z){
@@ -440,13 +471,92 @@ private:
             return d2;
     }
 
-    tf::TransformListener* tf_;
+    void drawMarker(tf::Stamped<tf::Pose>& tf_pose, ros::Publisher& pub)
+    {
+        geometry_msgs::PoseStamped  current_pose;
+        tf::poseStampedTFToMsg(tf_pose, current_pose);
 
+        visualization_msgs::Marker points;
+        points.header.frame_id = "/map";
+        points.header.stamp = ros::Time::now();
+        points.ns  = "points_and_lines";
+        points.action = visualization_msgs::Marker::ADD;
+        points.pose = current_pose.pose;
+        points.id = 2;
+        points.type = visualization_msgs::Marker::SPHERE;
+        points.scale.x = 0.1;
+        points.scale.y = 0.1;
+        points.color.r = 1.0f;
+        points.color.a = 1.0;
+        pub.publish(points);
+    }
+
+    void drawLine(geometry_msgs::Point start, geometry_msgs::Point end,
+                  double& a, double& b, double& c)
+    {
+        visualization_msgs::Marker points;
+        points.header.frame_id = "/map";
+        points.header.stamp = ros::Time::now();
+        points.ns  = "lines";
+        points.action = visualization_msgs::Marker::ADD;
+        points.pose.orientation.w = 1.0;
+        points.id = 2;
+        points.type = visualization_msgs::Marker::LINE_STRIP;
+        points.scale.x = 0.1;
+        points.scale.y = 0.1;
+        points.color.b = 1.0f;
+        points.color.a = 1.0;
+        for (uint32_t i = 0; i < 100; ++i)
+        {
+            double k = - a/b;
+            double bias = -c/b;
+            double y = k * (start.x + i) + bias;
+
+            geometry_msgs::Point p;
+            p.x = start.x + i;
+            p.y = y;
+            p.z = 0;
+            points.points.push_back(p);
+        }
+        marker_pub3.publish(points);
+    }
+
+    // let the linear equation be "ax + by + c = 0"
+    // if there are two points (x1,y1) , (x2,y2), a = "y2-y1, b = "(-1) * x2 - x1" ,c = "(-1) * (y2-y1)x1 + (x2-x1)y1"
+    bool getLinearEquation(geometry_msgs::Point start, geometry_msgs::Point end, double& a, double& b, double& c)
+    {
+      //(x1, y1) = (start.x, star.y), (x2, y2) = (end.x, end.y)
+      double sub_x = fabs(start.x - end.x);
+      double sub_y = fabs(start.y - end.y);
+      double error = pow(10, -5);  // 0.00001
+
+      if (sub_x < error && sub_y < error)
+      {
+        ROS_INFO("two points are the same point!!");
+        return false;
+      }
+
+      a = end.y - start.y;
+      b = (-1) * (end.x - start.x);
+      c = (-1) * (end.y - start.y) * start.x + (end.x - start.x) * start.y;
+
+      return true;
+    }
+
+    double getDistanceBetweenLineAndPoint(geometry_msgs::Point point, double a, double b, double c)
+    {
+      double d = fabs(a * point.x + b * point.y + c) / sqrt(pow(a, 2) + pow(b, 2));
+
+      return d;
+    }
+
+private:
+    tf::TransformListener* tf_;
     boost::mutex configuration_mutex_;
     dynamic_reconfigure::Server<SimpleLocalPlannerConfig> *dsrv_;
     simple_local_planner::SimpleLocalPlannerConfig default_config_;
 
-    double K_trans_, K_rot_, tolerance_trans_, tolerance_rot_;
+    double K_x_, K_y_, K_rot_, tolerance_trans_, tolerance_rot_;
     double tolerance_timeout_;
     double max_vel_lin_, max_vel_th_;
     double min_vel_lin_, min_vel_th_;
@@ -467,7 +577,19 @@ private:
     //base_local_planner::TrajectoryPlannerROS collision_planner_;
     int samples_;
     int steps_;
+
+    Smoother sm_vx;
+    Smoother sm_vy;
+    Smoother sm_wz;
+    geometry_msgs::Twist last_vel;
+    ros::Publisher marker_pub1,marker_pub2,marker_pub3,marker_pub4;
+
+    double ld;
+    double ld_A,ld_B,ld_C;
+    PID pid_vx_;
+    PID pid_vy_;
+    PID pid_wz_;
 };
-};
+}
 
 PLUGINLIB_EXPORT_CLASS(simple_local_planner::SimpleLocalPlanner, nav_core::BaseLocalPlanner)

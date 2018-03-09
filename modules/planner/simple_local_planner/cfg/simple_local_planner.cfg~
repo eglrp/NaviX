@@ -12,7 +12,8 @@ add_generic_localplanner_params(gen)
 
 gen.add("holonomic", bool_t, 0, "holonomic or diff robot modle", True)
 
-gen.add("k_trans", double_t, 0, "Pk of liner speed.", 3.5, 0)
+gen.add("k_trans_x", double_t, 0, "Pk of liner x.", 3.5, 0)
+gen.add("k_trans_y", double_t, 0, "Pk of liner y.", 3.5, 0)
 gen.add("k_rot", double_t, 0, "Pk of rotation speed.", 2.0, 0)
 
 gen.add("tolerance_trans", double_t, 0, "tolerance of trans", 0.10, 0.0)
@@ -34,4 +35,4 @@ gen.add("in_place_trans_vel", double_t, 0, " ", 0.0, 0.0)
 gen.add("trans_stopped_velocity", double_t, 0, " ", 1e-4, 0.0)
 gen.add("rot_stopped_velocity", double_t, 0, " ", 1e-4, 0.0)
 
-exit(gen.generate("simple_local_planner", "simple_local_planner", "simple_local_planner"))
+exit(gen.generate("simple_local_planner", "simple_local_planner", "SimpleLocalPlanner"))

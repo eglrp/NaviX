@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/bailiqun/NaviX/build/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/bailiqun/NaviX/build/devel/lib;/home/bailiqun/catkin_ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(costmap_2d_EXPORTED_TARGETS "costmap_2d_generate_messages_cpp;costmap_2d_generate_messages_lisp;costmap_2d_generate_messages_py;costmap_2d_gencfg")
+set(costmap_2d_EXPORTED_TARGETS "costmap_2d_generate_messages_cpp;costmap_2d_generate_messages_eus;costmap_2d_generate_messages_lisp;costmap_2d_generate_messages_py;costmap_2d_gencfg")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${costmap_2d_EXPORTED_TARGETS})
   if(NOT TARGET ${t})

@@ -155,21 +155,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
-.PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
-
-# Convenience name for target.
-costmap_2d_node: modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
-
-.PHONY : costmap_2d_node
-
-# fast build rule for target.
-costmap_2d_node/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/build
-.PHONY : costmap_2d_node/fast
-
-# Convenience name for target.
 modules/map/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/rule
 .PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/rule
@@ -183,6 +168,36 @@ costmap_2d_cloud: modules/map/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/rule
 costmap_2d_cloud/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_cloud.dir/build
 .PHONY : costmap_2d_cloud/fast
+
+# Convenience name for target.
+modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
+.PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
+
+# Convenience name for target.
+costmap_2d_markers: modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
+
+.PHONY : costmap_2d_markers
+
+# fast build rule for target.
+costmap_2d_markers/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build
+.PHONY : costmap_2d_markers/fast
+
+# Convenience name for target.
+modules/map/costmap_2d/CMakeFiles/layers.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/layers.dir/rule
+.PHONY : modules/map/costmap_2d/CMakeFiles/layers.dir/rule
+
+# Convenience name for target.
+layers: modules/map/costmap_2d/CMakeFiles/layers.dir/rule
+
+.PHONY : layers
+
+# fast build rule for target.
+layers/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/layers.dir/build.make modules/map/costmap_2d/CMakeFiles/layers.dir/build
+.PHONY : layers/fast
 
 # Convenience name for target.
 modules/map/costmap_2d/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
@@ -245,6 +260,21 @@ costmap_2d_gencpp/fast:
 .PHONY : costmap_2d_gencpp/fast
 
 # Convenience name for target.
+modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+.PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+costmap_2d_generate_messages_eus: modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+
+.PHONY : costmap_2d_generate_messages_eus
+
+# fast build rule for target.
+costmap_2d_generate_messages_eus/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
+.PHONY : costmap_2d_generate_messages_eus/fast
+
+# Convenience name for target.
 modules/map/costmap_2d/CMakeFiles/pcl_ros_gencfg.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/pcl_ros_gencfg.dir/rule
 .PHONY : modules/map/costmap_2d/CMakeFiles/pcl_ros_gencfg.dir/rule
@@ -273,21 +303,6 @@ pcl_msgs_generate_messages_py: modules/map/costmap_2d/CMakeFiles/pcl_msgs_genera
 pcl_msgs_generate_messages_py/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
 .PHONY : pcl_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
-.PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
-
-# Convenience name for target.
-costmap_2d_markers: modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/rule
-
-.PHONY : costmap_2d_markers
-
-# fast build rule for target.
-costmap_2d_markers/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_markers.dir/build
-.PHONY : costmap_2d_markers/fast
 
 # Convenience name for target.
 modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
@@ -425,6 +440,36 @@ costmap_2d_genlisp/fast:
 .PHONY : costmap_2d_genlisp/fast
 
 # Convenience name for target.
+modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
+.PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
+
+# Convenience name for target.
+costmap_2d_node: modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/rule
+
+.PHONY : costmap_2d_node
+
+# fast build rule for target.
+costmap_2d_node/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_node.dir/build
+.PHONY : costmap_2d_node/fast
+
+# Convenience name for target.
+modules/map/costmap_2d/CMakeFiles/costmap_2d_geneus.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/costmap_2d_geneus.dir/rule
+.PHONY : modules/map/costmap_2d/CMakeFiles/costmap_2d_geneus.dir/rule
+
+# Convenience name for target.
+costmap_2d_geneus: modules/map/costmap_2d/CMakeFiles/costmap_2d_geneus.dir/rule
+
+.PHONY : costmap_2d_geneus
+
+# fast build rule for target.
+costmap_2d_geneus/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_geneus.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_geneus.dir/build
+.PHONY : costmap_2d_geneus/fast
+
+# Convenience name for target.
 modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 .PHONY : modules/map/costmap_2d/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
@@ -453,21 +498,6 @@ costmap_2d_gencfg: modules/map/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/rule
 costmap_2d_gencfg/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build.make modules/map/costmap_2d/CMakeFiles/costmap_2d_gencfg.dir/build
 .PHONY : costmap_2d_gencfg/fast
-
-# Convenience name for target.
-modules/map/costmap_2d/CMakeFiles/layers.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/map/costmap_2d/CMakeFiles/layers.dir/rule
-.PHONY : modules/map/costmap_2d/CMakeFiles/layers.dir/rule
-
-# Convenience name for target.
-layers: modules/map/costmap_2d/CMakeFiles/layers.dir/rule
-
-.PHONY : layers
-
-# fast build rule for target.
-layers/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/map/costmap_2d/CMakeFiles/layers.dir/build.make modules/map/costmap_2d/CMakeFiles/layers.dir/build
-.PHONY : layers/fast
 
 # Convenience name for target.
 modules/map/costmap_2d/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
@@ -985,16 +1015,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... costmap_2d_node"
 	@echo "... costmap_2d_cloud"
+	@echo "... costmap_2d_markers"
+	@echo "... layers"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... costmap_2d_generate_messages_py"
 	@echo "... costmap_2d_gencpp"
+	@echo "... install/local"
+	@echo "... costmap_2d_generate_messages_eus"
 	@echo "... pcl_ros_gencfg"
 	@echo "... pcl_msgs_generate_messages_py"
-	@echo "... costmap_2d_markers"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... visualization_msgs_generate_messages_lisp"
 	@echo "... costmap_2d_generate_messages"
@@ -1006,9 +1037,10 @@ help:
 	@echo "... costmap_2d_generate_messages_lisp"
 	@echo "... visualization_msgs_generate_messages_cpp"
 	@echo "... costmap_2d_genlisp"
+	@echo "... costmap_2d_node"
+	@echo "... costmap_2d_geneus"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... costmap_2d_gencfg"
-	@echo "... layers"
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... costmap_2d"

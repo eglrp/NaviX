@@ -4,7 +4,7 @@ messages_str = "/home/bailiqun/NaviX/build/devel/share/move_base_msgs/msg/MoveBa
 services_str = ""
 pkg_name = "move_base_msgs"
 dependencies_str = "actionlib_msgs;geometry_msgs"
-langs = "gencpp;genlisp;genpy"
+langs = "gencpp;geneus;genlisp;genpy"
 dep_include_paths_str = "move_base_msgs;/home/bailiqun/NaviX/build/devel/share/move_base_msgs/msg;actionlib_msgs;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg;geometry_msgs;/opt/ros/indigo/share/geometry_msgs/cmake/../msg;std_msgs;/opt/ros/indigo/share/std_msgs/cmake/../msg"
 PYTHON_EXECUTABLE = "/usr/bin/python"
 package_has_static_sources = '' == 'TRUE'

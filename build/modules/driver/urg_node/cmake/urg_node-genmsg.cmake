@@ -6,6 +6,7 @@ set(MSG_I_FLAGS "-Iurg_node:/home/bailiqun/NaviX/modules/driver/urg_node/msg;-Is
 
 # Find all generators
 find_package(gencpp REQUIRED)
+find_package(geneus REQUIRED)
 find_package(genlisp REQUIRED)
 find_package(genpy REQUIRED)
 
@@ -21,7 +22,7 @@ add_custom_target(_urg_node_generate_messages_check_deps_${_filename}
 )
 
 #
-#  langs = gencpp;genlisp;genpy
+#  langs = gencpp;geneus;genlisp;genpy
 #
 
 ### Section generating for lang: gencpp
@@ -56,6 +57,39 @@ add_dependencies(urg_node_gencpp urg_node_generate_messages_cpp)
 
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS urg_node_generate_messages_cpp)
+
+### Section generating for lang: geneus
+### Generating Messages
+_generate_msg_eus(urg_node
+  "/home/bailiqun/NaviX/modules/driver/urg_node/msg/Status.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/urg_node
+)
+
+### Generating Services
+
+### Generating Module File
+_generate_module_eus(urg_node
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/urg_node
+  "${ALL_GEN_OUTPUT_FILES_eus}"
+)
+
+add_custom_target(urg_node_generate_messages_eus
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_eus}
+)
+add_dependencies(urg_node_generate_messages urg_node_generate_messages_eus)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/driver/urg_node/msg/Status.msg" NAME_WE)
+add_dependencies(urg_node_generate_messages_eus _urg_node_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(urg_node_geneus)
+add_dependencies(urg_node_geneus urg_node_generate_messages_eus)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS urg_node_generate_messages_eus)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
@@ -133,6 +167,15 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ur
   )
 endif()
 add_dependencies(urg_node_generate_messages_cpp std_msgs_generate_messages_cpp)
+
+if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/urg_node)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/urg_node
+    DESTINATION ${geneus_INSTALL_DIR}
+  )
+endif()
+add_dependencies(urg_node_generate_messages_eus std_msgs_generate_messages_eus)
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/urg_node)
   # install generated code

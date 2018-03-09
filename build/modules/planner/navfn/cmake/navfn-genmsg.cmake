@@ -6,6 +6,7 @@ set(MSG_I_FLAGS "-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../ms
 
 # Find all generators
 find_package(gencpp REQUIRED)
+find_package(geneus REQUIRED)
 find_package(genlisp REQUIRED)
 find_package(genpy REQUIRED)
 
@@ -26,7 +27,7 @@ add_custom_target(_navfn_generate_messages_check_deps_${_filename}
 )
 
 #
-#  langs = gencpp;genlisp;genpy
+#  langs = gencpp;geneus;genlisp;genpy
 #
 
 ### Section generating for lang: gencpp
@@ -69,6 +70,47 @@ add_dependencies(navfn_gencpp navfn_generate_messages_cpp)
 
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS navfn_generate_messages_cpp)
+
+### Section generating for lang: geneus
+### Generating Messages
+
+### Generating Services
+_generate_srv_eus(navfn
+  "/home/bailiqun/NaviX/modules/planner/navfn/srv/SetCostmap.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/navfn
+)
+_generate_srv_eus(navfn
+  "/home/bailiqun/NaviX/modules/planner/navfn/srv/MakeNavPlan.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/navfn
+)
+
+### Generating Module File
+_generate_module_eus(navfn
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/navfn
+  "${ALL_GEN_OUTPUT_FILES_eus}"
+)
+
+add_custom_target(navfn_generate_messages_eus
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_eus}
+)
+add_dependencies(navfn_generate_messages navfn_generate_messages_eus)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/planner/navfn/srv/SetCostmap.srv" NAME_WE)
+add_dependencies(navfn_generate_messages_eus _navfn_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/planner/navfn/srv/MakeNavPlan.srv" NAME_WE)
+add_dependencies(navfn_generate_messages_eus _navfn_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(navfn_geneus)
+add_dependencies(navfn_geneus navfn_generate_messages_eus)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS navfn_generate_messages_eus)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
@@ -162,6 +204,15 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/na
   )
 endif()
 add_dependencies(navfn_generate_messages_cpp geometry_msgs_generate_messages_cpp)
+
+if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/navfn)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/navfn
+    DESTINATION ${geneus_INSTALL_DIR}
+  )
+endif()
+add_dependencies(navfn_generate_messages_eus geometry_msgs_generate_messages_eus)
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/navfn)
   # install generated code

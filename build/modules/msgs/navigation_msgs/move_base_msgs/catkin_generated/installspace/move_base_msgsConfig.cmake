@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /usr/local/lib;/opt/ros/indigo/lib)
+    foreach(path /usr/local/lib;/home/bailiqun/catkin_ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(move_base_msgs_EXPORTED_TARGETS "move_base_msgs_generate_messages_cpp;move_base_msgs_generate_messages_lisp;move_base_msgs_generate_messages_py")
+set(move_base_msgs_EXPORTED_TARGETS "move_base_msgs_generate_messages_cpp;move_base_msgs_generate_messages_eus;move_base_msgs_generate_messages_lisp;move_base_msgs_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${move_base_msgs_EXPORTED_TARGETS})
   if(NOT TARGET ${t})

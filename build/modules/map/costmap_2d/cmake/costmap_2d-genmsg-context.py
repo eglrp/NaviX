@@ -4,7 +4,7 @@ messages_str = "/home/bailiqun/NaviX/modules/map/costmap_2d/msg/VoxelGrid.msg"
 services_str = ""
 pkg_name = "costmap_2d"
 dependencies_str = "std_msgs;geometry_msgs;map_msgs"
-langs = "gencpp;genlisp;genpy"
+langs = "gencpp;geneus;genlisp;genpy"
 dep_include_paths_str = "costmap_2d;/home/bailiqun/NaviX/modules/map/costmap_2d/msg;std_msgs;/opt/ros/indigo/share/std_msgs/cmake/../msg;geometry_msgs;/opt/ros/indigo/share/geometry_msgs/cmake/../msg;map_msgs;/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg;sensor_msgs;/opt/ros/indigo/share/sensor_msgs/cmake/../msg;nav_msgs;/opt/ros/indigo/share/nav_msgs/cmake/../msg;actionlib_msgs;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg"
 PYTHON_EXECUTABLE = "/usr/bin/python"
 package_has_static_sources = '' == 'TRUE'

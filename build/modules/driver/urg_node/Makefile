@@ -77,17 +77,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -100,6 +99,18 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -110,17 +121,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -198,6 +198,21 @@ urg_node_generate_messages: modules/driver/urg_node/CMakeFiles/urg_node_generate
 urg_node_generate_messages/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages.dir/build
 .PHONY : urg_node_generate_messages/fast
+
+# Convenience name for target.
+modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_eus.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_eus.dir/rule
+.PHONY : modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+urg_node_generate_messages_eus: modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_eus.dir/rule
+
+.PHONY : urg_node_generate_messages_eus
+
+# fast build rule for target.
+urg_node_generate_messages_eus/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_eus.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_generate_messages_eus.dir/build
+.PHONY : urg_node_generate_messages_eus/fast
 
 # Convenience name for target.
 modules/driver/urg_node/CMakeFiles/urg_node_genlisp.dir/rule:
@@ -440,6 +455,21 @@ urg_node/fast:
 .PHONY : urg_node/fast
 
 # Convenience name for target.
+modules/driver/urg_node/CMakeFiles/urg_node_geneus.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/urg_node_geneus.dir/rule
+.PHONY : modules/driver/urg_node/CMakeFiles/urg_node_geneus.dir/rule
+
+# Convenience name for target.
+urg_node_geneus: modules/driver/urg_node/CMakeFiles/urg_node_geneus.dir/rule
+
+.PHONY : urg_node_geneus
+
+# fast build rule for target.
+urg_node_geneus/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/driver/urg_node/CMakeFiles/urg_node_geneus.dir/build.make modules/driver/urg_node/CMakeFiles/urg_node_geneus.dir/build
+.PHONY : urg_node_geneus/fast
+
+# Convenience name for target.
 modules/driver/urg_node/CMakeFiles/getID.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/driver/urg_node/CMakeFiles/getID.dir/rule
 .PHONY : modules/driver/urg_node/CMakeFiles/getID.dir/rule
@@ -570,11 +600,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... install/strip"
 	@echo "... install"
 	@echo "... _urg_node_generate_messages_check_deps_Status"
 	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... install/strip"
 	@echo "... urg_node_generate_messages"
+	@echo "... urg_node_generate_messages_eus"
 	@echo "... urg_node_genlisp"
 	@echo "... dynamic_reconfigure_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_py"
@@ -592,8 +624,8 @@ help:
 	@echo "... urg_node_genpy"
 	@echo "... urg_c_wrapper"
 	@echo "... urg_node"
+	@echo "... urg_node_geneus"
 	@echo "... getID"
-	@echo "... install/local"
 	@echo "... src/getID.o"
 	@echo "... src/getID.i"
 	@echo "... src/getID.s"

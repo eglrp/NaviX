@@ -88,6 +88,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -99,17 +110,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -200,34 +200,19 @@ map_msgs_generate_messages/fast:
 .PHONY : map_msgs_generate_messages/fast
 
 # Convenience name for target.
-modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule
-.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule
+.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule
 
 # Convenience name for target.
-_map_msgs_generate_messages_check_deps_OccupancyGridUpdate: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule
+_map_msgs_generate_messages_check_deps_GetPointMapROI: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule
 
-.PHONY : _map_msgs_generate_messages_check_deps_OccupancyGridUpdate
+.PHONY : _map_msgs_generate_messages_check_deps_GetPointMapROI
 
 # fast build rule for target.
-_map_msgs_generate_messages_check_deps_OccupancyGridUpdate/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/build
-.PHONY : _map_msgs_generate_messages_check_deps_OccupancyGridUpdate/fast
-
-# Convenience name for target.
-modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-map_msgs_generate_messages_py: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule
-
-.PHONY : map_msgs_generate_messages_py
-
-# fast build rule for target.
-map_msgs_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/build
-.PHONY : map_msgs_generate_messages_py/fast
+_map_msgs_generate_messages_check_deps_GetPointMapROI/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/build
+.PHONY : _map_msgs_generate_messages_check_deps_GetPointMapROI/fast
 
 # Convenience name for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/rule:
@@ -243,6 +228,21 @@ map_msgs_generate_messages_cpp: modules/msgs/navigation_msgs/map_msgs/CMakeFiles
 map_msgs_generate_messages_cpp/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_cpp.dir/build
 .PHONY : map_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_eus.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_eus: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_eus.dir/rule
+
+.PHONY : map_msgs_generate_messages_eus
+
+# fast build rule for target.
+map_msgs_generate_messages_eus/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_eus.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_eus.dir/build
+.PHONY : map_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMap.dir/rule:
@@ -273,6 +273,21 @@ nav_msgs_generate_messages_lisp: modules/msgs/navigation_msgs/map_msgs/CMakeFile
 nav_msgs_generate_messages_lisp/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
 .PHONY : nav_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_PointCloud2Update.dir/rule:
@@ -365,6 +380,51 @@ map_msgs_gencpp/fast:
 .PHONY : map_msgs_gencpp/fast
 
 # Convenience name for target.
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule
+.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule
+
+# Convenience name for target.
+_map_msgs_generate_messages_check_deps_OccupancyGridUpdate: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/rule
+
+.PHONY : _map_msgs_generate_messages_check_deps_OccupancyGridUpdate
+
+# fast build rule for target.
+_map_msgs_generate_messages_check_deps_OccupancyGridUpdate/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_OccupancyGridUpdate.dir/build
+.PHONY : _map_msgs_generate_messages_check_deps_OccupancyGridUpdate/fast
+
+# Convenience name for target.
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+map_msgs_generate_messages_py: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/rule
+
+.PHONY : map_msgs_generate_messages_py
+
+# fast build rule for target.
+map_msgs_generate_messages_py/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_py.dir/build
+.PHONY : map_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_geneus.dir/rule:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_geneus.dir/rule
+.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_geneus.dir/rule
+
+# Convenience name for target.
+map_msgs_geneus: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_geneus.dir/rule
+
+.PHONY : map_msgs_geneus
+
+# fast build rule for target.
+map_msgs_geneus/fast:
+	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_geneus.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_geneus.dir/build
+.PHONY : map_msgs_geneus/fast
+
+# Convenience name for target.
 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
 .PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_generate_messages_lisp.dir/rule
@@ -424,36 +484,6 @@ map_msgs_genpy/fast:
 	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_genpy.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/map_msgs_genpy.dir/build
 .PHONY : map_msgs_genpy/fast
 
-# Convenience name for target.
-modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule
-.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule
-
-# Convenience name for target.
-_map_msgs_generate_messages_check_deps_GetPointMapROI: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/rule
-
-.PHONY : _map_msgs_generate_messages_check_deps_GetPointMapROI
-
-# fast build rule for target.
-_map_msgs_generate_messages_check_deps_GetPointMapROI/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/_map_msgs_generate_messages_check_deps_GetPointMapROI.dir/build
-.PHONY : _map_msgs_generate_messages_check_deps_GetPointMapROI/fast
-
-# Convenience name for target.
-modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f CMakeFiles/Makefile2 modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_py: modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/bailiqun/NaviX/build && $(MAKE) -f modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make modules/msgs/navigation_msgs/map_msgs/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -466,26 +496,28 @@ help:
 	@echo "... _map_msgs_generate_messages_check_deps_ProjectedMapsInfo"
 	@echo "... _map_msgs_generate_messages_check_deps_SetMapProjections"
 	@echo "... map_msgs_generate_messages"
-	@echo "... _map_msgs_generate_messages_check_deps_OccupancyGridUpdate"
-	@echo "... map_msgs_generate_messages_py"
+	@echo "... install/strip"
+	@echo "... _map_msgs_generate_messages_check_deps_GetPointMapROI"
 	@echo "... map_msgs_generate_messages_cpp"
+	@echo "... map_msgs_generate_messages_eus"
 	@echo "... _map_msgs_generate_messages_check_deps_GetPointMap"
 	@echo "... install"
 	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... install/local"
+	@echo "... nav_msgs_generate_messages_py"
 	@echo "... _map_msgs_generate_messages_check_deps_PointCloud2Update"
 	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... _map_msgs_generate_messages_check_deps_SaveMap"
 	@echo "... _map_msgs_generate_messages_check_deps_ProjectedMap"
 	@echo "... _map_msgs_generate_messages_check_deps_ProjectedMapInfo"
 	@echo "... map_msgs_gencpp"
+	@echo "... _map_msgs_generate_messages_check_deps_OccupancyGridUpdate"
+	@echo "... map_msgs_generate_messages_py"
+	@echo "... map_msgs_geneus"
 	@echo "... map_msgs_generate_messages_lisp"
 	@echo "... _map_msgs_generate_messages_check_deps_GetMapROI"
 	@echo "... map_msgs_genlisp"
 	@echo "... map_msgs_genpy"
-	@echo "... _map_msgs_generate_messages_check_deps_GetPointMapROI"
-	@echo "... install/strip"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... install/local"
 .PHONY : help
 
 

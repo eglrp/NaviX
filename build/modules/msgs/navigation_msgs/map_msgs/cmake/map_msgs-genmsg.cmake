@@ -6,6 +6,7 @@ set(MSG_I_FLAGS "-Imap_msgs:/home/bailiqun/NaviX/modules/msgs/navigation_msgs/ma
 
 # Find all generators
 find_package(gencpp REQUIRED)
+find_package(geneus REQUIRED)
 find_package(genlisp REQUIRED)
 find_package(genpy REQUIRED)
 
@@ -66,7 +67,7 @@ add_custom_target(_map_msgs_generate_messages_check_deps_${_filename}
 )
 
 #
-#  langs = gencpp;genlisp;genpy
+#  langs = gencpp;geneus;genlisp;genpy
 #
 
 ### Section generating for lang: gencpp
@@ -173,6 +174,111 @@ add_dependencies(map_msgs_gencpp map_msgs_generate_messages_cpp)
 
 # register target for catkin_package(EXPORTED_TARGETS)
 list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS map_msgs_generate_messages_cpp)
+
+### Section generating for lang: geneus
+### Generating Messages
+_generate_msg_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/PointCloud2Update.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/PointField.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/PointCloud2.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_msg_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/ProjectedMapInfo.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_msg_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/OccupancyGridUpdate.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_msg_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/ProjectedMap.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/OccupancyGrid.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/MapMetaData.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+
+### Generating Services
+_generate_srv_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/ProjectedMapsInfo.srv"
+  "${MSG_I_FLAGS}"
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/ProjectedMapInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_srv_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/GetMapROI.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/OccupancyGrid.msg;/opt/ros/indigo/share/nav_msgs/cmake/../msg/MapMetaData.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_srv_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/GetPointMapROI.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/PointField.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/PointCloud2.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_srv_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/GetPointMap.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/sensor_msgs/cmake/../msg/PointField.msg;/opt/ros/indigo/share/sensor_msgs/cmake/../msg/PointCloud2.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_srv_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/SetMapProjections.srv"
+  "${MSG_I_FLAGS}"
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/ProjectedMapInfo.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+_generate_srv_eus(map_msgs
+  "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/SaveMap.srv"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/String.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+)
+
+### Generating Module File
+_generate_module_eus(map_msgs
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+  "${ALL_GEN_OUTPUT_FILES_eus}"
+)
+
+add_custom_target(map_msgs_generate_messages_eus
+  DEPENDS ${ALL_GEN_OUTPUT_FILES_eus}
+)
+add_dependencies(map_msgs_generate_messages map_msgs_generate_messages_eus)
+
+# add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/PointCloud2Update.msg" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/ProjectedMapInfo.msg" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/OccupancyGridUpdate.msg" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/ProjectedMapsInfo.srv" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/GetMapROI.srv" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/GetPointMapROI.srv" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/msg/ProjectedMap.msg" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/GetPointMap.srv" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/SetMapProjections.srv" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/bailiqun/NaviX/modules/msgs/navigation_msgs/map_msgs/srv/SaveMap.srv" NAME_WE)
+add_dependencies(map_msgs_generate_messages_eus _map_msgs_generate_messages_check_deps_${_filename})
+
+# target for backward compatibility
+add_custom_target(map_msgs_geneus)
+add_dependencies(map_msgs_geneus map_msgs_generate_messages_eus)
+
+# register target for catkin_package(EXPORTED_TARGETS)
+list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS map_msgs_generate_messages_eus)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
@@ -396,6 +502,17 @@ endif()
 add_dependencies(map_msgs_generate_messages_cpp std_msgs_generate_messages_cpp)
 add_dependencies(map_msgs_generate_messages_cpp sensor_msgs_generate_messages_cpp)
 add_dependencies(map_msgs_generate_messages_cpp nav_msgs_generate_messages_cpp)
+
+if(geneus_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs)
+  # install generated code
+  install(
+    DIRECTORY ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/map_msgs
+    DESTINATION ${geneus_INSTALL_DIR}
+  )
+endif()
+add_dependencies(map_msgs_generate_messages_eus std_msgs_generate_messages_eus)
+add_dependencies(map_msgs_generate_messages_eus sensor_msgs_generate_messages_eus)
+add_dependencies(map_msgs_generate_messages_eus nav_msgs_generate_messages_eus)
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/map_msgs)
   # install generated code
